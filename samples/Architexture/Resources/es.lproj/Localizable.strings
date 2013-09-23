@@ -1,0 +1,47 @@
+/*
+ Localizable.strings
+ Architexture
+ 
+ Created by Enric Vergara Carreras on 30/08/13.
+ 
+ */
+
+"ADD_TO_CART"           = "Add to Cart";
+"CHECKOUT"              = "CheckOut";
+"NEXT"                  = "Next";
+"BACK"                  = "Back";
+"TOTAL"                 = "Total";
+"NOT_SHIPPING"          = "(Not including shipping)";
+"WARNING"               = "Advertencia";
+"OK"                    = "Ok";
+"AT_LEAST_ONE_RING"     = "Para continuar el pedido ha de añadir al carrito almenos 1 anillo";
+"SHOP"                  = "Shop";
+"SHOP"                  = "Shop";
+"SHOP"                  = "Shop";
+"WEB_ARCHITEXTURE"      = "Web Architexture";
+"CONTACT_US"            = "Contact us";
+
+"BARCELONA_COLLECTION"  = "Barcelona Collection";
+"MATERIALS_COLLECTION"  = "Materials Collection";
+"PARIS_COLLECTION"      = "Paris Collection";
+"SPECIAL_COLLECTIONS"   = "Special Collections";
+
+"HAPPI_INFO"            = "HAPPI_INFO_AN.png";
+"REFLEX_INFO"           = "REFLEX_INFO_AN.png";
+"SKY_INFO"              = "SKY_INFO_AN.png";
+"CLOTHING_INFO"         = "CLOTHING_INFO_AN.png";
+"FANCY_INFO"            = "FANCY_INFO_AN.png";
+"EARTH_INFO"            = "EARTH_INFO_AN.png";
+"TRANSPARENCY_INFO"     = "TRANSPARENCY_INFO_AN.png";
+"RHYTHM_INFO"           = "RHYTHM_INFO_AN.png";
+"GOLD_INFO"             = "GOLD_INFO_AN.png";
+"COLOURS_INFO"          = "COLOURS_INFO_AN.png";
+"LIGHT_INFO"            = "LIGHT_INFO_AN.png";
+"MOUNTAIN_INFO"         = "MOUNTAIN_INFO_AN.png";
+"BACKGROUND_INIT"       = "SPLASHSCREEN_EN.jpg";
+"FLOWER_INFO"           = "FLOWER_INFO_AN.png";
+"PLACE_INFO"            = "PLACE_INFO_AN.png";
+"CALME_INFO"            = "CALME_INFO_AN.png";
+"ANGLE_INFO"            = "ANGLE_INFO_AN.png";
+"ICONE_INFO"            = "ICONE_INFO_AN.png";
+"RGB_INFO"              = "RGB_INFO_AN.png";
