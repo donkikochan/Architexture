@@ -66,6 +66,7 @@
 		C7A8525D1793326A0059361B /* ICONA.png in Resources */ = {isa = PBXBuildFile; fileRef = C7A8525C179332690059361B /* ICONA.png */; };
 		C7A8525F1793327C0059361B /* ICONA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7A8525E1793327C0059361B /* ICONA@2x.png */; };
 		C7A91F0917EDDDC900AD20CC /* ParisRingsProfile_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A91F0817EDDDC900AD20CC /* ParisRingsProfile_VC.m */; };
+		C7A91F0E17F169C400AD20CC /* RingProfile_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A91F0D17F169C400AD20CC /* RingProfile_VC.m */; };
 		C7D740F917ECA8FA004A5D25 /* LoadingCollection_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D740F817ECA8FA004A5D25 /* LoadingCollection_VC.m */; };
 		C7D7421517ECC7A8004A5D25 /* HAPPI00@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7D740FD17ECC7A8004A5D25 /* HAPPI00@2x.jpg */; };
 		C7D7421617ECC7A8004A5D25 /* HAPPI19@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7D740FE17ECC7A8004A5D25 /* HAPPI19@2x.jpg */; };
@@ -422,6 +423,8 @@
 		C7A8525E1793327C0059361B /* ICONA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ICONA@2x.png"; sourceTree = "<group>"; };
 		C7A91F0717EDDDC900AD20CC /* ParisRingsProfile_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParisRingsProfile_VC.h; sourceTree = "<group>"; };
 		C7A91F0817EDDDC900AD20CC /* ParisRingsProfile_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParisRingsProfile_VC.m; sourceTree = "<group>"; };
+		C7A91F0C17F169C400AD20CC /* RingProfile_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingProfile_VC.h; sourceTree = "<group>"; };
+		C7A91F0D17F169C400AD20CC /* RingProfile_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RingProfile_VC.m; sourceTree = "<group>"; };
 		C7D740F717ECA8FA004A5D25 /* LoadingCollection_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingCollection_VC.h; sourceTree = "<group>"; };
 		C7D740F817ECA8FA004A5D25 /* LoadingCollection_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingCollection_VC.m; sourceTree = "<group>"; };
 		C7D740FD17ECC7A8004A5D25 /* HAPPI00@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "HAPPI00@2x.jpg"; sourceTree = "<group>"; };
@@ -806,6 +809,8 @@
 		C72ACDD517CF5853000CCEAD /* 02. Rings Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C7A91F0C17F169C400AD20CC /* RingProfile_VC.h */,
+				C7A91F0D17F169C400AD20CC /* RingProfile_VC.m */,
 				C791E4F117D0A8CB003C4703 /* RingProfile_View.h */,
 				C791E4F217D0A8CB003C4703 /* RingProfile_View.m */,
 				C7A91F0217EDDD6A00AD20CC /* Barcelona Collection */,
@@ -1936,6 +1941,7 @@
 				C78BA69317DF2B5E00CADA77 /* MenuOption_Cell.m in Sources */,
 				C72ACDED17CF5853000CCEAD /* Init_VC.m in Sources */,
 				C72ACDEE17CF5853000CCEAD /* BarcelonaRingsProfile_VC.m in Sources */,
+				C7A91F0E17F169C400AD20CC /* RingProfile_VC.m in Sources */,
 				C72ACDEF17CF5853000CCEAD /* Menu_VC.m in Sources */,
 				C72ACDF017CF5853000CCEAD /* Checkout_Cell.m in Sources */,
 				C72ACDF117CF5853000CCEAD /* Checkout_VC.m in Sources */,
