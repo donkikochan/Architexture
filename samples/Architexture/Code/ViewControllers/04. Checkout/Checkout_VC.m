@@ -41,7 +41,8 @@
     _m_Label_Title.text         = NSLocalizedString(@"CHECKOUT",nil);
     _m_Label_Total.text         = NSLocalizedString(@"TOTAL",nil);
     _m_Label_NotShipping.text   = NSLocalizedString(@"NOT_SHIPPING",nil);
-    [_m_Button_Clear setTitle:NSLocalizedString(@"BACK",nil) forState:UIControlStateNormal];
+    [_m_Button_Back setTitle:NSLocalizedString(@"BACK",nil) forState:UIControlStateNormal];
+    [_m_Button_Clear setTitle:NSLocalizedString(@"CLEAR",nil) forState:UIControlStateNormal];
     [_m_Button_Order setTitle:NSLocalizedString(@"NEXT",nil) forState:UIControlStateNormal];
     //-------------------------
     
@@ -101,13 +102,10 @@
 
 - (IBAction) clear_Clicked:(id)sender
 {
-    /*
     [[AppDelegate mainAppDelegate].m_CheckOutInfo resetRings];
     [self calculateAmmounts];
     [self setLabels];
     [_m_TableView reloadData];
-    */
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction) order_Clicked:(id)sender

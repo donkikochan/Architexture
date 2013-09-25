@@ -154,6 +154,20 @@
             [AppDelegate mainAppDelegate].m_sGoToNewCollection  = @"YES";
             [self.navigationController popViewControllerAnimated:NO];
         }
+        else if (l_iIndex >= 40 && l_iIndex<50)
+        {
+            if (l_iIndex == 40)
+            {
+                [AppDelegate mainAppDelegate].m_sCollectionToLoad = SP_COLLECTION_DALI;
+            }
+            else if (l_iIndex == 41)
+            {
+                [AppDelegate mainAppDelegate].m_sCollectionToLoad = SP_COLLECTION_BORN;
+            }
+            [AppDelegate mainAppDelegate].m_sRingToLoad = 0;
+            [AppDelegate mainAppDelegate].m_sGoToNewCollection  = @"YES";
+            [self.navigationController popViewControllerAnimated:NO];
+        }
         else if (l_iIndex == 100)
         {
             [self performSegueWithIdentifier:@"FromRingsToCheckout" sender:nil];
@@ -169,6 +183,48 @@
     }
 }
 
+- (IBAction) addShop:(id)sender
+{
+    UIButton* btn = (UIButton*)sender;
+    NSLog(@"Add Shop: %d",btn.tag);
+    switch(btn.tag)
+    {
+        case 0: //_01_HAPPINESS
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"HAPPINESS"];
+        }
+            break;
+        case 1: //_02_REFLEX
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"REFLEX"];
+        }
+            break;
+        case 2: //_03_SKY
+        {
+           [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"SKY"];
+        }
+            break;
+
+        case 3: //_04_CLOTHING
+        {
+           [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"CLOTHING"];
+        }
+            break;
+
+        case 4: //_05_FANCY
+        {
+           [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"FANCY"];
+        }
+            break;
+
+        case 5: //_06_EARTH
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"EARTH"];
+        }
+            break;
+    }
+    [self performSegueWithIdentifier:@"FromRingsToCheckout" sender:nil];
+}
 
 
 - (void)didReceiveMemoryWarning

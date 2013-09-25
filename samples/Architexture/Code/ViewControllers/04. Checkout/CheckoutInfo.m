@@ -72,7 +72,7 @@
         [l_ArrayParisCollection addObject:ring];
         [m_aCollections addObject:l_ArrayParisCollection];
         
-        //--- DALI COLLECTION
+        //--- SPECIAL COLLECTIONS
         NSMutableArray* l_ArrayDaliCollection = [NSMutableArray arrayWithCapacity:4];
         ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-DALI.png"          andRingName:@"DALÍ"         andCollectionName:NSLocalizedString(@"SPECIAL_COLLECTIONS",nil)];
         [l_ArrayDaliCollection addObject:ring];

@@ -155,6 +155,20 @@
             [AppDelegate mainAppDelegate].m_sGoToNewCollection  = @"YES";
             [self.navigationController popViewControllerAnimated:NO];
         }
+        else if (l_iIndex >= 40 && l_iIndex<50)
+        {
+            if (l_iIndex == 40)
+            {
+                [AppDelegate mainAppDelegate].m_sCollectionToLoad = SP_COLLECTION_DALI;
+            }
+            else if (l_iIndex == 41)
+            {
+                [AppDelegate mainAppDelegate].m_sCollectionToLoad = SP_COLLECTION_BORN;
+            }
+            [AppDelegate mainAppDelegate].m_sRingToLoad = 0;
+            [AppDelegate mainAppDelegate].m_sGoToNewCollection  = @"YES";
+            [self.navigationController popViewControllerAnimated:NO];
+        }
         else if (l_iIndex == 100)
         {
             [self performSegueWithIdentifier:@"FromRingsToCheckout" sender:nil];
@@ -168,6 +182,51 @@
             //CONTACT US
         }
     }
+}
+
+
+- (IBAction) addShop:(id)sender
+{
+
+    UIButton* btn = (UIButton*)sender;
+    NSLog(@"Add Shop: %d",btn.tag);
+    switch(btn.tag)
+    {
+        case 0: //_01_RHYTHM
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"RHYTHM"];
+        }
+            break;
+        case 1: //_02_TRANSPARENCY
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"TRANSPARENCY"];
+        }
+            break;
+        case 2: //_03_GOLD
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"GOLD"];
+        }
+            break;
+            
+        case 3: //_04_COLOURS
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"COLOURS"];
+        }
+            break;
+            
+        case 4: //_05_LIGHT
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"LIGHT"];
+        }
+            break;
+            
+        case 5: //_06_MOUNTAIN
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"MOUNTAIN"];
+        }
+            break;
+    }
+    [self performSegueWithIdentifier:@"FromRingsToCheckout" sender:nil];
 }
 
 

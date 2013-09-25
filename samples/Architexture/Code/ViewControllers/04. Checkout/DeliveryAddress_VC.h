@@ -6,14 +6,16 @@
 //
 //
 
+//---Imports:--
 #import <UIKit/UIKit.h>
+#import "PayPalMobile.h"
+//-------------
 
-@interface DeliveryAddress_VC : UIViewController
+@interface DeliveryAddress_VC : UIViewController <PayPalPaymentDelegate>
 {
-    NSMutableArray  *arrayCountries;
-    NSString* m_sCountryCodeSelected;
-    
-    float m_fShippingPrize;
+    NSMutableArray* arrayCountries;
+    NSString*       m_sCountryCodeSelected;
+    float           m_fShippingPrize;
 }
 
 //---IBOutlets:
@@ -59,5 +61,6 @@
 - (IBAction) paypal_Clicked:(id)sender;
 
 //---Functions:
+//...
 
 @end

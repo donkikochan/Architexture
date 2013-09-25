@@ -19,15 +19,6 @@
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 		C71CC99317D9DE7200F08F33 /* MapView_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C71CC99217D9DE7200F08F33 /* MapView_VC.m */; };
 		C71CC99517D9F7B400F08F33 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71CC99417D9F7B400F08F33 /* CoreLocation.framework */; };
-		C72ACB7D17CF521A000CCEAD /* Kike.dat in Resources */ = {isa = PBXBuildFile; fileRef = C72AC91B17CF521A000CCEAD /* Kike.dat */; };
-		C72ACB7E17CF521A000CCEAD /* Kike.xml in Resources */ = {isa = PBXBuildFile; fileRef = C72AC91C17CF521A000CCEAD /* Kike.xml */; };
-		C72ACB7F17CF521A000CCEAD /* StonesAndChips.dat in Resources */ = {isa = PBXBuildFile; fileRef = C72AC91D17CF521A000CCEAD /* StonesAndChips.dat */; };
-		C72ACB8017CF521A000CCEAD /* StonesAndChips.xml in Resources */ = {isa = PBXBuildFile; fileRef = C72AC91E17CF521A000CCEAD /* StonesAndChips.xml */; };
-		C72ACB8117CF521A000CCEAD /* Tarmac.dat in Resources */ = {isa = PBXBuildFile; fileRef = C72AC91F17CF521A000CCEAD /* Tarmac.dat */; };
-		C72ACB8217CF521A000CCEAD /* Tarmac.xml in Resources */ = {isa = PBXBuildFile; fileRef = C72AC92017CF521A000CCEAD /* Tarmac.xml */; };
-		C72ACB8317CF521A000CCEAD /* TextureTeapotBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = C72AC92117CF521A000CCEAD /* TextureTeapotBlue.png */; };
-		C72ACB8417CF521A000CCEAD /* TextureTeapotBrass.png in Resources */ = {isa = PBXBuildFile; fileRef = C72AC92217CF521A000CCEAD /* TextureTeapotBrass.png */; };
-		C72ACB8517CF521A000CCEAD /* TextureTeapotRed.png in Resources */ = {isa = PBXBuildFile; fileRef = C72AC92317CF521A000CCEAD /* TextureTeapotRed.png */; };
 		C72ACDEC17CF5853000CCEAD /* UIImage+StackBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = C72ACDD017CF5853000CCEAD /* UIImage+StackBlur.m */; };
 		C72ACDED17CF5853000CCEAD /* Init_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C72ACDD417CF5853000CCEAD /* Init_VC.m */; };
 		C72ACDEE17CF5853000CCEAD /* BarcelonaRingsProfile_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C72ACDD717CF5853000CCEAD /* BarcelonaRingsProfile_VC.m */; };
@@ -39,26 +30,20 @@
 		C72ACDF417CF5853000CCEAD /* DeliveryAddress_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C72ACDE517CF5853000CCEAD /* DeliveryAddress_VC.m */; };
 		C72ACDF517CF5853000CCEAD /* ViewLink_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C72ACDE917CF5853000CCEAD /* ViewLink_VC.m */; };
 		C72ACDF617CF5853000CCEAD /* MainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72ACDEB17CF5853000CCEAD /* MainNavController.m */; };
-		C72ACE1317CF69F3000CCEAD /* AR_EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = C72ACE0117CF69F3000CCEAD /* AR_EAGLView.mm */; };
-		C72ACE1417CF69F3000CCEAD /* ARParentViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C72ACE0317CF69F3000CCEAD /* ARParentViewController.mm */; };
-		C72ACE1517CF69F3000CCEAD /* ARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C72ACE0517CF69F3000CCEAD /* ARViewController.mm */; };
-		C72ACE1617CF69F3000CCEAD /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C72ACE0717CF69F3000CCEAD /* OverlayView.m */; };
-		C72ACE1717CF69F3000CCEAD /* OverlayViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C72ACE0917CF69F3000CCEAD /* OverlayViewController.mm */; };
-		C72ACE1817CF69F3000CCEAD /* QCARutils.mm in Sources */ = {isa = PBXBuildFile; fileRef = C72ACE0B17CF69F3000CCEAD /* QCARutils.mm */; };
-		C72ACE1917CF69F3000CCEAD /* Shader.fsh in Sources */ = {isa = PBXBuildFile; fileRef = C72ACE0D17CF69F3000CCEAD /* Shader.fsh */; };
-		C72ACE1A17CF69F3000CCEAD /* Shader.vsh in Sources */ = {isa = PBXBuildFile; fileRef = C72ACE0E17CF69F3000CCEAD /* Shader.vsh */; };
-		C72ACE1B17CF69F3000CCEAD /* ShaderUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C72ACE0F17CF69F3000CCEAD /* ShaderUtils.cpp */; };
-		C72ACE1C17CF69F3000CCEAD /* Texture.mm in Sources */ = {isa = PBXBuildFile; fileRef = C72ACE1217CF69F3000CCEAD /* Texture.mm */; };
 		C72ACE2017CF79EE000CCEAD /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C72ACE1E17CF79EE000CCEAD /* AppDelegate.mm */; };
 		C72ACE2117CF79EE000CCEAD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72ACE1F17CF79EE000CCEAD /* MainStoryboard.storyboard */; };
-		C72ACE2417CF79FD000CCEAD /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = C72ACE2317CF79FD000CCEAD /* EAGLView.mm */; };
 		C72ACE2B17CF7A7A000CCEAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C72ACE2917CF7A7A000CCEAD /* main.m */; };
+		C7572C2017F1DFA80013439C /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7572C1C17F1DFA80013439C /* libPayPalMobile.a */; };
+		C7572C2417F1E0360013439C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7572C2317F1E0360013439C /* AudioToolbox.framework */; };
+		C7572C2617F1E0450013439C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C7572C2517F1E0450013439C /* libxml2.dylib */; };
+		C7572C2817F1E04B0013439C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7572C2717F1E04B0013439C /* MessageUI.framework */; };
+		C7572C2A17F1E05B0013439C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7572C2917F1E05B0013439C /* MobileCoreServices.framework */; };
+		C7572C2E17F2035B0013439C /* DaliRingProfile_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C7572C2D17F2035B0013439C /* DaliRingProfile_VC.m */; };
 		C78BA69017DF100D00CADA77 /* CollectionSection_View.m in Sources */ = {isa = PBXBuildFile; fileRef = C78BA68F17DF100C00CADA77 /* CollectionSection_View.m */; };
 		C78BA69317DF2B5E00CADA77 /* MenuOption_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = C78BA69217DF2B5E00CADA77 /* MenuOption_Cell.m */; };
 		C78BA69617DF412600CADA77 /* MaterialsRingsProfile_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C78BA69517DF412600CADA77 /* MaterialsRingsProfile_VC.m */; };
 		C791E4F317D0A8CB003C4703 /* RingProfile_View.m in Sources */ = {isa = PBXBuildFile; fileRef = C791E4F217D0A8CB003C4703 /* RingProfile_View.m */; };
 		C7A37A6317D121E2003EB817 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7A37A6517D121E2003EB817 /* Localizable.strings */; };
-		C7A37AD117D3D164003EB817 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A37ACC17D3C448003EB817 /* libGPUImage.a */; };
 		C7A851B61792ADFC0059361B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A851B51792ADFC0059361B /* MapKit.framework */; };
 		C7A851BA1792F4D10059361B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C7A851B91792F4D10059361B /* Default.png */; };
 		C7A851BC1792F4D70059361B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7A851BB1792F4D70059361B /* Default@2x.png */; };
@@ -303,32 +288,7 @@
 		C7D742FD17ECC7A8004A5D25 /* RHYTHM@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D7421217ECC7A8004A5D25 /* RHYTHM@2x.png */; };
 		C7D742FE17ECC7A8004A5D25 /* SKY@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D7421317ECC7A8004A5D25 /* SKY@2x.png */; };
 		C7D742FF17ECC7A8004A5D25 /* TRANSPARENCY@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D7421417ECC7A8004A5D25 /* TRANSPARENCY@2x.png */; };
-		CCCB51C6140FB9E6005A9272 /* libQCAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCB51B8140FB9E6005A9272 /* libQCAR.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C7A37ACB17D3C448003EB817 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C7A37AC517D3C448003EB817 /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
-			remoteInfo = GPUImage;
-		};
-		C7A37ACD17D3C448003EB817 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C7A37AC517D3C448003EB817 /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCF1A34414DDB1EC00852800;
-			remoteInfo = GPUImageTests;
-		};
-		C7A37ACF17D3C7DA003EB817 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C7A37AC517D3C448003EB817 /* GPUImage.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BCF1A33314DDB1EC00852800;
-			remoteInfo = GPUImage;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		15899801132907BC004C3F7B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -345,15 +305,6 @@
 		C71CC99117D9DE7200F08F33 /* MapView_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView_VC.h; sourceTree = "<group>"; };
 		C71CC99217D9DE7200F08F33 /* MapView_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView_VC.m; sourceTree = "<group>"; };
 		C71CC99417D9F7B400F08F33 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		C72AC91B17CF521A000CCEAD /* Kike.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kike.dat; sourceTree = "<group>"; };
-		C72AC91C17CF521A000CCEAD /* Kike.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Kike.xml; sourceTree = "<group>"; };
-		C72AC91D17CF521A000CCEAD /* StonesAndChips.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = StonesAndChips.dat; sourceTree = "<group>"; };
-		C72AC91E17CF521A000CCEAD /* StonesAndChips.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = StonesAndChips.xml; sourceTree = "<group>"; };
-		C72AC91F17CF521A000CCEAD /* Tarmac.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tarmac.dat; sourceTree = "<group>"; };
-		C72AC92017CF521A000CCEAD /* Tarmac.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tarmac.xml; sourceTree = "<group>"; };
-		C72AC92117CF521A000CCEAD /* TextureTeapotBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotBlue.png; sourceTree = "<group>"; };
-		C72AC92217CF521A000CCEAD /* TextureTeapotBrass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotBrass.png; sourceTree = "<group>"; };
-		C72AC92317CF521A000CCEAD /* TextureTeapotRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapotRed.png; sourceTree = "<group>"; };
 		C72ACDCF17CF5853000CCEAD /* UIImage+StackBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+StackBlur.h"; sourceTree = "<group>"; };
 		C72ACDD017CF5853000CCEAD /* UIImage+StackBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+StackBlur.m"; sourceTree = "<group>"; };
 		C72ACDD317CF5853000CCEAD /* Init_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Init_VC.h; sourceTree = "<group>"; };
@@ -376,33 +327,22 @@
 		C72ACDE917CF5853000CCEAD /* ViewLink_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewLink_VC.m; sourceTree = "<group>"; };
 		C72ACDEA17CF5853000CCEAD /* MainNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavController.h; sourceTree = "<group>"; };
 		C72ACDEB17CF5853000CCEAD /* MainNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavController.m; sourceTree = "<group>"; };
-		C72ACE0017CF69F3000CCEAD /* AR_EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AR_EAGLView.h; sourceTree = "<group>"; };
-		C72ACE0117CF69F3000CCEAD /* AR_EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AR_EAGLView.mm; sourceTree = "<group>"; };
-		C72ACE0217CF69F3000CCEAD /* ARParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARParentViewController.h; path = ../../../../ARCommon/ARParentViewController.h; sourceTree = "<group>"; };
-		C72ACE0317CF69F3000CCEAD /* ARParentViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ARParentViewController.mm; path = ../../../../ARCommon/ARParentViewController.mm; sourceTree = "<group>"; };
-		C72ACE0417CF69F3000CCEAD /* ARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
-		C72ACE0517CF69F3000CCEAD /* ARViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARViewController.mm; sourceTree = "<group>"; };
-		C72ACE0617CF69F3000CCEAD /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
-		C72ACE0717CF69F3000CCEAD /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
-		C72ACE0817CF69F3000CCEAD /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
-		C72ACE0917CF69F3000CCEAD /* OverlayViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OverlayViewController.mm; sourceTree = "<group>"; };
-		C72ACE0A17CF69F3000CCEAD /* QCARutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCARutils.h; sourceTree = "<group>"; };
-		C72ACE0B17CF69F3000CCEAD /* QCARutils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QCARutils.mm; sourceTree = "<group>"; };
-		C72ACE0D17CF69F3000CCEAD /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
-		C72ACE0E17CF69F3000CCEAD /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
-		C72ACE0F17CF69F3000CCEAD /* ShaderUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderUtils.cpp; sourceTree = "<group>"; };
-		C72ACE1017CF69F3000CCEAD /* ShaderUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderUtils.h; sourceTree = "<group>"; };
-		C72ACE1117CF69F3000CCEAD /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
-		C72ACE1217CF69F3000CCEAD /* Texture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Texture.mm; sourceTree = "<group>"; };
 		C72ACE1D17CF79EE000CCEAD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Architexture/AppDelegate.h; sourceTree = "<group>"; };
 		C72ACE1E17CF79EE000CCEAD /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Architexture/AppDelegate.mm; sourceTree = "<group>"; };
 		C72ACE1F17CF79EE000CCEAD /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = Architexture/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C72ACE2217CF79FD000CCEAD /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EAGLView.h; path = Architexture/EAGLView.h; sourceTree = SOURCE_ROOT; };
-		C72ACE2317CF79FD000CCEAD /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = EAGLView.mm; path = Architexture/EAGLView.mm; sourceTree = SOURCE_ROOT; };
 		C72ACE2717CF7A7A000CCEAD /* ArchiteXture_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArchiteXture_Prefix.pch; path = Architexture/ArchiteXture_Prefix.pch; sourceTree = "<group>"; };
 		C72ACE2817CF7A7A000CCEAD /* ArchiteXture-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ArchiteXture-Info.plist"; path = "Architexture/ArchiteXture-Info.plist"; sourceTree = "<group>"; };
 		C72ACE2917CF7A7A000CCEAD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Architexture/main.m; sourceTree = "<group>"; };
-		C72ACE2C17CF7A83000CCEAD /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Teapot.h; path = ../../Architexture/Teapot.h; sourceTree = "<group>"; };
+		C7572C1C17F1DFA80013439C /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
+		C7572C1D17F1DFA80013439C /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
+		C7572C1E17F1DFA80013439C /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		C7572C1F17F1DFA80013439C /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		C7572C2317F1E0360013439C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C7572C2517F1E0450013439C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		C7572C2717F1E04B0013439C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C7572C2917F1E05B0013439C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C7572C2C17F2035B0013439C /* DaliRingProfile_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaliRingProfile_VC.h; sourceTree = "<group>"; };
+		C7572C2D17F2035B0013439C /* DaliRingProfile_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaliRingProfile_VC.m; sourceTree = "<group>"; };
 		C78BA68E17DF100C00CADA77 /* CollectionSection_View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionSection_View.h; sourceTree = "<group>"; };
 		C78BA68F17DF100C00CADA77 /* CollectionSection_View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionSection_View.m; sourceTree = "<group>"; };
 		C78BA69117DF2B5E00CADA77 /* MenuOption_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuOption_Cell.h; sourceTree = "<group>"; };
@@ -414,7 +354,6 @@
 		C7A37A6417D121E2003EB817 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C7A37A6617D12218003EB817 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C7A37A6717D12227003EB817 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
-		C7A37AC517D3C448003EB817 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = ../GPUImage_framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
 		C7A851B51792ADFC0059361B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C7A851B91792F4D10059361B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C7A851BB1792F4D70059361B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -670,13 +609,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C71CC99517D9F7B400F08F33 /* CoreLocation.framework in Frameworks */,
-				C7A37AD117D3D164003EB817 /* libGPUImage.a in Frameworks */,
-				C7A851B61792ADFC0059361B /* MapKit.framework in Frameworks */,
-				CCCB51C6140FB9E6005A9272 /* libQCAR.a in Frameworks */,
-				1599F811134360DE0073DAB2 /* Security.framework in Frameworks */,
-				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				1599F811134360DE0073DAB2 /* Security.framework in Frameworks */,
+				C7572C2A17F1E05B0013439C /* MobileCoreServices.framework in Frameworks */,
+				C7572C2817F1E04B0013439C /* MessageUI.framework in Frameworks */,
+				C7572C2617F1E0450013439C /* libxml2.dylib in Frameworks */,
+				C7572C2417F1E0360013439C /* AudioToolbox.framework in Frameworks */,
+				C71CC99517D9F7B400F08F33 /* CoreLocation.framework in Frameworks */,
+				C7A851B61792ADFC0059361B /* MapKit.framework in Frameworks */,
+				C7572C2017F1DFA80013439C /* libPayPalMobile.a in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */,
 				28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */,
 				15899802132907BC004C3F7B /* AVFoundation.framework in Frameworks */,
@@ -717,8 +659,11 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7572C2917F1E05B0013439C /* MobileCoreServices.framework */,
+				C7572C2717F1E04B0013439C /* MessageUI.framework */,
+				C7572C2517F1E0450013439C /* libxml2.dylib */,
+				C7572C2317F1E0360013439C /* AudioToolbox.framework */,
 				C71CC99417D9F7B400F08F33 /* CoreLocation.framework */,
-				C7A37AC517D3C448003EB817 /* GPUImage.xcodeproj */,
 				C7A851B51792ADFC0059361B /* MapKit.framework */,
 				CCCB51B8140FB9E6005A9272 /* libQCAR.a */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -739,33 +684,15 @@
 			isa = PBXGroup;
 			children = (
 				C7D740FA17ECC7A8004A5D25 /* Images */,
-				C72AC91A17CF521A000CCEAD /* AR Assets */,
 				C7A37A6517D121E2003EB817 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		C72AC91A17CF521A000CCEAD /* AR Assets */ = {
-			isa = PBXGroup;
-			children = (
-				C72ACE2C17CF7A83000CCEAD /* Teapot.h */,
-				C72AC91B17CF521A000CCEAD /* Kike.dat */,
-				C72AC91C17CF521A000CCEAD /* Kike.xml */,
-				C72AC91D17CF521A000CCEAD /* StonesAndChips.dat */,
-				C72AC91E17CF521A000CCEAD /* StonesAndChips.xml */,
-				C72AC91F17CF521A000CCEAD /* Tarmac.dat */,
-				C72AC92017CF521A000CCEAD /* Tarmac.xml */,
-				C72AC92117CF521A000CCEAD /* TextureTeapotBlue.png */,
-				C72AC92217CF521A000CCEAD /* TextureTeapotBrass.png */,
-				C72AC92317CF521A000CCEAD /* TextureTeapotRed.png */,
-			);
-			path = "AR Assets";
-			sourceTree = "<group>";
-		};
 		C72ACDCC17CF5853000CCEAD /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				C72ACDFF17CF69F2000CCEAD /* ARCommon */,
+				C7572C1B17F1DFA80013439C /* PayPalMobile */,
 				C72ACDCE17CF5853000CCEAD /* Utils */,
 				C72ACDD117CF5853000CCEAD /* ViewControllers */,
 			);
@@ -790,7 +717,6 @@
 				C72ACDDB17CF5853000CCEAD /* 04. Checkout */,
 				C72ACDE617CF5853000CCEAD /* 05. MapViewer */,
 				C72ACDE717CF5853000CCEAD /* 06. WebViewer */,
-				C72ACDF717CF588B000CCEAD /* 07. AR */,
 				C72ACDEA17CF5853000CCEAD /* MainNavController.h */,
 				C72ACDEB17CF5853000CCEAD /* MainNavController.m */,
 			);
@@ -871,50 +797,6 @@
 			path = "06. WebViewer";
 			sourceTree = "<group>";
 		};
-		C72ACDF717CF588B000CCEAD /* 07. AR */ = {
-			isa = PBXGroup;
-			children = (
-				C72ACE0217CF69F3000CCEAD /* ARParentViewController.h */,
-				C72ACE0317CF69F3000CCEAD /* ARParentViewController.mm */,
-			);
-			name = "07. AR";
-			path = "01. Init";
-			sourceTree = "<group>";
-		};
-		C72ACDFF17CF69F2000CCEAD /* ARCommon */ = {
-			isa = PBXGroup;
-			children = (
-				C72ACE2217CF79FD000CCEAD /* EAGLView.h */,
-				C72ACE2317CF79FD000CCEAD /* EAGLView.mm */,
-				C72ACE0017CF69F3000CCEAD /* AR_EAGLView.h */,
-				C72ACE0117CF69F3000CCEAD /* AR_EAGLView.mm */,
-				C72ACE0417CF69F3000CCEAD /* ARViewController.h */,
-				C72ACE0517CF69F3000CCEAD /* ARViewController.mm */,
-				C72ACE0617CF69F3000CCEAD /* OverlayView.h */,
-				C72ACE0717CF69F3000CCEAD /* OverlayView.m */,
-				C72ACE0817CF69F3000CCEAD /* OverlayViewController.h */,
-				C72ACE0917CF69F3000CCEAD /* OverlayViewController.mm */,
-				C72ACE0A17CF69F3000CCEAD /* QCARutils.h */,
-				C72ACE0B17CF69F3000CCEAD /* QCARutils.mm */,
-				C72ACE0C17CF69F3000CCEAD /* Shaders */,
-				C72ACE0F17CF69F3000CCEAD /* ShaderUtils.cpp */,
-				C72ACE1017CF69F3000CCEAD /* ShaderUtils.h */,
-				C72ACE1117CF69F3000CCEAD /* Texture.h */,
-				C72ACE1217CF69F3000CCEAD /* Texture.mm */,
-			);
-			name = ARCommon;
-			path = ../../ARCommon;
-			sourceTree = "<group>";
-		};
-		C72ACE0C17CF69F3000CCEAD /* Shaders */ = {
-			isa = PBXGroup;
-			children = (
-				C72ACE0D17CF69F3000CCEAD /* Shader.fsh */,
-				C72ACE0E17CF69F3000CCEAD /* Shader.vsh */,
-			);
-			path = Shaders;
-			sourceTree = "<group>";
-		};
 		C72ACE2517CF7A40000CCEAD /* Icons And Screenshots */ = {
 			isa = PBXGroup;
 			children = (
@@ -937,13 +819,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C7A37AC617D3C448003EB817 /* Products */ = {
+		C7572C1B17F1DFA80013439C /* PayPalMobile */ = {
 			isa = PBXGroup;
 			children = (
-				C7A37ACC17D3C448003EB817 /* libGPUImage.a */,
-				C7A37ACE17D3C448003EB817 /* GPUImageTests.octest */,
+				C7572C1C17F1DFA80013439C /* libPayPalMobile.a */,
+				C7572C1D17F1DFA80013439C /* PayPalMobile.h */,
+				C7572C1E17F1DFA80013439C /* PayPalPayment.h */,
+				C7572C1F17F1DFA80013439C /* PayPalPaymentViewController.h */,
 			);
-			name = Products;
+			path = PayPalMobile;
+			sourceTree = "<group>";
+		};
+		C7572C2B17F202CF0013439C /* Dali Collection */ = {
+			isa = PBXGroup;
+			children = (
+				C7572C2C17F2035B0013439C /* DaliRingProfile_VC.h */,
+				C7572C2D17F2035B0013439C /* DaliRingProfile_VC.m */,
+			);
+			name = "Dali Collection";
 			sourceTree = "<group>";
 		};
 		C7A91F0217EDDD6A00AD20CC /* Barcelona Collection */ = {
@@ -976,6 +869,7 @@
 		C7A91F0A17EDDDFF00AD20CC /* Special Collections */ = {
 			isa = PBXGroup;
 			children = (
+				C7572C2B17F202CF0013439C /* Dali Collection */,
 			);
 			name = "Special Collections";
 			sourceTree = "<group>";
@@ -1612,7 +1506,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C7A37AD017D3C7DA003EB817 /* PBXTargetDependency */,
 			);
 			name = ArchiteXture;
 			productName = ImageTargets;
@@ -1641,35 +1534,12 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = C7A37AC617D3C448003EB817 /* Products */;
-					ProjectRef = C7A37AC517D3C448003EB817 /* GPUImage.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* ArchiteXture */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		C7A37ACC17D3C448003EB817 /* libGPUImage.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libGPUImage.a;
-			remoteRef = C7A37ACB17D3C448003EB817 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C7A37ACE17D3C448003EB817 /* GPUImageTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GPUImageTests.octest;
-			remoteRef = C7A37ACD17D3C448003EB817 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
@@ -1784,7 +1654,6 @@
 				C7D742B917ECC7A8004A5D25 /* MENU@2x.png in Resources */,
 				C7D742B817ECC7A8004A5D25 /* MENU.png in Resources */,
 				C7D742EC17ECC7A8004A5D25 /* ANGLE@2x.png in Resources */,
-				C72ACB7D17CF521A000CCEAD /* Kike.dat in Resources */,
 				C7D7424F17ECC7A8004A5D25 /* LOGO@2x.png in Resources */,
 				C7D7429417ECC7A8004A5D25 /* header_fletxa_fitxa@2x.png in Resources */,
 				C7D7427217ECC7A8004A5D25 /* REFLEX_TITLE_SMALL@2x.png in Resources */,
@@ -1796,7 +1665,6 @@
 				C7D7426517ECC7A8004A5D25 /* MINI-SKY@2x.png in Resources */,
 				C7D742A817ECC7A8004A5D25 /* COLOURS_INFO_AN@2x.png in Resources */,
 				C7D742D017ECC7A8004A5D25 /* ANGLE_TITLE_BIG@2x.png in Resources */,
-				C72ACB7E17CF521A000CCEAD /* Kike.xml in Resources */,
 				C7D742BA17ECC7A8004A5D25 /* FLOWER_INFO_AN@2x.png in Resources */,
 				C7D742A517ECC7A8004A5D25 /* GOLD_TIRA_IMATGES@2x.png in Resources */,
 				C7D7423317ECC7A8004A5D25 /* ANGLE00@2x.jpg in Resources */,
@@ -1808,7 +1676,6 @@
 				C7D7422217ECC7A8004A5D25 /* RHYTHM19@2x.jpg in Resources */,
 				C7D7421717ECC7A8004A5D25 /* REFLEX00@2x.jpg in Resources */,
 				C7D7428E17ECC7A8004A5D25 /* CLICK_BUTTON@2x.png in Resources */,
-				C72ACB7F17CF521A000CCEAD /* StonesAndChips.dat in Resources */,
 				C7D742BE17ECC7A8004A5D25 /* FLOWER_TITLE_BIG@2x.png in Resources */,
 				C7D742DD17ECC7A8004A5D25 /* RGB_TITLE_SMALL@2x.png in Resources */,
 				C7D7422017ECC7A8004A5D25 /* EARTH19@2x.jpg in Resources */,
@@ -1823,10 +1690,8 @@
 				C7D7423917ECC7A8004A5D25 /* BORN00@2x.jpg in Resources */,
 				C7D7426217ECC7A8004A5D25 /* MINI-REFLEX@2x.png in Resources */,
 				C7D7429E17ECC7A8004A5D25 /* TRANSPARENCY_PRODUCT@2x.png in Resources */,
-				C72ACB8017CF521A000CCEAD /* StonesAndChips.xml in Resources */,
 				C7D7429A17ECC7A8004A5D25 /* RHYTHM_TITLE_BIG@2x.png in Resources */,
 				C7D742CE17ECC7A8004A5D25 /* ANGLE_PRODUCT@2x.png in Resources */,
-				C72ACB8117CF521A000CCEAD /* Tarmac.dat in Resources */,
 				C7D7426F17ECC7A8004A5D25 /* REFLEX_PRODUCT@2x.png in Resources */,
 				C7D742F217ECC7A8004A5D25 /* EARTH@2x.png in Resources */,
 				C7D7428717ECC7A8004A5D25 /* EARTH_PRODUCT@2x.png in Resources */,
@@ -1836,10 +1701,8 @@
 				C7D7421517ECC7A8004A5D25 /* HAPPI00@2x.jpg in Resources */,
 				C7D7425117ECC7A8004A5D25 /* SPLASHSCREEN_EN@2x.jpg in Resources */,
 				C7D742DF17ECC7A8004A5D25 /* SHOP_BUTTON@2x.png in Resources */,
-				C72ACB8217CF521A000CCEAD /* Tarmac.xml in Resources */,
 				C7D7428817ECC7A8004A5D25 /* EARTH_TIRA_IMATGES@2x.png in Resources */,
 				C7D742AA17ECC7A8004A5D25 /* COLOURS_PRODUCT@2x.png in Resources */,
-				C72ACB8317CF521A000CCEAD /* TextureTeapotBlue.png in Resources */,
 				C7D7429817ECC7A8004A5D25 /* RHYTHM_PRODUCT@2x.png in Resources */,
 				C7D7428D17ECC7A8004A5D25 /* BASE.png in Resources */,
 				C7D742DC17ECC7A8004A5D25 /* RGB_TITLE_BIG@2x.png in Resources */,
@@ -1861,7 +1724,6 @@
 				C7D742A217ECC7A8004A5D25 /* GOLD_INFO_AN@2x.png in Resources */,
 				C7D7427617ECC7A8004A5D25 /* SKY_TIRA_IMATGES@2x.png in Resources */,
 				C7D7421D17ECC7A8004A5D25 /* FANCY00@2x.jpg in Resources */,
-				C72ACB8417CF521A000CCEAD /* TextureTeapotBrass.png in Resources */,
 				C7D742CD17ECC7A8004A5D25 /* ANGLE_MAP@2x.jpg in Resources */,
 				C7D742B417ECC7A8004A5D25 /* MOUNTAIN_PRODUCT@2x.png in Resources */,
 				C7D7429017ECC7A8004A5D25 /* COLOURS_TITLE_SMALL@2x.png in Resources */,
@@ -1894,7 +1756,6 @@
 				C7D7422317ECC7A8004A5D25 /* TRANSPARENCY00@2x.jpg in Resources */,
 				C7D742F517ECC7A8004A5D25 /* GOLD@2x.png in Resources */,
 				C7D742AE17ECC7A8004A5D25 /* LIGHT_PRODUCT@2x.png in Resources */,
-				C72ACB8517CF521A000CCEAD /* TextureTeapotRed.png in Resources */,
 				C7D7424117ECC7A8004A5D25 /* 08_Order_Button_ON.png in Resources */,
 				C7D7421C17ECC7A8004A5D25 /* CLOTHING19@2x.jpg in Resources */,
 				C7D742EB17ECC7A8004A5D25 /* DALI_TITLE_SMALL@2x.png in Resources */,
@@ -1937,6 +1798,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7572C2E17F2035B0013439C /* DaliRingProfile_VC.m in Sources */,
 				C72ACDEC17CF5853000CCEAD /* UIImage+StackBlur.m in Sources */,
 				C78BA69317DF2B5E00CADA77 /* MenuOption_Cell.m in Sources */,
 				C72ACDED17CF5853000CCEAD /* Init_VC.m in Sources */,
@@ -1950,22 +1812,11 @@
 				C72ACDF417CF5853000CCEAD /* DeliveryAddress_VC.m in Sources */,
 				C72ACDF517CF5853000CCEAD /* ViewLink_VC.m in Sources */,
 				C72ACDF617CF5853000CCEAD /* MainNavController.m in Sources */,
-				C72ACE1317CF69F3000CCEAD /* AR_EAGLView.mm in Sources */,
-				C72ACE1417CF69F3000CCEAD /* ARParentViewController.mm in Sources */,
-				C72ACE1517CF69F3000CCEAD /* ARViewController.mm in Sources */,
-				C72ACE1617CF69F3000CCEAD /* OverlayView.m in Sources */,
-				C72ACE1717CF69F3000CCEAD /* OverlayViewController.mm in Sources */,
-				C72ACE1817CF69F3000CCEAD /* QCARutils.mm in Sources */,
-				C72ACE1917CF69F3000CCEAD /* Shader.fsh in Sources */,
-				C72ACE1A17CF69F3000CCEAD /* Shader.vsh in Sources */,
-				C72ACE1B17CF69F3000CCEAD /* ShaderUtils.cpp in Sources */,
-				C72ACE1C17CF69F3000CCEAD /* Texture.mm in Sources */,
 				C7A91F0917EDDDC900AD20CC /* ParisRingsProfile_VC.m in Sources */,
 				C72ACE2017CF79EE000CCEAD /* AppDelegate.mm in Sources */,
 				C78BA69017DF100D00CADA77 /* CollectionSection_View.m in Sources */,
 				C78BA69617DF412600CADA77 /* MaterialsRingsProfile_VC.m in Sources */,
 				C7D740F917ECA8FA004A5D25 /* LoadingCollection_VC.m in Sources */,
-				C72ACE2417CF79FD000CCEAD /* EAGLView.mm in Sources */,
 				C72ACE2B17CF7A7A000CCEAD /* main.m in Sources */,
 				C791E4F317D0A8CB003C4703 /* RingProfile_View.m in Sources */,
 				C71CC99317D9DE7200F08F33 /* MapView_VC.m in Sources */,
@@ -1973,14 +1824,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C7A37AD017D3C7DA003EB817 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GPUImage;
-			targetProxy = C7A37ACF17D3C7DA003EB817 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C7A37A6517D121E2003EB817 /* Localizable.strings */ = {
@@ -2038,8 +1881,15 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Architexture/ArchiteXture-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = ../../build/lib/arm;
-				OTHER_LDFLAGS = "-ObjC";
+				LIBRARY_SEARCH_PATHS = (
+					../../build/lib/arm,
+					/Users/donkikochan/Architexture/samples/Architexture/Code/PayPalMobile,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = ArchiteXture;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -2068,8 +1918,15 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Architexture/ArchiteXture-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = ../../build/lib/arm;
-				OTHER_LDFLAGS = "-ObjC";
+				LIBRARY_SEARCH_PATHS = (
+					../../build/lib/arm,
+					/Users/donkikochan/Architexture/samples/Architexture/Code/PayPalMobile,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = ArchiteXture;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -2095,8 +1952,15 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Architexture/ArchiteXture-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = ../../build/lib/arm;
-				OTHER_LDFLAGS = "-ObjC";
+				LIBRARY_SEARCH_PATHS = (
+					../../build/lib/arm,
+					/Users/donkikochan/Architexture/samples/Architexture/Code/PayPalMobile,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = ArchiteXture;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;

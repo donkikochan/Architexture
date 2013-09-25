@@ -187,7 +187,7 @@
     
     m_bMoveCarouselImages   = YES;
     m_bMoveCarouselProducts = YES;
-    [self moveCarousels];
+    //[self moveCarousels];
 }
 
 - (void) moveCarousels
@@ -228,6 +228,7 @@
 {
     [super viewWillDisappear:animated];
     
+    /*
     for (int i = 0; i < m_aProfileRing_Views.count; i++)
     {
         RingProfile_View* ringProfileView = m_aProfileRing_Views[i];
@@ -238,6 +239,7 @@
         RingProfile_View* ringProfileView = m_aProfileRing_Views[i];
         [ringProfileView.m_ScrollView_Product.layer removeAllAnimations];
     }
+     */
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -335,6 +337,7 @@
     }
 }
 
+/*
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
     int tag = scrollView.tag;
@@ -378,6 +381,7 @@
     }
     
 }
+ */
 
 - (void) configureFilterAtIndex:(int) _index
 {
@@ -419,12 +423,6 @@
     [self performSegueWithIdentifier:@"FromViewController_To_WebLink" sender:@"http://www.architexture-online.com"];
 }
 
-- (IBAction) addShop:(id)sender
-{
-    UIButton* btn = (UIButton*)sender;
-    NSLog(@"Add Shop: %d",btn.tag);
-    [self performSegueWithIdentifier:@"FromRingsToCheckout" sender:nil];
-}
 
 
 - (IBAction) viewMap:(id)sender

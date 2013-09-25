@@ -153,6 +153,20 @@
             RingProfile_View* ringProfileView =m_aProfileRing_Views[l_iIndex];
             [super.m_ScrollView_AllRings scrollRectToVisible:CGRectMake(WIDTH_RING_PROFILE*l_iIndex, 0, WIDTH_RING_PROFILE , ringProfileView.m_ScrollView_Profile.frame.size.height) animated:NO];
         }
+        else if (l_iIndex >= 40 && l_iIndex<50)
+        {
+            if (l_iIndex == 40)
+            {
+                [AppDelegate mainAppDelegate].m_sCollectionToLoad = SP_COLLECTION_DALI;
+            }
+            else if (l_iIndex == 41)
+            {
+                [AppDelegate mainAppDelegate].m_sCollectionToLoad = SP_COLLECTION_BORN;
+            }
+            [AppDelegate mainAppDelegate].m_sRingToLoad = 0;
+            [AppDelegate mainAppDelegate].m_sGoToNewCollection  = @"YES";
+            [self.navigationController popViewControllerAnimated:NO];
+        }
         else if (l_iIndex == 100)
         {
             [self performSegueWithIdentifier:@"FromRingsToCheckout" sender:nil];
@@ -168,6 +182,49 @@
     }
 }
 
+
+- (IBAction) addShop:(id)sender
+{
+    UIButton* btn = (UIButton*)sender;
+    NSLog(@"Add Shop: %d",btn.tag);
+    switch(btn.tag)
+    {
+        case 0: //_01_FLOWER
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"FLOWER"];
+        }
+            break;
+        case 1: //_02_PLACE
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"PLACE"];
+        }
+            break;
+        case 2: //_03_CALME
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"CALME"];
+        }
+            break;
+            
+        case 3: //_04_ANGLE
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"ANGLE"];
+        }
+            break;
+            
+        case 4: //_05_ICONE
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"ICONE"];
+        }
+            break;
+            
+        case 5: //_06_RGB
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"RGB"];
+        }
+            break;
+    }
+    [self performSegueWithIdentifier:@"FromRingsToCheckout" sender:nil];
+}
 
 - (void)didReceiveMemoryWarning
 {

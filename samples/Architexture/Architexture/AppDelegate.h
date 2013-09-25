@@ -39,6 +39,8 @@
 #define COLLECTION_BARCELONA    @"BARCELONA"
 #define COLLECTION_MATERIALS    @"MATERILAS"
 #define COLLECTION_PARIS        @"PARIS"
+#define SP_COLLECTION_DALI      @"DALI"
+#define SP_COLLECTION_BORN      @"BORN"
 //------------------------------------
 
 
