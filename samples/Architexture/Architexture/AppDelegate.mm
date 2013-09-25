@@ -36,9 +36,7 @@
 
 //---Imports:---
 #import "AppDelegate.h"
-#import "QCARutils.h"
 #import <QuartzCore/QuartzCore.h>
-#import "UIImage+StackBlur.h"
 //--------------
 
 

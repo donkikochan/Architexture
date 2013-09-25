@@ -14,11 +14,11 @@
 }
 
 //---IBOutlets:
-@property (strong, nonatomic) IBOutlet UIButton *m_Button_PhotoRing;
-@property (strong, nonatomic) IBOutlet UILabel  *m_Label_Quantity;
-@property (strong, nonatomic) IBOutlet UILabel  *m_Label_Ammount;
-@property (strong, nonatomic) IBOutlet UIButton *m_Button_Add;
-@property (strong, nonatomic) IBOutlet UIButton *m_Button_Remove;
+@property (strong, nonatomic) IBOutlet UIButton*    m_Button_PhotoRing;
+@property (strong, nonatomic) IBOutlet UILabel*     m_Label_Quantity;
+@property (strong, nonatomic) IBOutlet UILabel*     m_Label_Ammount;
+@property (strong, nonatomic) IBOutlet UIButton*    m_Button_Add;
+@property (strong, nonatomic) IBOutlet UIButton*    m_Button_Remove;
 
 
 //---IBActions:

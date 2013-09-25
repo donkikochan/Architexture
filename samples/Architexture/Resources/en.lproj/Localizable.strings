@@ -16,8 +16,7 @@
 "OK"                    = "Ok";
 "AT_LEAST_ONE_RING"     = "Para continuar el pedido ha de añadir al carrito almenos 1 anillo";
 "SHOP"                  = "Shop";
-"SHOP"                  = "Shop";
-"SHOP"                  = "Shop";
+"CLEAR"                 = "Clear";
 "WEB_ARCHITEXTURE"      = "Web Architexture";
 "CONTACT_US"            = "Contact us";
 
@@ -45,3 +44,5 @@
 "ANGLE_INFO"            = "ANGLE_INFO_AN.png";
 "ICONE_INFO"            = "ICONE_INFO_AN.png";
 "RGB_INFO"              = "RGB_INFO_AN.png";
+
+"ARCHITEXTURE_PRODUCT"  = "ArchiteXture Product";

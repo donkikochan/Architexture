@@ -47,6 +47,14 @@
     {
         _m_Label_Loading.text = @"Loading Paris Collection...";
     }
+    else if ([[AppDelegate mainAppDelegate].m_sCollectionToLoad isEqualToString:SP_COLLECTION_DALI])
+    {
+        _m_Label_Loading.text = @"Loading Dalí Collection...";
+    }
+    else if ([[AppDelegate mainAppDelegate].m_sCollectionToLoad isEqualToString:SP_COLLECTION_BORN])
+    {
+        _m_Label_Loading.text = @"Loading Born Collection...";
+    }
     
     [NSTimer scheduledTimerWithTimeInterval:1.5
                                      target:self
@@ -67,6 +75,14 @@
     else if ([[AppDelegate mainAppDelegate].m_sCollectionToLoad isEqualToString:COLLECTION_PARIS])
     {
         [self performSegueWithIdentifier:@"FromLoadingCollectionToParis" sender:nil];
+    }
+    else if ([[AppDelegate mainAppDelegate].m_sCollectionToLoad isEqualToString:SP_COLLECTION_DALI])
+    {
+        [self performSegueWithIdentifier:@"FromLoadingCollectionToDali" sender:nil];
+    }
+    else if ([[AppDelegate mainAppDelegate].m_sCollectionToLoad isEqualToString:SP_COLLECTION_BORN])
+    {
+        [self performSegueWithIdentifier:@"FromLoadingCollectionToDali" sender:nil];
     }
 }
 
