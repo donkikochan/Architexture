@@ -82,7 +82,7 @@
     }
     else if ([[AppDelegate mainAppDelegate].m_sCollectionToLoad isEqualToString:SP_COLLECTION_BORN])
     {
-        [self performSegueWithIdentifier:@"FromLoadingCollectionToDali" sender:nil];
+        [self performSegueWithIdentifier:@"FromLoadingCollectionToBorn" sender:nil];
     }
 }
 

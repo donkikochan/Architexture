@@ -1,8 +1,8 @@
 //
-//  DaliRingProfile_VC.h
+//  BornRingProfile_VC.h
 //  Architexture
 //
-//  Created by Enric Vergara Carreras on 24/09/13.
+//  Created by DonKikochan on 25/09/13.
 //
 //
 
@@ -11,7 +11,7 @@
 #import "RingProfile_View.h"
 //---------------
 
-@interface DaliRingProfile_VC : UIViewController <UIScrollViewDelegate>
+@interface BornRingProfile_VC : UIViewController <UIScrollViewDelegate>
 {}
 
 //---IBOutlets:
@@ -23,5 +23,4 @@
 
 //---Functions:
 //...
-
 @end

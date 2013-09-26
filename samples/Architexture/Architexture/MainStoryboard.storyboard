@@ -77,7 +77,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jUA-Ys-Z5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-509" y="-698"/>
+            <point key="canvasLocation" x="-565" y="-698"/>
         </scene>
         <!--MenuVC-->
         <scene sceneID="lZ5-zL-5yl">
@@ -151,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMU-CX-SlC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-509" y="-30"/>
+            <point key="canvasLocation" x="-565" y="-22"/>
         </scene>
         <!--View LinkVC-->
         <scene sceneID="JeR-mL-bAV">
@@ -215,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q73-ow-etV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1265" y="-516"/>
+            <point key="canvasLocation" x="1721" y="652"/>
         </scene>
         <!--Map ViewVC-->
         <scene sceneID="dP3-be-llv">
@@ -276,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9b2-WK-fDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1265" y="134"/>
+            <point key="canvasLocation" x="1721" y="1302"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7Kt-Y2-fPt">
@@ -448,7 +448,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9dc-Mh-HpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-509" y="592"/>
+            <point key="canvasLocation" x="-1437" y="652"/>
         </scene>
         <!--CheckoutVC-->
         <scene sceneID="rtq-nd-Mfm">
@@ -676,7 +676,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T9U-Ln-NF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1271" y="752"/>
+            <point key="canvasLocation" x="1727" y="1920"/>
         </scene>
         <!--Delivery AddressVC-->
         <scene sceneID="3tk-Ci-Q94">
@@ -1032,7 +1032,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bE9-eK-YkV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1729" y="752"/>
+            <point key="canvasLocation" x="2185" y="1920"/>
         </scene>
         <!--Loading CollectionVC-->
         <scene sceneID="lZX-Ne-z5E">
@@ -1059,11 +1059,12 @@
                         <segue destination="ett-XP-fX3" kind="push" identifier="FromLoadingCollectionToMaterials" id="OnA-X3-M4W"/>
                         <segue destination="KDW-7i-CUD" kind="push" identifier="FromLoadingCollectionToParis" id="XLl-77-Ytj"/>
                         <segue destination="hDw-bA-V9Y" kind="push" identifier="FromLoadingCollectionToDali" id="zpu-Co-eWx"/>
+                        <segue destination="4ff-Px-fXg" kind="push" identifier="FromLoadingCollectionToBorn" id="WaY-zf-JGL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epg-Ey-Gmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="79" y="731"/>
+            <point key="canvasLocation" x="-33" y="1357"/>
         </scene>
         <!--Barcelona Rings ProfileVC-->
         <scene sceneID="3Co-sw-cHm">
@@ -4972,19 +4973,19 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="9TW-qX-YwQ" userLabel="01" customClass="RingProfile_View">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="DALI00.jpg" id="9fu-Iz-HZ5" userLabel="Image - Background">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="479"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="DALI19.jpg" id="L2F-80-buK" userLabel="Image - Background_AUX">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="DALI00.jpg" id="L2F-80-buK" userLabel="Image - Background_AUX">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="479"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="DEGRADAT.png" id="sRo-61-Z91" userLabel="Image - Degradat">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" id="JVz-rg-1MZ" userLabel="Header View">
@@ -4995,7 +4996,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="DALI_TITLE_BIG.png" id="9xZ-5l-67F" userLabel="Img - BigTitle">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="DALI_TITLE_SMALL.png" id="9xZ-5l-67F" userLabel="Img - BigTitle">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -5015,22 +5016,69 @@
                                         <color key="backgroundColor" white="0.58870967740000002" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3AI-8L-o2v">
-                                        <rect key="frame" x="0.0" y="45" width="320" height="435"/>
+                                        <rect key="frame" x="0.0" y="45" width="320" height="415"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="DALI.png" id="vqF-GZ-qVa" userLabel="Image View - Title">
-                                                <rect key="frame" x="0.0" y="320" width="318" height="99"/>
+                                                <rect key="frame" x="0.0" y="301" width="318" height="99"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="-10" maxX="0.0" maxY="10"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" id="3gN-lr-dBx" userLabel="Info View">
-                                                <rect key="frame" x="0.0" y="463" width="320" height="2095"/>
+                                                <rect key="frame" x="0.0" y="443" width="320" height="2345"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="DALI_INFO_EN.png" id="bQD-kr-B9g" userLabel="ImageView - INFO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="2095"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="2345"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GNN-bD-6MP" userLabel="Button - Facebook">
+                                                        <rect key="frame" x="106" y="2270" width="42" height="42"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" backgroundImage="FACEBOOK.png">
+                                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1en-ou-Hag" userLabel="Button - Like">
+                                                        <rect key="frame" x="20" y="2276" width="63" height="31"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" backgroundImage="LIKE.png">
+                                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AdG-oh-V7h" userLabel="Button - Twitter">
+                                                        <rect key="frame" x="236" y="2270" width="52" height="42"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" backgroundImage="TWITTER.png">
+                                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GPT-BU-eoX">
+                                                        <rect key="frame" x="8" y="2221" width="305" height="35"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <state key="normal" title="www.architexture-online.com">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="0.59431703629999999" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
@@ -5038,7 +5086,7 @@
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                     </scrollView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="UNPIXELNEGRE.png" id="NXO-6o-VXF">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" id="GZV-tf-VIC">
@@ -5048,8 +5096,13 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
                                 <connections>
+                                    <outlet property="m_Button_Architexture_Online" destination="GPT-BU-eoX" id="hK7-h0-en8"/>
+                                    <outlet property="m_Button_Facebook" destination="GNN-bD-6MP" id="EOx-nD-Y45"/>
                                     <outlet property="m_Button_GoToMenu" destination="hZe-l9-fBc" id="dpd-vX-OkP"/>
+                                    <outlet property="m_Button_Like" destination="1en-ou-Hag" id="6Qt-Rr-HwI"/>
+                                    <outlet property="m_Button_Twitter" destination="AdG-oh-V7h" id="f8s-we-Akd"/>
                                     <outlet property="m_Image_Background" destination="9fu-Iz-HZ5" id="X93-Wk-Y1k"/>
                                     <outlet property="m_Image_Background_AUX" destination="L2F-80-buK" id="D15-rP-Kf0"/>
                                     <outlet property="m_Image_Info" destination="bQD-kr-B9g" id="eHa-iB-uF8"/>
@@ -5070,11 +5123,410 @@
                     <navigationItem key="navigationItem" id="8Nq-SW-yAJ"/>
                     <connections>
                         <outlet property="m_View_Ring" destination="9TW-qX-YwQ" id="fhx-rP-9ND"/>
+                        <segue destination="4Na-rZ-9SD" kind="push" identifier="FromRingsToCheckout" id="qQC-FB-jfk"/>
+                        <segue destination="TgB-n7-CDW" kind="push" identifier="FromViewController_To_WebLink" id="fyi-HG-Lfg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSe-Xk-9bO" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="627" y="1975"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WcG-YF-MIU">
+            <objects>
+                <viewController id="25R-Cu-mLe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BIK-aE-zny">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="2345"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DALI_INFO_EN.png" id="Xyp-ed-wjh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="2345"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5vg-zS-Uhh" userLabel="Button - Twitter">
+                                <rect key="frame" x="236" y="2270" width="52" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="TWITTER.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7DF-yx-Gha" userLabel="Button - Facebook">
+                                <rect key="frame" x="106" y="2270" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="FACEBOOK.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WWG-Zd-FEd" userLabel="Button - Like">
+                                <rect key="frame" x="20" y="2276" width="63" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="LIKE.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Quz-uJ-AgT">
+                                <rect key="frame" x="8" y="2221" width="305" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="www.architexture-online.com">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="0.59431703629999999" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6P-RF-8Tm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1008" y="652"/>
+        </scene>
+        <!--Born Ring ProfileVC-->
+        <scene sceneID="Mo3-tT-yBe">
+            <objects>
+                <viewController id="4ff-Px-fXg" customClass="BornRingProfile_VC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vzS-OT-LFg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="OLf-he-g9U" userLabel="01" customClass="RingProfile_View">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="BORN00.jpg" id="H0K-Qe-SKH" userLabel="Image - Background">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="479"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="BORN00.jpg" id="5CI-H4-BhR" userLabel="Image - Background_AUX">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="479"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="DEGRADAT.png" id="x4F-6h-4FW" userLabel="Image - Degradat">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="zji-we-aaq" userLabel="Header View">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="BORN_TITLE_SMALL.png" id="GFh-zP-89i" userLabel="Img - SmallTitle">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="BORN_TITLE_SMALL.png" id="bY7-vM-lP7" userLabel="Img - BigTitle">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="k0k-vM-I4C" userLabel="Button - Menu">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" image="MENU.png">
+                                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.58870967740000002" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="AlC-hS-X9a">
+                                        <rect key="frame" x="0.0" y="45" width="320" height="415"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="BORN.png" id="avH-Ho-vlG" userLabel="Image View - Title">
+                                                <rect key="frame" x="0.0" y="301" width="318" height="99"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" id="cHd-0N-3Jr" userLabel="Info View">
+                                                <rect key="frame" x="0.0" y="443" width="320" height="2345"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="DALI_INFO_EN.png" id="SXM-5S-SaK" userLabel="ImageView - INFO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="2345"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wuk-4O-pSU" userLabel="Button - Facebook">
+                                                        <rect key="frame" x="106" y="2270" width="42" height="42"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" backgroundImage="FACEBOOK.png">
+                                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lju-bc-ZRo" userLabel="Button - Like">
+                                                        <rect key="frame" x="20" y="2276" width="63" height="31"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" backgroundImage="LIKE.png">
+                                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xef-3b-lcd" userLabel="Button - Twitter">
+                                                        <rect key="frame" x="236" y="2270" width="52" height="42"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" backgroundImage="TWITTER.png">
+                                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sPC-z5-Ppf">
+                                                        <rect key="frame" x="8" y="2221" width="305" height="35"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <state key="normal" title="www.architexture-online.com">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="0.59431703629999999" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    </scrollView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="UNPIXELNEGRE.png" id="nnq-Dj-vAi">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="Std-bU-Iix">
+                                        <rect key="frame" x="0.0" y="-20" width="320" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="m_Button_Architexture_Online" destination="sPC-z5-Ppf" id="eSl-kq-TVl"/>
+                                    <outlet property="m_Button_Facebook" destination="Wuk-4O-pSU" id="5bJ-cp-0wV"/>
+                                    <outlet property="m_Button_GoToMenu" destination="k0k-vM-I4C" id="LKO-cQ-iVV"/>
+                                    <outlet property="m_Button_Like" destination="Lju-bc-ZRo" id="aLS-we-71K"/>
+                                    <outlet property="m_Button_Twitter" destination="xef-3b-lcd" id="PDY-70-Hlj"/>
+                                    <outlet property="m_Image_Background" destination="H0K-Qe-SKH" id="lmg-8t-HsE"/>
+                                    <outlet property="m_Image_Background_AUX" destination="5CI-H4-BhR" id="3kL-hG-In9"/>
+                                    <outlet property="m_Image_Info" destination="SXM-5S-SaK" id="Acr-35-ZJH"/>
+                                    <outlet property="m_Image_Title" destination="avH-Ho-vlG" id="jIO-8z-NrT"/>
+                                    <outlet property="m_Image_TitleBig" destination="bY7-vM-lP7" id="Qh8-Kg-WRc"/>
+                                    <outlet property="m_Image_TitleSmall" destination="GFh-zP-89i" id="3ud-nv-PLs"/>
+                                    <outlet property="m_ScrollView_Profile" destination="AlC-hS-X9a" id="mne-Kg-KMw"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="eDr-Ji-HNR">
+                                <rect key="frame" x="0.0" y="-20" width="320" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="q9z-8h-waT"/>
+                    <connections>
+                        <outlet property="m_View_Ring" destination="OLf-he-g9U" id="YkN-P3-crz"/>
+                        <segue destination="4Na-rZ-9SD" kind="push" identifier="FromRingsToCheckout" id="2lj-VW-b2y"/>
+                        <segue destination="TgB-n7-CDW" kind="push" identifier="FromViewController_To_WebLink" id="fbO-zq-q7B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NAd-NK-kXK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="627" y="2619"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XKc-Ej-dn2">
+            <objects>
+                <viewController id="3Y4-Wq-2yn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YLr-Vt-If3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="3214"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BORN_INFO_AN.png" id="44f-0r-i3q">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="3214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="B3u-bd-uV7" userLabel="Button - SHOP">
+                                <rect key="frame" x="8" y="1143" width="305" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="Add to Cart" backgroundImage="SHOP_BUTTON.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8Af-hp-lVX" userLabel="Scroll View - Carousel">
+                                <rect key="frame" x="17" y="907" width="286" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="HAPPI_TIRA_IMATGES.png" id="HTY-hz-gpb">
+                                        <rect key="frame" x="0.0" y="0.0" width="1413" height="228"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="16g-9P-aiT" userLabel="Button - SHOP">
+                                <rect key="frame" x="8" y="1717" width="305" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="Add to Cart" backgroundImage="SHOP_BUTTON.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="h5U-0c-EGg" userLabel="Scroll View - Carousel">
+                                <rect key="frame" x="17" y="1481" width="286" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="HAPPI_TIRA_IMATGES.png" id="FOR-Yu-Pwq">
+                                        <rect key="frame" x="0.0" y="0.0" width="1413" height="228"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Yr-ra-YIT" userLabel="Button - SHOP">
+                                <rect key="frame" x="8" y="2289" width="305" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="Add to Cart" backgroundImage="SHOP_BUTTON.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="JzY-sA-Ggb" userLabel="Scroll View - Carousel">
+                                <rect key="frame" x="17" y="2053" width="286" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="HAPPI_TIRA_IMATGES.png" id="uLp-xm-BAp">
+                                        <rect key="frame" x="0.0" y="0.0" width="1413" height="228"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cHi-QU-lgH" userLabel="Button - SHOP">
+                                <rect key="frame" x="8" y="2868" width="305" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="Add to Cart" backgroundImage="SHOP_BUTTON.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="f7e-dw-eCq" userLabel="Scroll View - Carousel">
+                                <rect key="frame" x="17" y="2632" width="286" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="HAPPI_TIRA_IMATGES.png" id="24H-6E-SBW">
+                                        <rect key="frame" x="0.0" y="0.0" width="1413" height="228"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hwF-w5-hLN" userLabel="Button - Twitter">
+                                <rect key="frame" x="236" y="3128" width="52" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="TWITTER.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="52e-6v-fu1" userLabel="Button - Facebook">
+                                <rect key="frame" x="106" y="3128" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="FACEBOOK.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="w7l-Mf-csv" userLabel="Button - Like">
+                                <rect key="frame" x="20" y="3134" width="63" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="LIKE.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="G6c-MB-21L">
+                                <rect key="frame" x="8" y="3059" width="305" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="www.architexture-online.com">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="0.59431703629999999" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RkS-eM-W3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-576" y="652"/>
         </scene>
     </scenes>
     <resources>
@@ -5086,12 +5538,14 @@
         <image name="08_Remove_Button_ON.png" width="90" height="90"/>
         <image name="8_Clear_Button_OFF.png" width="260" height="90"/>
         <image name="8_Clear_Button_ON.png" width="260" height="90"/>
+        <image name="BORN.png" width="320" height="99"/>
+        <image name="BORN00.jpg" width="320" height="490"/>
+        <image name="BORN_INFO_AN.png" width="320" height="3214"/>
+        <image name="BORN_TITLE_SMALL.png" width="320" height="45"/>
         <image name="CLICK_BUTTON.png" width="133" height="24"/>
         <image name="DALI.png" width="320" height="99"/>
         <image name="DALI00.jpg" width="320" height="490"/>
-        <image name="DALI19.jpg" width="320" height="490"/>
         <image name="DALI_INFO_EN.png" width="320" height="2345"/>
-        <image name="DALI_TITLE_BIG.png" width="320" height="45"/>
         <image name="DALI_TITLE_SMALL.png" width="320" height="45"/>
         <image name="DEGRADAT.png" width="320" height="480"/>
         <image name="FACEBOOK.png" width="52" height="52"/>
@@ -5124,8 +5578,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ZqA-U4-Jp0"/>
-        <segue reference="ix8-lW-ykv"/>
+        <segue reference="fbO-zq-q7B"/>
+        <segue reference="woO-CJ-j3G"/>
         <segue reference="LtQ-Cg-qfW"/>
     </inferredMetricsTieBreakers>
 </document>

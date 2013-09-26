@@ -1,18 +1,18 @@
 //
-//  DaliRingProfile_VC.m
+//  BornRingProfile_VC.m
 //  Architexture
 //
-//  Created by Enric Vergara Carreras on 24/09/13.
+//  Created by DonKikochan on 25/09/13.
 //
 //
 
-#import "DaliRingProfile_VC.h"
+#import "BornRingProfile_VC.h"
 
-@interface DaliRingProfile_VC ()
+@interface BornRingProfile_VC ()
 
 @end
 
-@implementation DaliRingProfile_VC
+@implementation BornRingProfile_VC
 
 #define TITLE_MIN_Y         347.f
 #define TITLE_MAX_Y         425.f
@@ -37,29 +37,29 @@
     [_m_View_Ring.m_ScrollView_Profile setScrollEnabled:YES];
     
     //---- Configurar la imatge inicial background de cada Ring Profile:
-    _m_View_Ring.m_Image_Background.image       = [UIImage imageNamed:@"DALI00.jpg"];
-    _m_View_Ring.m_Image_Background_AUX.image   = [UIImage imageNamed:@"DALI19.jpg"];
+    _m_View_Ring.m_Image_Background.image       = [UIImage imageNamed:@"BORN00.jpg"];
+    _m_View_Ring.m_Image_Background_AUX.image   = [UIImage imageNamed:@"BORN19.jpg"];
     _m_View_Ring.m_Image_Background_AUX.alpha   = 0.f;
     
     
     //---- Configure Titles:
-    _m_View_Ring.m_Image_Title.image = [UIImage imageNamed:@"DALI.png"];
+    _m_View_Ring.m_Image_Title.image = [UIImage imageNamed:@"BORN.png"];
     
     
     //---- Configure Menu Button:
     [_m_View_Ring.m_Button_GoToMenu addTarget:self action:@selector(menu_Clicked:) forControlEvents:UIControlEventTouchDown];
     
-
+    
     //---- Configure Info Image:
-    _m_View_Ring.m_Image_Info.image = [UIImage imageNamed:@"DALI_INFO_EN.png"];
+    _m_View_Ring.m_Image_Info.image = [UIImage imageNamed:@"BORN_INFO_AN.png"];
     
     
     //---- Configure Small and Big Title:
-    _m_View_Ring.m_Image_TitleBig.image      = [UIImage imageNamed:@"DALI_TITLE_BIG.png"];
-    _m_View_Ring.m_Image_TitleSmall.image    = [UIImage imageNamed:@"DALI_TITLE_SMALL.png"];
+    _m_View_Ring.m_Image_TitleBig.image      = [UIImage imageNamed:@"BORN_TITLE_BIG.png"];
+    _m_View_Ring.m_Image_TitleSmall.image    = [UIImage imageNamed:@"BORN_TITLE_SMALL.png"];
     _m_View_Ring.m_Image_TitleSmall.alpha    = 0.f;
     _m_View_Ring.m_Image_TitleBig.alpha      = 1.f;
- 
+    
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)])
     {
         // iOS 7
@@ -143,7 +143,7 @@
         _m_View_Ring.m_Image_TitleBig.alpha     = 0.f;
         _m_View_Ring.m_Image_TitleSmall.alpha   = 1.f;
     }
-
+    
     float value = _m_View_Ring.m_ScrollView_Profile.contentOffset.y /300.f;
     if (value < 0.f) value = 0.f;
     if (value > 1.f) value = 1.f;
@@ -185,14 +185,14 @@
         {
             if (l_iIndex == 40)
             {
-                //Nothing todo.
-            }
-            else if (l_iIndex == 41)
-            {
-                [AppDelegate mainAppDelegate].m_sCollectionToLoad = SP_COLLECTION_BORN;
+                [AppDelegate mainAppDelegate].m_sCollectionToLoad = SP_COLLECTION_DALI;
                 [AppDelegate mainAppDelegate].m_sRingToLoad = 0;
                 [AppDelegate mainAppDelegate].m_sGoToNewCollection  = @"YES";
                 [self.navigationController popViewControllerAnimated:NO];
+            }
+            else if (l_iIndex == 41)
+            {
+                //Nothing todo.
             }
             
         }
@@ -222,7 +222,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
     
-    NSLog(@"Dalí didReceiveMemoryWarning");
+    NSLog(@"Born didReceiveMemoryWarning");
 }
 
 @end

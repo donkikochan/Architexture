@@ -52,6 +52,7 @@
 		C7A8525F1793327C0059361B /* ICONA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7A8525E1793327C0059361B /* ICONA@2x.png */; };
 		C7A91F0917EDDDC900AD20CC /* ParisRingsProfile_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A91F0817EDDDC900AD20CC /* ParisRingsProfile_VC.m */; };
 		C7A91F0E17F169C400AD20CC /* RingProfile_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A91F0D17F169C400AD20CC /* RingProfile_VC.m */; };
+		C7A91F1417F3362000AD20CC /* BornRingProfile_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A91F1317F3362000AD20CC /* BornRingProfile_VC.m */; };
 		C7D740F917ECA8FA004A5D25 /* LoadingCollection_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D740F817ECA8FA004A5D25 /* LoadingCollection_VC.m */; };
 		C7D7421517ECC7A8004A5D25 /* HAPPI00@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7D740FD17ECC7A8004A5D25 /* HAPPI00@2x.jpg */; };
 		C7D7421617ECC7A8004A5D25 /* HAPPI19@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7D740FE17ECC7A8004A5D25 /* HAPPI19@2x.jpg */; };
@@ -364,6 +365,8 @@
 		C7A91F0817EDDDC900AD20CC /* ParisRingsProfile_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParisRingsProfile_VC.m; sourceTree = "<group>"; };
 		C7A91F0C17F169C400AD20CC /* RingProfile_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingProfile_VC.h; sourceTree = "<group>"; };
 		C7A91F0D17F169C400AD20CC /* RingProfile_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RingProfile_VC.m; sourceTree = "<group>"; };
+		C7A91F1217F3362000AD20CC /* BornRingProfile_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BornRingProfile_VC.h; sourceTree = "<group>"; };
+		C7A91F1317F3362000AD20CC /* BornRingProfile_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BornRingProfile_VC.m; sourceTree = "<group>"; };
 		C7D740F717ECA8FA004A5D25 /* LoadingCollection_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingCollection_VC.h; sourceTree = "<group>"; };
 		C7D740F817ECA8FA004A5D25 /* LoadingCollection_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingCollection_VC.m; sourceTree = "<group>"; };
 		C7D740FD17ECC7A8004A5D25 /* HAPPI00@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "HAPPI00@2x.jpg"; sourceTree = "<group>"; };
@@ -869,9 +872,19 @@
 		C7A91F0A17EDDDFF00AD20CC /* Special Collections */ = {
 			isa = PBXGroup;
 			children = (
+				C7A91F1117F335FA00AD20CC /* Born Collection */,
 				C7572C2B17F202CF0013439C /* Dali Collection */,
 			);
 			name = "Special Collections";
+			sourceTree = "<group>";
+		};
+		C7A91F1117F335FA00AD20CC /* Born Collection */ = {
+			isa = PBXGroup;
+			children = (
+				C7A91F1217F3362000AD20CC /* BornRingProfile_VC.h */,
+				C7A91F1317F3362000AD20CC /* BornRingProfile_VC.m */,
+			);
+			name = "Born Collection";
 			sourceTree = "<group>";
 		};
 		C7D740FA17ECC7A8004A5D25 /* Images */ = {
@@ -1805,6 +1818,7 @@
 				C72ACDEE17CF5853000CCEAD /* BarcelonaRingsProfile_VC.m in Sources */,
 				C7A91F0E17F169C400AD20CC /* RingProfile_VC.m in Sources */,
 				C72ACDEF17CF5853000CCEAD /* Menu_VC.m in Sources */,
+				C7A91F1417F3362000AD20CC /* BornRingProfile_VC.m in Sources */,
 				C72ACDF017CF5853000CCEAD /* Checkout_Cell.m in Sources */,
 				C72ACDF117CF5853000CCEAD /* Checkout_VC.m in Sources */,
 				C72ACDF217CF5853000CCEAD /* CheckoutInfo.m in Sources */,

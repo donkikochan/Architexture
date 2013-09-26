@@ -287,7 +287,7 @@
     }
     else
     {
-        newSection = [[CollectionSection_View alloc] initWithCollectionName:@""];
+        newSection = [[CollectionSection_View alloc] initWithCollectionName:@"ArchiteXture"];
     }
     return newSection;
 }
