@@ -29,30 +29,110 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
 
-    _m_Button_StartApp.hidden   =
-    _m_Button_Camera.hidden     = NO;
-    _m_ViewLoading.hidden       = YES;
-    _m_Image_BackGround.image = [UIImage imageNamed:NSLocalizedString(@"BACKGROUND_INIT", nil)];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.5];
+    [UIView setAnimationDelay:1.0];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    
+    _m_Image_SplashScreen.alpha = 0.f;
+    
+    [UIView commitAnimations];
+    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)])
+    {
+        // iOS 7
+        [self setNeedsStatusBarAppearanceUpdate];
+    }
+    
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 - (IBAction) catalog_Clicked:(id)sender
 {
-//    _m_ViewLoading.hidden       = NO;
-//    [_m_ActivityIndicator startAnimating];
-//    [NSTimer scheduledTimerWithTimeInterval:0.5f
-//                                     target:self
-//                                   selector:@selector(gotoRingProfiles:)
-//                                   userInfo:nil
-//                                    repeats:NO];
-//    
+    UIButton* btn = (UIButton*) sender;
+    switch (btn.tag) {
+        case 1:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_BARCELONA;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"0";
+            break;
+        case 2:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_BARCELONA;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"1";
+            break;
+        case 3:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_BARCELONA;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"2";
+            break;
+        case 4:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_BARCELONA;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"3";
+            break;
+        case 5:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_BARCELONA;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"4";
+            break;
+        case 6:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_BARCELONA;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"5";
+            break;
+        case 7:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_MATERIALS;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"0";
+            break;
+        case 8:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_MATERIALS;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"1";
+            break;
+        case 9:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_MATERIALS;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"2";
+            break;
+        case 10:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_MATERIALS;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"3";
+            break;
+        case 11:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_MATERIALS;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"4";
+            break;
+        case 12:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_MATERIALS;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"5";
+            break;
+        case 13:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_PARIS;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"0";
+            break;
+        case 14:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_PARIS;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"1";
+            break;
+        case 15:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_PARIS;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"2";
+            break;
+        case 16:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_PARIS;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"3";
+            break;
+        case 17:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_PARIS;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"4";
+            break;
+        case 18:
+            [AppDelegate mainAppDelegate].m_sCollectionToLoad = COLLECTION_PARIS;
+            [AppDelegate mainAppDelegate].m_sRingToLoad = @"5";
+            break;
+        default:
+            break;
+    }
+    [self performSegueWithIdentifier:@"FromInitToLoading" sender:nil];
 }
 
-- (void) gotoRingProfiles:(NSTimer *)timer
-{
-    [self performSegueWithIdentifier:@"FromInitToRingProfiles" sender:nil];
-}
 
     
 - (void)didReceiveMemoryWarning
@@ -63,11 +143,6 @@
 
 - (void)viewDidUnload
 {
-    [self setM_ActivityIndicator:nil];
-    [self setM_Button_StartApp:nil];
-    [self setM_Button_Camera:nil];
-    [self setM_Image_BackGround:nil];
-    [self setM_ViewLoading:nil];
     [super viewDidUnload];
 }
 @end

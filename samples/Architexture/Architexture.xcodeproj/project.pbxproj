@@ -42,6 +42,44 @@
 		C78BA69017DF100D00CADA77 /* CollectionSection_View.m in Sources */ = {isa = PBXBuildFile; fileRef = C78BA68F17DF100C00CADA77 /* CollectionSection_View.m */; };
 		C78BA69317DF2B5E00CADA77 /* MenuOption_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = C78BA69217DF2B5E00CADA77 /* MenuOption_Cell.m */; };
 		C78BA69617DF412600CADA77 /* MaterialsRingsProfile_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C78BA69517DF412600CADA77 /* MaterialsRingsProfile_VC.m */; };
+		C78C828C17F5E20900C17D28 /* ANGLE_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C826617F5E20900C17D28 /* ANGLE_BOLETA@2x.png */; };
+		C78C828D17F5E20900C17D28 /* ANGLE_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C826717F5E20900C17D28 /* ANGLE_BOLETA_HOVER@2x.png */; };
+		C78C828E17F5E20900C17D28 /* CALME_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C826817F5E20900C17D28 /* CALME_BOLETA@2x.png */; };
+		C78C828F17F5E20900C17D28 /* CALME_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C826917F5E20900C17D28 /* CALME_BOLETA_HOVER@2x.png */; };
+		C78C829017F5E20900C17D28 /* CATALEG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C78C826A17F5E20900C17D28 /* CATALEG.jpg */; };
+		C78C829117F5E20900C17D28 /* CATALEG_BASE@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C78C826B17F5E20900C17D28 /* CATALEG_BASE@2x.jpg */; };
+		C78C829217F5E20900C17D28 /* CLOTHING_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C826C17F5E20900C17D28 /* CLOTHING_BOLETA@2x.png */; };
+		C78C829317F5E20900C17D28 /* CLOTHING_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C826D17F5E20900C17D28 /* CLOTHING_BOLETA_HOVER@2x.png */; };
+		C78C829417F5E20900C17D28 /* COLOURS_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C826E17F5E20900C17D28 /* COLOURS_BOLETA@2x.png */; };
+		C78C829517F5E20900C17D28 /* COLOURS_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C826F17F5E20900C17D28 /* COLOURS_BOLETA_HOVER@2x.png */; };
+		C78C829617F5E20900C17D28 /* EARTH_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827017F5E20900C17D28 /* EARTH_BOLETA@2x.png */; };
+		C78C829717F5E20900C17D28 /* EARTH_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827117F5E20900C17D28 /* EARTH_BOLETA_HOVER@2x.png */; };
+		C78C829817F5E20900C17D28 /* FANCY_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827217F5E20900C17D28 /* FANCY_BOLETA@2x.png */; };
+		C78C829917F5E20900C17D28 /* FANCY_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827317F5E20900C17D28 /* FANCY_BOLETA_HOVER@2x.png */; };
+		C78C829A17F5E20900C17D28 /* FLOWER_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827417F5E20900C17D28 /* FLOWER_BOLETA@2x.png */; };
+		C78C829B17F5E20900C17D28 /* FLOWER_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827517F5E20900C17D28 /* FLOWER_BOLETA_HOVER@2x.png */; };
+		C78C829C17F5E20900C17D28 /* GOLD_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827617F5E20900C17D28 /* GOLD_BOLETA@2x.png */; };
+		C78C829D17F5E20900C17D28 /* GOLD_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827717F5E20900C17D28 /* GOLD_BOLETA_HOVER@2x.png */; };
+		C78C829E17F5E20900C17D28 /* HAPPINESS_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827817F5E20900C17D28 /* HAPPINESS_BOLETA@2x.png */; };
+		C78C829F17F5E20900C17D28 /* HAPPINESS_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827917F5E20900C17D28 /* HAPPINESS_BOLETA_HOVER@2x.png */; };
+		C78C82A017F5E20900C17D28 /* ICONE_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827A17F5E20900C17D28 /* ICONE_BOLETA@2x.png */; };
+		C78C82A117F5E20900C17D28 /* ICONE_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827B17F5E20900C17D28 /* ICONE_BOLETA_HOVER@2x.png */; };
+		C78C82A217F5E20900C17D28 /* LIGHT_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827C17F5E20900C17D28 /* LIGHT_BOLETA@2x.png */; };
+		C78C82A317F5E20900C17D28 /* LIGHT_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827D17F5E20900C17D28 /* LIGHT_BOLETA_HOVER@2x.png */; };
+		C78C82A417F5E20900C17D28 /* MOUNTAIN_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827E17F5E20900C17D28 /* MOUNTAIN_BOLETA@2x.png */; };
+		C78C82A517F5E20900C17D28 /* MOUNTAIN_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C827F17F5E20900C17D28 /* MOUNTAIN_BOLETA_HOVER@2x.png */; };
+		C78C82A617F5E20900C17D28 /* PLACE_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C828017F5E20900C17D28 /* PLACE_BOLETA@2x.png */; };
+		C78C82A717F5E20900C17D28 /* PLACE_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C828117F5E20900C17D28 /* PLACE_BOLETA_HOVER@2x.png */; };
+		C78C82A817F5E20900C17D28 /* REFLEX_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C828217F5E20900C17D28 /* REFLEX_BOLETA@2x.png */; };
+		C78C82A917F5E20900C17D28 /* REFLEX_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C828317F5E20900C17D28 /* REFLEX_BOLETA_HOVER@2x.png */; };
+		C78C82AA17F5E20900C17D28 /* RGB_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C828417F5E20900C17D28 /* RGB_BOLETA@2x.png */; };
+		C78C82AB17F5E20900C17D28 /* RGB_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C828517F5E20900C17D28 /* RGB_BOLETA_HOVER@2x.png */; };
+		C78C82AC17F5E20900C17D28 /* RHYTHM_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C828617F5E20900C17D28 /* RHYTHM_BOLETA@2x.png */; };
+		C78C82AD17F5E20900C17D28 /* RHYTHM_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C828717F5E20900C17D28 /* RHYTHM_BOLETA_HOVER@2x.png */; };
+		C78C82AE17F5E20900C17D28 /* SKY_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C828817F5E20900C17D28 /* SKY_BOLETA@2x.png */; };
+		C78C82AF17F5E20900C17D28 /* SKY_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C828917F5E20900C17D28 /* SKY_BOLETA_HOVER@2x.png */; };
+		C78C82B017F5E20900C17D28 /* TRANSPARENCY_BOLETA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C828A17F5E20900C17D28 /* TRANSPARENCY_BOLETA@2x.png */; };
+		C78C82B117F5E20900C17D28 /* TRANSPARENCY_BOLETA_HOVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C78C828B17F5E20900C17D28 /* TRANSPARENCY_BOLETA_HOVER@2x.png */; };
 		C791E4F317D0A8CB003C4703 /* RingProfile_View.m in Sources */ = {isa = PBXBuildFile; fileRef = C791E4F217D0A8CB003C4703 /* RingProfile_View.m */; };
 		C7A37A6317D121E2003EB817 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7A37A6517D121E2003EB817 /* Localizable.strings */; };
 		C7A851B61792ADFC0059361B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A851B51792ADFC0059361B /* MapKit.framework */; };
@@ -355,6 +393,44 @@
 		C78BA69217DF2B5E00CADA77 /* MenuOption_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuOption_Cell.m; sourceTree = "<group>"; };
 		C78BA69417DF412600CADA77 /* MaterialsRingsProfile_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialsRingsProfile_VC.h; sourceTree = "<group>"; };
 		C78BA69517DF412600CADA77 /* MaterialsRingsProfile_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialsRingsProfile_VC.m; sourceTree = "<group>"; };
+		C78C826617F5E20900C17D28 /* ANGLE_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ANGLE_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C826717F5E20900C17D28 /* ANGLE_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ANGLE_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C826817F5E20900C17D28 /* CALME_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CALME_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C826917F5E20900C17D28 /* CALME_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CALME_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C826A17F5E20900C17D28 /* CATALEG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CATALEG.jpg; sourceTree = "<group>"; };
+		C78C826B17F5E20900C17D28 /* CATALEG_BASE@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "CATALEG_BASE@2x.jpg"; sourceTree = "<group>"; };
+		C78C826C17F5E20900C17D28 /* CLOTHING_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CLOTHING_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C826D17F5E20900C17D28 /* CLOTHING_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CLOTHING_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C826E17F5E20900C17D28 /* COLOURS_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "COLOURS_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C826F17F5E20900C17D28 /* COLOURS_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "COLOURS_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C827017F5E20900C17D28 /* EARTH_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EARTH_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C827117F5E20900C17D28 /* EARTH_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EARTH_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C827217F5E20900C17D28 /* FANCY_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FANCY_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C827317F5E20900C17D28 /* FANCY_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FANCY_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C827417F5E20900C17D28 /* FLOWER_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FLOWER_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C827517F5E20900C17D28 /* FLOWER_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FLOWER_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C827617F5E20900C17D28 /* GOLD_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GOLD_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C827717F5E20900C17D28 /* GOLD_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GOLD_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C827817F5E20900C17D28 /* HAPPINESS_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HAPPINESS_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C827917F5E20900C17D28 /* HAPPINESS_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HAPPINESS_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C827A17F5E20900C17D28 /* ICONE_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ICONE_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C827B17F5E20900C17D28 /* ICONE_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ICONE_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C827C17F5E20900C17D28 /* LIGHT_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LIGHT_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C827D17F5E20900C17D28 /* LIGHT_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LIGHT_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C827E17F5E20900C17D28 /* MOUNTAIN_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOUNTAIN_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C827F17F5E20900C17D28 /* MOUNTAIN_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOUNTAIN_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C828017F5E20900C17D28 /* PLACE_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLACE_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C828117F5E20900C17D28 /* PLACE_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLACE_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C828217F5E20900C17D28 /* REFLEX_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "REFLEX_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C828317F5E20900C17D28 /* REFLEX_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "REFLEX_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C828417F5E20900C17D28 /* RGB_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RGB_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C828517F5E20900C17D28 /* RGB_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RGB_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C828617F5E20900C17D28 /* RHYTHM_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RHYTHM_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C828717F5E20900C17D28 /* RHYTHM_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RHYTHM_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C828817F5E20900C17D28 /* SKY_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SKY_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C828917F5E20900C17D28 /* SKY_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SKY_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
+		C78C828A17F5E20900C17D28 /* TRANSPARENCY_BOLETA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TRANSPARENCY_BOLETA@2x.png"; sourceTree = "<group>"; };
+		C78C828B17F5E20900C17D28 /* TRANSPARENCY_BOLETA_HOVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TRANSPARENCY_BOLETA_HOVER@2x.png"; sourceTree = "<group>"; };
 		C791E4F117D0A8CB003C4703 /* RingProfile_View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingProfile_View.h; sourceTree = "<group>"; };
 		C791E4F217D0A8CB003C4703 /* RingProfile_View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RingProfile_View.m; sourceTree = "<group>"; };
 		C7A37A6417D121E2003EB817 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -852,6 +928,51 @@
 			name = "Dali Collection";
 			sourceTree = "<group>";
 		};
+		C78C826517F5E20900C17D28 /* Portada */ = {
+			isa = PBXGroup;
+			children = (
+				C78C826617F5E20900C17D28 /* ANGLE_BOLETA@2x.png */,
+				C78C826717F5E20900C17D28 /* ANGLE_BOLETA_HOVER@2x.png */,
+				C78C826817F5E20900C17D28 /* CALME_BOLETA@2x.png */,
+				C78C826917F5E20900C17D28 /* CALME_BOLETA_HOVER@2x.png */,
+				C78C826A17F5E20900C17D28 /* CATALEG.jpg */,
+				C78C826B17F5E20900C17D28 /* CATALEG_BASE@2x.jpg */,
+				C78C826C17F5E20900C17D28 /* CLOTHING_BOLETA@2x.png */,
+				C78C826D17F5E20900C17D28 /* CLOTHING_BOLETA_HOVER@2x.png */,
+				C78C826E17F5E20900C17D28 /* COLOURS_BOLETA@2x.png */,
+				C78C826F17F5E20900C17D28 /* COLOURS_BOLETA_HOVER@2x.png */,
+				C78C827017F5E20900C17D28 /* EARTH_BOLETA@2x.png */,
+				C78C827117F5E20900C17D28 /* EARTH_BOLETA_HOVER@2x.png */,
+				C78C827217F5E20900C17D28 /* FANCY_BOLETA@2x.png */,
+				C78C827317F5E20900C17D28 /* FANCY_BOLETA_HOVER@2x.png */,
+				C78C827417F5E20900C17D28 /* FLOWER_BOLETA@2x.png */,
+				C78C827517F5E20900C17D28 /* FLOWER_BOLETA_HOVER@2x.png */,
+				C78C827617F5E20900C17D28 /* GOLD_BOLETA@2x.png */,
+				C78C827717F5E20900C17D28 /* GOLD_BOLETA_HOVER@2x.png */,
+				C78C827817F5E20900C17D28 /* HAPPINESS_BOLETA@2x.png */,
+				C78C827917F5E20900C17D28 /* HAPPINESS_BOLETA_HOVER@2x.png */,
+				C78C827A17F5E20900C17D28 /* ICONE_BOLETA@2x.png */,
+				C78C827B17F5E20900C17D28 /* ICONE_BOLETA_HOVER@2x.png */,
+				C78C827C17F5E20900C17D28 /* LIGHT_BOLETA@2x.png */,
+				C78C827D17F5E20900C17D28 /* LIGHT_BOLETA_HOVER@2x.png */,
+				C78C827E17F5E20900C17D28 /* MOUNTAIN_BOLETA@2x.png */,
+				C78C827F17F5E20900C17D28 /* MOUNTAIN_BOLETA_HOVER@2x.png */,
+				C78C828017F5E20900C17D28 /* PLACE_BOLETA@2x.png */,
+				C78C828117F5E20900C17D28 /* PLACE_BOLETA_HOVER@2x.png */,
+				C78C828217F5E20900C17D28 /* REFLEX_BOLETA@2x.png */,
+				C78C828317F5E20900C17D28 /* REFLEX_BOLETA_HOVER@2x.png */,
+				C78C828417F5E20900C17D28 /* RGB_BOLETA@2x.png */,
+				C78C828517F5E20900C17D28 /* RGB_BOLETA_HOVER@2x.png */,
+				C78C828617F5E20900C17D28 /* RHYTHM_BOLETA@2x.png */,
+				C78C828717F5E20900C17D28 /* RHYTHM_BOLETA_HOVER@2x.png */,
+				C78C828817F5E20900C17D28 /* SKY_BOLETA@2x.png */,
+				C78C828917F5E20900C17D28 /* SKY_BOLETA_HOVER@2x.png */,
+				C78C828A17F5E20900C17D28 /* TRANSPARENCY_BOLETA@2x.png */,
+				C78C828B17F5E20900C17D28 /* TRANSPARENCY_BOLETA_HOVER@2x.png */,
+			);
+			path = Portada;
+			sourceTree = "<group>";
+		};
 		C7A91F0217EDDD6A00AD20CC /* Barcelona Collection */ = {
 			isa = PBXGroup;
 			children = (
@@ -900,6 +1021,7 @@
 		C7C5B8BB17F48712005E36DF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C78C826517F5E20900C17D28 /* Portada */,
 				C7C5B8BC17F48712005E36DF /* Backgrounds */,
 				C7C5B8F917F48712005E36DF /* Checkout */,
 				C7C5B90C17F48712005E36DF /* General */,
@@ -1575,16 +1697,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7C5BA5217F48713005E36DF /* EARTH_PRODUCT@2x.png in Resources */,
+				C78C829217F5E20900C17D28 /* CLOTHING_BOLETA@2x.png in Resources */,
 				C7C5BAA417F48713005E36DF /* RGB_MAP@2x.jpg in Resources */,
 				C7C5BA8C17F48713005E36DF /* PLACE_MAP@2x.jpg in Resources */,
 				C7C5BAB817F48713005E36DF /* BORN@2x.png in Resources */,
 				C7C5BA5917F48713005E36DF /* CLICK_BUTTON@2x.png in Resources */,
 				C7C5BAA117F48713005E36DF /* ICONE_TITLE_BIG@2x.png in Resources */,
+				C78C82AE17F5E20900C17D28 /* SKY_BOLETA@2x.png in Resources */,
 				C7C5BA9517F48713005E36DF /* CALME_TITLE_BIG@2x.png in Resources */,
 				C7C5BA8517F48713005E36DF /* FLOWER_INFO_AN@2x.png in Resources */,
 				C7C5B9EA17F48713005E36DF /* TRANSPARENCY19@2x.jpg in Resources */,
 				C7C5BAB717F48713005E36DF /* ANGLE@2x.png in Resources */,
 				C7C5BA9617F48713005E36DF /* CALME_TITLE_SMALL@2x.png in Resources */,
+				C78C829117F5E20900C17D28 /* CATALEG_BASE@2x.jpg in Resources */,
 				C7C5BA6817F48713005E36DF /* TRANSPARENCY_MAP@2x.jpg in Resources */,
 				C7C5BA3A17F48713005E36DF /* REFLEX_PRODUCT@2x.png in Resources */,
 				C7C5B9DD17F48713005E36DF /* REFLEX00@2x.jpg in Resources */,
@@ -1593,6 +1718,7 @@
 				C7C5BABE17F48713005E36DF /* FANCY@2x.png in Resources */,
 				C7C5BA1117F48713005E36DF /* backgorundCell2.JPG in Resources */,
 				C7C5BA4217F48713005E36DF /* SKY_TITLE_BIG@2x.png in Resources */,
+				C78C829B17F5E20900C17D28 /* FLOWER_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BA8917F48713005E36DF /* FLOWER_TITLE_BIG@2x.png in Resources */,
 				C7C5BA6E17F48713005E36DF /* GOLD_MAP@2x.jpg in Resources */,
 				C7C5B9FD17F48713005E36DF /* RGB00@2x.jpg in Resources */,
@@ -1601,6 +1727,7 @@
 				C7C5BA2517F48713005E36DF /* MINI-GOLD@2x.png in Resources */,
 				C7C5BA0917F48713005E36DF /* 08_Paypal_OFF_IPAD_02.jpg in Resources */,
 				C7C5B9F817F48713005E36DF /* CALME19@2x.jpg in Resources */,
+				C78C82B117F5E20900C17D28 /* TRANSPARENCY_BOLETA_HOVER@2x.png in Resources */,
 				C7C5B9ED17F48713005E36DF /* COLOURS00@2x.jpg in Resources */,
 				C7C5BAB417F48713005E36DF /* DALI_INFO_EN@2x.png in Resources */,
 				C7C5B9EC17F48713005E36DF /* GOLD19@2x.jpg in Resources */,
@@ -1608,6 +1735,7 @@
 				C7C5B9FF17F48713005E36DF /* BORN00@2x.jpg in Resources */,
 				C7C5BA5F17F48713005E36DF /* header_fletxa_fitxa@2x.png in Resources */,
 				C7C5BA9217F48713005E36DF /* CALME_MAP@2x.jpg in Resources */,
+				C78C828F17F5E20900C17D28 /* CALME_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BAAB17F48713005E36DF /* TWITTER@2x.png in Resources */,
 				C7C5B9E617F48713005E36DF /* EARTH19@2x.jpg in Resources */,
 				C7C5BA8017F48713005E36DF /* MOUNTAIN_TIRA_IMATGES@2x.png in Resources */,
@@ -1622,11 +1750,13 @@
 				C7C5B9DB17F48713005E36DF /* HAPPI00@2x.jpg in Resources */,
 				C7C5BAC717F48713005E36DF /* RGB@2x.png in Resources */,
 				C7C5BA7617F48713005E36DF /* COLOURS_TIRA_IMATGES@2x.png in Resources */,
+				C78C82A417F5E20900C17D28 /* MOUNTAIN_BOLETA@2x.png in Resources */,
 				C7C5BA5117F48713005E36DF /* EARTH_MAP@2x.jpg in Resources */,
 				C7C5BA2A17F48713005E36DF /* MINI-PLACE@2x.png in Resources */,
 				C7C5BAB317F48713005E36DF /* TEULA_PRODUCT@2x.png in Resources */,
 				C7C5BA3717F48713005E36DF /* HAPPI_TITLE_SMALL@2x.png in Resources */,
 				C7C5BA0317F48713005E36DF /* 08_Add_Button_OFF.png in Resources */,
+				C78C829F17F5E20900C17D28 /* HAPPINESS_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BA3817F48713005E36DF /* REFLEX_INFO_AN@2x.png in Resources */,
 				C7C5BA9B17F48713005E36DF /* ANGLE_TITLE_BIG@2x.png in Resources */,
 				C7C5B9E517F48713005E36DF /* EARTH00@2x.jpg in Resources */,
@@ -1634,6 +1764,7 @@
 				C7C5BA7117F48713005E36DF /* GOLD_TITLE_BIG@2x.png in Resources */,
 				C7C5BA5B17F48713005E36DF /* COLOURS_TITLE_SMALL@2x.png in Resources */,
 				C7C5BA0717F48713005E36DF /* 08_Order_Button_ON.png in Resources */,
+				C78C82AF17F5E20900C17D28 /* SKY_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BA6617F48713005E36DF /* RHYTHM_TITLE_SMALL@2x.png in Resources */,
 				C7C5BAA917F48713005E36DF /* pastilla_buscador@2x.png in Resources */,
 				C7C5B9F917F48713005E36DF /* ANGLE00@2x.jpg in Resources */,
@@ -1645,16 +1776,24 @@
 				C7C5BAAF17F48713005E36DF /* BORN_PRODUCT@2x.png in Resources */,
 				C7C5BA3317F48713005E36DF /* HAPPI_MAP@2x.jpg in Resources */,
 				C7C5BA7817F48713005E36DF /* LIGHT_MAP@2x.jpg in Resources */,
+				C78C82A617F5E20900C17D28 /* PLACE_BOLETA@2x.png in Resources */,
 				C7C5BA6017F48713005E36DF /* LIKE@2x.png in Resources */,
 				C7C5BAA217F48713005E36DF /* ICONE_TITLE_SMALL@2x.png in Resources */,
 				C7C5BA4117F48713005E36DF /* SKY_TIRA_IMATGES@2x.png in Resources */,
+				C78C828E17F5E20900C17D28 /* CALME_BOLETA@2x.png in Resources */,
+				C78C829E17F5E20900C17D28 /* HAPPINESS_BOLETA@2x.png in Resources */,
 				C7C5BA0E17F48713005E36DF /* 08_Upload_Succesful.png in Resources */,
 				C7C5BA8D17F48713005E36DF /* PLACE_PRODUCT@2x.png in Resources */,
+				C78C82AA17F5E20900C17D28 /* RGB_BOLETA@2x.png in Resources */,
+				C78C82A517F5E20900C17D28 /* MOUNTAIN_BOLETA_HOVER@2x.png in Resources */,
 				C7C5B9FB17F48713005E36DF /* ICONE00@2x.jpg in Resources */,
+				C78C829D17F5E20900C17D28 /* GOLD_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BA0617F48713005E36DF /* 08_Order_Button_OFF.png in Resources */,
 				C7C5BA1B17F48713005E36DF /* MINI-ANGLE@2x.png in Resources */,
+				C78C82AB17F5E20900C17D28 /* RGB_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BAAA17F48713005E36DF /* SHOP_BUTTON@2x.png in Resources */,
 				C7C5BAAD17F48713005E36DF /* ANTIC_PRODUCT@2x.png in Resources */,
+				C78C82A117F5E20900C17D28 /* ICONE_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BA1F17F48713005E36DF /* MINI-COLOURS@2x.png in Resources */,
 				C7C5BA4717F48713005E36DF /* CLOTHING_TIRA_IMATGES@2x.png in Resources */,
 				C7A851BC1792F4D70059361B /* Default@2x.png in Resources */,
@@ -1686,20 +1825,25 @@
 				C7C5BA1717F48713005E36DF /* SPLASHSCREEN_CATALOG_BTN@2x.png in Resources */,
 				C7C5BA2017F48713005E36DF /* MINI-CONTACT@2x.png in Resources */,
 				C7C5BA3D17F48713005E36DF /* REFLEX_TITLE_SMALL@2x.png in Resources */,
+				C78C829A17F5E20900C17D28 /* FLOWER_BOLETA@2x.png in Resources */,
+				C78C829317F5E20900C17D28 /* CLOTHING_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BA8617F48713005E36DF /* FLOWER_MAP@2x.jpg in Resources */,
 				C7C5BAC417F48713005E36DF /* MOUNTAIN@2x.png in Resources */,
 				C7C5BA7217F48713005E36DF /* GOLD_TITLE_SMALL@2x.png in Resources */,
 				C7C5BA1A17F48713005E36DF /* MINI-ABOUT@2x.png in Resources */,
+				C78C829C17F5E20900C17D28 /* GOLD_BOLETA@2x.png in Resources */,
 				C7C5BA8317F48713005E36DF /* MENU.png in Resources */,
 				C7C5BA0D17F48713005E36DF /* 08_Upload_Failed.png in Resources */,
 				C7C5BA1D17F48713005E36DF /* MINI-CALME@2x.png in Resources */,
 				C7C5B9E217F48713005E36DF /* CLOTHING19@2x.jpg in Resources */,
+				C78C82A917F5E20900C17D28 /* REFLEX_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BA2B17F48713005E36DF /* MINI-REFLEX@2x.png in Resources */,
 				C7C5BAA317F48713005E36DF /* RGB_INFO_AN@2x.png in Resources */,
 				C7C5BA0017F48713005E36DF /* BORN19@2x.jpg in Resources */,
 				C7C5BA1517F48713005E36DF /* INSTRUCCIONS@2x.png in Resources */,
 				C7C5BAC017F48713005E36DF /* GOLD@2x.png in Resources */,
 				C7C5BAC817F48713005E36DF /* RHYTHM@2x.png in Resources */,
+				C78C82A717F5E20900C17D28 /* PLACE_BOLETA_HOVER@2x.png in Resources */,
 				C7C5B9E717F48713005E36DF /* RHYTHM00@2x.jpg in Resources */,
 				C7C5BA2417F48713005E36DF /* MINI-FLOWER@2x.png in Resources */,
 				C7C5BA5817F48713005E36DF /* BASE.png in Resources */,
@@ -1707,10 +1851,14 @@
 				C7C5B9EB17F48713005E36DF /* GOLD00@2x.jpg in Resources */,
 				C7C5B9E417F48713005E36DF /* FANCY19@2x.jpg in Resources */,
 				C7C5BA7F17F48713005E36DF /* MOUNTAIN_PRODUCT@2x.png in Resources */,
+				C78C82A817F5E20900C17D28 /* REFLEX_BOLETA@2x.png in Resources */,
 				C7C5BA6217F48713005E36DF /* RHYTHM_MAP@2x.jpg in Resources */,
+				C78C82AD17F5E20900C17D28 /* RHYTHM_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BA8817F48713005E36DF /* FLOWER_TIRA_IMATGES@2x.png in Resources */,
+				C78C82AC17F5E20900C17D28 /* RHYTHM_BOLETA@2x.png in Resources */,
 				C7C5BA9417F48713005E36DF /* CALME_TIRA_IMATGES@2x.png in Resources */,
 				C7C5BA4E17F48713005E36DF /* FANCY_TITLE_BIG@2x.png in Resources */,
+				C78C829017F5E20900C17D28 /* CATALEG.jpg in Resources */,
 				C7C5BA6D17F48713005E36DF /* GOLD_INFO_AN@2x.png in Resources */,
 				C7C5BA0517F48713005E36DF /* 08_Checkout_Quantity_1024x768.png in Resources */,
 				C7C5BA6317F48713005E36DF /* RHYTHM_PRODUCT@2x.png in Resources */,
@@ -1732,6 +1880,8 @@
 				C7C5B9F017F48713005E36DF /* LIGHT19@2x.jpg in Resources */,
 				C7C5BA3117F48713005E36DF /* MINI-WEB@2x.png in Resources */,
 				C7C5BA2E17F48713005E36DF /* MINI-SHOP@2x.png in Resources */,
+				C78C829617F5E20900C17D28 /* EARTH_BOLETA@2x.png in Resources */,
+				C78C829517F5E20900C17D28 /* COLOURS_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BAAC17F48713005E36DF /* UNPIXELNEGRE@2x.png in Resources */,
 				C7C5BA1917F48713005E36DF /* SPLASHSCREEN_SCAN_BTN@2x.png in Resources */,
 				C7C5BABA17F48713005E36DF /* CLOTHING@2x.png in Resources */,
@@ -1743,6 +1893,7 @@
 				C7C5BAB117F48713005E36DF /* BORN_TITLE_SMALL@2x.png in Resources */,
 				C7C5BA0A17F48713005E36DF /* 08_Paypal_ON_IPAD_02.jpg in Resources */,
 				C7C5BA3017F48713005E36DF /* MINI-TRANSPARENCY@2x.png in Resources */,
+				C78C829417F5E20900C17D28 /* COLOURS_BOLETA@2x.png in Resources */,
 				C7C5BA3417F48713005E36DF /* HAPPI_PRODUCT@2x.png in Resources */,
 				C7C5B9F217F48713005E36DF /* MOUNTAIN19@2x.jpg in Resources */,
 				C7C5BA4817F48713005E36DF /* CLOTHING_TITLE_BIG@2x.png in Resources */,
@@ -1751,7 +1902,9 @@
 				C7C5BA6717F48713005E36DF /* TRANSPARENCY_INFO_AN@2x.png in Resources */,
 				C7C5BA7D17F48713005E36DF /* MOUNTAIN_INFO_AN@2x.png in Resources */,
 				C7C5BA0817F48713005E36DF /* 08_PayPal_OFF.png in Resources */,
+				C78C82A317F5E20900C17D28 /* LIGHT_BOLETA_HOVER@2x.png in Resources */,
 				C7C5B9FA17F48713005E36DF /* ANGLE19@2x.jpg in Resources */,
+				C78C82B017F5E20900C17D28 /* TRANSPARENCY_BOLETA@2x.png in Resources */,
 				C7C5BA4417F48713005E36DF /* CLOTHING_INFO_AN@2x.png in Resources */,
 				C7C5BA5E17F48713005E36DF /* header_fletxa2_fitxa@2x.png in Resources */,
 				C7C5BA4317F48713005E36DF /* SKY_TITLE_SMALL@2x.png in Resources */,
@@ -1763,6 +1916,7 @@
 				C7C5BAA617F48713005E36DF /* RGB_TIRA_IMATGES@2x.png in Resources */,
 				C7C5BA2217F48713005E36DF /* MINI-EARTH@2x.png in Resources */,
 				C7A8525D1793326A0059361B /* ICONA.png in Resources */,
+				C78C828D17F5E20900C17D28 /* ANGLE_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BA1217F48713005E36DF /* backgroundCell.JPG in Resources */,
 				C7C5BA9717F48713005E36DF /* ANGLE_INFO_AN@2x.png in Resources */,
 				C7C5BA1017F48713005E36DF /* 8_Clear_Button_ON.png in Resources */,
@@ -1771,6 +1925,7 @@
 				C7C5B9F417F48713005E36DF /* FLOWER19@2x.jpg in Resources */,
 				C7C5BA5317F48713005E36DF /* EARTH_TIRA_IMATGES@2x.png in Resources */,
 				C7C5BA1E17F48713005E36DF /* MINI-CLOTHING@2x.png in Resources */,
+				C78C829817F5E20900C17D28 /* FANCY_BOLETA@2x.png in Resources */,
 				C7C5BA0F17F48713005E36DF /* 8_Clear_Button_OFF.png in Resources */,
 				C7C5BA2717F48713005E36DF /* MINI-ICONE@2x.png in Resources */,
 				C7C5BA7917F48713005E36DF /* LIGHT_PRODUCT@2x.png in Resources */,
@@ -1794,6 +1949,7 @@
 				C7C5BA4A17F48713005E36DF /* FANCY_INFO_AN@2x.png in Resources */,
 				C7C5BA5717F48713005E36DF /* base dali.jpg in Resources */,
 				C7C5BA4F17F48713005E36DF /* FANCY_TITLE_SMALL@2x.png in Resources */,
+				C78C829917F5E20900C17D28 /* FANCY_BOLETA_HOVER@2x.png in Resources */,
 				C7C5B9DE17F48713005E36DF /* REFLEX19@2x.jpg in Resources */,
 				C7C5BA2617F48713005E36DF /* MINI-HAPPINESS@2x.png in Resources */,
 				C7C5B9E117F48713005E36DF /* CLOTHING00@2x.jpg in Resources */,
@@ -1809,8 +1965,10 @@
 				C7C5BAB917F48713005E36DF /* CALME@2x.png in Resources */,
 				C7A37A6317D121E2003EB817 /* Localizable.strings in Resources */,
 				C7C5BA5617F48713005E36DF /* base born.jpg in Resources */,
+				C78C829717F5E20900C17D28 /* EARTH_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BA2D17F48713005E36DF /* MINI-RHYTHM@2x.png in Resources */,
 				C7C5BA2C17F48713005E36DF /* MINI-RGB@2x.png in Resources */,
+				C78C82A017F5E20900C17D28 /* ICONE_BOLETA@2x.png in Resources */,
 				C7C5BA9817F48713005E36DF /* ANGLE_MAP@2x.jpg in Resources */,
 				C7C5B9DC17F48713005E36DF /* HAPPI19@2x.jpg in Resources */,
 				C7C5BA6117F48713005E36DF /* RHYTHM_INFO_AN@2x.png in Resources */,
@@ -1819,7 +1977,9 @@
 				C7C5BA3217F48713005E36DF /* HAPPI_INFO_AN@2x.png in Resources */,
 				C7C5BA9117F48713005E36DF /* CALME_INFO_AN@2x.png in Resources */,
 				C7C5BA8717F48713005E36DF /* FLOWER_PRODUCT@2x.png in Resources */,
+				C78C828C17F5E20900C17D28 /* ANGLE_BOLETA@2x.png in Resources */,
 				C7C5BA4B17F48713005E36DF /* FANCY_MAP@2x.jpg in Resources */,
+				C78C82A217F5E20900C17D28 /* LIGHT_BOLETA@2x.png in Resources */,
 				C7C5BA8117F48713005E36DF /* MOUNTAIN_TITLE_BIG@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
