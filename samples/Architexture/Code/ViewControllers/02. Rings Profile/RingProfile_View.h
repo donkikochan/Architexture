@@ -43,4 +43,19 @@
 
 
 
+@property (weak, nonatomic) IBOutlet UIScrollView   *m_ScrollView_Product_Aux1;
+@property (weak, nonatomic) IBOutlet UIScrollView   *m_ScrollView_Product_Aux2;
+@property (weak, nonatomic) IBOutlet UIScrollView   *m_ScrollView_Product_Aux3;
+@property (weak, nonatomic) IBOutlet UIScrollView   *m_ScrollView_Product_Aux4;
+@property (weak, nonatomic) IBOutlet UIImageView    *m_Image_Product_Aux1;
+@property (weak, nonatomic) IBOutlet UIImageView    *m_Image_Product_Aux2;
+@property (weak, nonatomic) IBOutlet UIImageView    *m_Image_Product_Aux3;
+@property (weak, nonatomic) IBOutlet UIImageView    *m_Image_Product_Aux4;
+@property (weak, nonatomic) IBOutlet UIButton       *m_Button_Shop_Aux1;
+@property (weak, nonatomic) IBOutlet UIButton       *m_Button_Shop_Aux2;
+@property (weak, nonatomic) IBOutlet UIButton       *m_Button_Shop_Aux3;
+@property (weak, nonatomic) IBOutlet UIButton       *m_Button_Shop_Aux4;
+
+
+
 @end

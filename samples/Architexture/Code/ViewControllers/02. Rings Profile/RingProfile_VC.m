@@ -127,10 +127,10 @@
         [ringProfileView.m_Button_Shop setTitle:NSLocalizedString(@"ADD_TO_CART",nil) forState:UIControlStateNormal];
         
         
-        //---- Configure Button Shop:
+        //---- Configure Image Map:
         ringProfileView.m_Image_Map.image = [UIImage imageNamed:m_aMap[i]];
         
-        //---- Configure Button Shop:
+        //---- Configure Button Map:
         ringProfileView.m_Button_MapView.tag = i;
         [ringProfileView.m_Button_MapView addTarget:self action:@selector(viewMap:) forControlEvents:UIControlEventTouchDown];
     }

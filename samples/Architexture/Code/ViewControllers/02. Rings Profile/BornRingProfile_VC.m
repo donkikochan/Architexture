@@ -32,7 +32,7 @@
 	// Do any additional setup after loading the view.
     
     float height = self.view.frame.size.height;
-    [_m_View_Ring.m_ScrollView_Profile setContentSize:CGSizeMake(1.f, 2345+height)];
+    [_m_View_Ring.m_ScrollView_Profile setContentSize:CGSizeMake(1.f, 3214+height)];
     [_m_View_Ring.m_ScrollView_Profile setDelegate: self];
     [_m_View_Ring.m_ScrollView_Profile setScrollEnabled:YES];
     
@@ -60,6 +60,33 @@
     _m_View_Ring.m_Image_TitleSmall.alpha    = 0.f;
     _m_View_Ring.m_Image_TitleBig.alpha      = 1.f;
     
+    
+    //---- Configure Product carousel:
+    _m_View_Ring.m_Image_Product_Aux1.image = [UIImage imageNamed:@"TEULA_PRODUCT.png"];
+    _m_View_Ring.m_Image_Product_Aux2.image = [UIImage imageNamed:@"ANTIC_PRODUCT.png"];
+    _m_View_Ring.m_Image_Product_Aux3.image = [UIImage imageNamed:@"MUR_PRODUCT.png"];
+    _m_View_Ring.m_Image_Product_Aux4.image = [UIImage imageNamed:@"BORN_PRODUCT.png"];
+    [_m_View_Ring.m_ScrollView_Product_Aux1 setContentSize:CGSizeMake(1091, 1.f)];
+    [_m_View_Ring.m_ScrollView_Product_Aux2 setContentSize:CGSizeMake(1091, 1.f)];
+    [_m_View_Ring.m_ScrollView_Product_Aux3 setContentSize:CGSizeMake(1091, 1.f)];
+    [_m_View_Ring.m_ScrollView_Product_Aux4 setContentSize:CGSizeMake(1091, 1.f)];
+    
+    //---- Configure Button Shop:
+    _m_View_Ring.m_Button_Shop_Aux1.tag = 1;
+    [_m_View_Ring.m_Button_Shop_Aux1 addTarget:self action:@selector(addShop:) forControlEvents:UIControlEventTouchDown];
+    [_m_View_Ring.m_Button_Shop_Aux1 setTitle:NSLocalizedString(@"ADD_TO_CART",nil) forState:UIControlStateNormal];
+    
+    _m_View_Ring.m_Button_Shop_Aux1.tag = 2;
+    [_m_View_Ring.m_Button_Shop_Aux1 addTarget:self action:@selector(addShop:) forControlEvents:UIControlEventTouchDown];
+    [_m_View_Ring.m_Button_Shop_Aux1 setTitle:NSLocalizedString(@"ADD_TO_CART",nil) forState:UIControlStateNormal];
+    
+    _m_View_Ring.m_Button_Shop_Aux1.tag = 3;
+    [_m_View_Ring.m_Button_Shop_Aux1 addTarget:self action:@selector(addShop:) forControlEvents:UIControlEventTouchDown];
+    [_m_View_Ring.m_Button_Shop_Aux1 setTitle:NSLocalizedString(@"ADD_TO_CART",nil) forState:UIControlStateNormal];
+    
+    _m_View_Ring.m_Button_Shop_Aux1.tag = 4;
+    [_m_View_Ring.m_Button_Shop_Aux1 addTarget:self action:@selector(addShop:) forControlEvents:UIControlEventTouchDown];
+    [_m_View_Ring.m_Button_Shop_Aux1 setTitle:NSLocalizedString(@"ADD_TO_CART",nil) forState:UIControlStateNormal];
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)])
     {
         // iOS 7
@@ -224,5 +251,38 @@
     
     NSLog(@"Born didReceiveMemoryWarning");
 }
+
+
+- (IBAction) addShop:(id)sender
+{
+    UIButton* btn = (UIButton*)sender;
+    NSLog(@"Add Shop: %d",btn.tag);
+    switch(btn.tag)
+    {
+        case 1: //TEULA
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"TEULA"];
+        }
+            break;
+        case 2: //ANTIC
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"ANTIC"];
+        }
+            break;
+        case 3: //MUR
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"MUR"];
+        }
+            break;
+            
+        case 4: //BORN
+        {
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"BORN"];
+        }
+            break;
+    }
+    [self performSegueWithIdentifier:@"FromRingsToCheckout" sender:nil];
+}
+
 
 @end
