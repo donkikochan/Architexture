@@ -425,14 +425,6 @@
 
 
 
-- (IBAction) viewMap:(id)sender
-{
-    UIButton* btn = (UIButton*)sender;
-    NSLog(@"Add Shop: %d",btn.tag);
-    [self performSegueWithIdentifier:@"FromViewController_To_MapView" sender:nil];
-}
-
-
 - (IBAction)menu_Clicked:(id)sender
 {
     m_bMenuClicked = YES;

@@ -17,6 +17,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		C70AD0CE17F635EE008A963B /* LOADING@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C70AD0CD17F635EE008A963B /* LOADING@2x.jpg */; };
 		C71CC99317D9DE7200F08F33 /* MapView_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C71CC99217D9DE7200F08F33 /* MapView_VC.m */; };
 		C71CC99517D9F7B400F08F33 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71CC99417D9F7B400F08F33 /* CoreLocation.framework */; };
 		C72ACDEC17CF5853000CCEAD /* UIImage+StackBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = C72ACDD017CF5853000CCEAD /* UIImage+StackBlur.m */; };
@@ -346,6 +347,7 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C70AD0CD17F635EE008A963B /* LOADING@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "LOADING@2x.jpg"; sourceTree = "<group>"; };
 		C71CC99117D9DE7200F08F33 /* MapView_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView_VC.h; sourceTree = "<group>"; };
 		C71CC99217D9DE7200F08F33 /* MapView_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView_VC.m; sourceTree = "<group>"; };
 		C71CC99417D9F7B400F08F33 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -1268,6 +1270,7 @@
 		C7C5B90C17F48712005E36DF /* General */ = {
 			isa = PBXGroup;
 			children = (
+				C70AD0CD17F635EE008A963B /* LOADING@2x.jpg */,
 				C7C5B90D17F48712005E36DF /* INSTRUCCIONS@2x.png */,
 				C7C5B90E17F48712005E36DF /* LOGO@2x.png */,
 			);
@@ -1923,6 +1926,7 @@
 				C7C5BACA17F48713005E36DF /* TRANSPARENCY@2x.png in Resources */,
 				C7C5BA9317F48713005E36DF /* CALME_PRODUCT@2x.png in Resources */,
 				C7C5B9F417F48713005E36DF /* FLOWER19@2x.jpg in Resources */,
+				C70AD0CE17F635EE008A963B /* LOADING@2x.jpg in Resources */,
 				C7C5BA5317F48713005E36DF /* EARTH_TIRA_IMATGES@2x.png in Resources */,
 				C7C5BA1E17F48713005E36DF /* MINI-CLOTHING@2x.png in Resources */,
 				C78C829817F5E20900C17D28 /* FANCY_BOLETA@2x.png in Resources */,

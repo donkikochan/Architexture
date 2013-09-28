@@ -206,7 +206,7 @@
     }
     else
     {
-        return 3;
+        return 5;
     }
 }
 
@@ -251,19 +251,31 @@
             cell = [[MenuOption_Cell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
         
-        cell.m_Image_Option.hidden = YES;
+        cell.m_Image_Option.hidden = NO;
         
         if (indexPath.row == 0)
         {
             cell.m_Label_Option.text = NSLocalizedString(@"SHOP",nil);
+            cell.m_Image_Option.image = [UIImage imageNamed:@"MINI-SHOP.png"];
         }
         if (indexPath.row == 1)
         {
             cell.m_Label_Option.text = NSLocalizedString(@"WEB_ARCHITEXTURE",nil);
+            cell.m_Image_Option.image = [UIImage imageNamed:@"MINI-WEB.png"];
         }
         if (indexPath.row == 2)
         {
+            cell.m_Label_Option.text = NSLocalizedString(@"ABOUT",nil);
+            cell.m_Image_Option.image = [UIImage imageNamed:@"MINI-ABOUT.png"];
+        }
+        if (indexPath.row == 3)
+        {
             cell.m_Label_Option.text = NSLocalizedString(@"CONTACT_US",nil);
+            cell.m_Image_Option.image = [UIImage imageNamed:@"MINI-CONTACT.png"];
+        }
+        if (indexPath.row == 4)
+        {
+            cell.m_Label_Option.text = NSLocalizedString(@"FACEBOOK",nil);
         }
         
         int tag = 100 + indexPath.row;

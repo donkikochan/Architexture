@@ -56,6 +56,7 @@
 @property (strong, nonatomic) NSString*                 m_sCollectionToLoad;
 @property (strong, nonatomic) NSString*                 m_sRingToLoad;
 @property (strong, nonatomic) NSString*                 m_sGoToNewCollection;
+@property (strong, nonatomic) NSString*                 m_sMapRing;
 
 + (AppDelegate*) mainAppDelegate;
 

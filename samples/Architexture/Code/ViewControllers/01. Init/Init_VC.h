@@ -13,14 +13,17 @@
 
 @interface Init_VC : UIViewController
 {
-    
+    NSTimer* m_pTimer;
+    int m_iLastRingAnimated;
 }
 
 //--- IBOutlets:
 @property (strong, nonatomic) IBOutlet UIImageView *m_Image_SplashScreen;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *m_aButtonsAux;
 
 
 //--- IBActions:
 - (IBAction) catalog_Clicked:(id)sender;
 
 @end
+                            

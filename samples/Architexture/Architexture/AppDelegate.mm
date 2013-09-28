@@ -92,8 +92,9 @@
     }
     
     _m_sCollectionToLoad = COLLECTION_BARCELONA;
-    _m_sRingToLoad       = @"0";
+    _m_sRingToLoad          = @"0";
     _m_sGoToNewCollection   = @"NO";
+    _m_sMapRing             = @"0";
     return YES;
 }
 

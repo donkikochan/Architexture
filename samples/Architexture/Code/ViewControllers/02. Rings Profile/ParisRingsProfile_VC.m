@@ -226,6 +226,14 @@
     [self performSegueWithIdentifier:@"FromRingsToCheckout" sender:nil];
 }
 
+- (IBAction) viewMap:(id)sender
+{
+    UIButton* btn = (UIButton*)sender;
+    NSLog(@"ViewMap: %d",12+btn.tag);
+    [AppDelegate mainAppDelegate].m_sMapRing = [NSString stringWithFormat:@"%d",12+btn.tag];
+    [self performSegueWithIdentifier:@"FromViewController_To_MapView" sender:nil];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

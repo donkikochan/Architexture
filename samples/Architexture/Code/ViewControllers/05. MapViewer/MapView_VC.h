@@ -13,7 +13,7 @@
 
 @interface MapView_VC : UIViewController <MKMapViewDelegate>
 {
-    CGPoint m_aPositions[13];
+    CGPoint m_aPositions[18];
 }
 
 
