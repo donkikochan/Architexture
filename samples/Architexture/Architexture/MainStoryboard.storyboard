@@ -6002,20 +6002,46 @@
         <image name="08_Add_Button_OFF.png" width="90" height="90"/>
         <image name="08_Add_Button_ON.png" width="90" height="90"/>
         <image name="08_Order_Button_OFF.png" width="410" height="90"/>
+        <image name="08_Order_Button_OFF.png" width="410" height="90"/>
+        <image name="08_Order_Button_ON.png" width="410" height="90"/>
         <image name="08_Order_Button_ON.png" width="410" height="90"/>
         <image name="08_Remove_Button_OFF.png" width="90" height="90"/>
         <image name="08_Remove_Button_ON.png" width="90" height="90"/>
         <image name="8_Clear_Button_OFF.png" width="260" height="90"/>
+        <image name="8_Clear_Button_OFF.png" width="260" height="90"/>
+        <image name="8_Clear_Button_OFF.png" width="260" height="90"/>
+        <image name="8_Clear_Button_ON.png" width="260" height="90"/>
+        <image name="8_Clear_Button_ON.png" width="260" height="90"/>
         <image name="8_Clear_Button_ON.png" width="260" height="90"/>
         <image name="ANGLE_BOLETA.png" width="61" height="61"/>
         <image name="ANGLE_BOLETA_HOVER.png" width="61" height="61"/>
         <image name="BORN.png" width="320" height="99"/>
         <image name="BORN00.jpg" width="320" height="490"/>
+        <image name="BORN00.jpg" width="320" height="490"/>
         <image name="BORN_INFO_AN.png" width="320" height="3214"/>
+        <image name="BORN_TITLE_SMALL.png" width="320" height="45"/>
         <image name="BORN_TITLE_SMALL.png" width="320" height="45"/>
         <image name="CALME_BOLETA.png" width="61" height="61"/>
         <image name="CALME_BOLETA_HOVER.png" width="61" height="61"/>
         <image name="CATALEG_BASE.jpg" width="320" height="480"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
+        <image name="CLICK_BUTTON.png" width="133" height="24"/>
         <image name="CLICK_BUTTON.png" width="133" height="24"/>
         <image name="CLOTHING_BOLETA.png" width="61" height="61"/>
         <image name="CLOTHING_BOLETA_HOVER.png" width="61" height="61"/>
@@ -6023,12 +6049,57 @@
         <image name="COLOURS_BOLETA_HOVER.png" width="61" height="61"/>
         <image name="DALI.png" width="320" height="99"/>
         <image name="DALI00.jpg" width="320" height="490"/>
+        <image name="DALI00.jpg" width="320" height="490"/>
+        <image name="DALI_INFO_EN.png" width="320" height="2345"/>
+        <image name="DALI_INFO_EN.png" width="320" height="2345"/>
         <image name="DALI_INFO_EN.png" width="320" height="2345"/>
         <image name="DALI_TITLE_SMALL.png" width="320" height="45"/>
+        <image name="DALI_TITLE_SMALL.png" width="320" height="45"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
+        <image name="DEGRADAT.png" width="320" height="480"/>
         <image name="DEGRADAT.png" width="320" height="480"/>
         <image name="Default.png" width="320" height="480"/>
         <image name="EARTH_BOLETA.png" width="61" height="61"/>
         <image name="EARTH_BOLETA_HOVER.png" width="61" height="61"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
+        <image name="FACEBOOK.png" width="52" height="52"/>
         <image name="FACEBOOK.png" width="52" height="52"/>
         <image name="FANCY_BOLETA.png" width="60" height="60"/>
         <image name="FANCY_BOLETA_HOVER.png" width="61" height="61"/>
@@ -6039,21 +6110,210 @@
         <image name="GOLD_BOLETA.png" width="61" height="61"/>
         <image name="GOLD_BOLETA_HOVER.png" width="61" height="61"/>
         <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPI00.jpg" width="196" height="301"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
+        <image name="HAPPINESS.png" width="320" height="99"/>
         <image name="HAPPINESS.png" width="320" height="99"/>
         <image name="HAPPINESS_BOLETA.png" width="61" height="61"/>
         <image name="HAPPINESS_BOLETA_HOVER.png" width="61" height="61"/>
         <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_INFO_AN.png" width="320" height="2094"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
+        <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
         <image name="HAPPI_PRODUCT.png" width="669" height="140"/>
         <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TIRA_IMATGES.png" width="867" height="140"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
+        <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
         <image name="HAPPI_TITLE_BIG.png" width="320" height="45"/>
         <image name="ICONE_BOLETA.png" width="59" height="59"/>
         <image name="ICONE_BOLETA_HOVER.png" width="61" height="61"/>
         <image name="LIGHT_BOLETA.png" width="61" height="61"/>
         <image name="LIGHT_BOLETA_HOVER.png" width="61" height="61"/>
         <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
+        <image name="LIKE.png" width="62" height="30"/>
         <image name="LOADING.jpg" width="320" height="480"/>
         <image name="LOGO.png" width="159" height="37"/>
+        <image name="LOGO.png" width="159" height="37"/>
         <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MENU.png" width="17" height="14"/>
+        <image name="MINI-FLOWER.png" width="35" height="35"/>
         <image name="MINI-FLOWER.png" width="35" height="35"/>
         <image name="MOUNTAIN_BOLETA.png" width="61" height="61"/>
         <image name="MOUNTAIN_BOLETA_HOVER.png" width="61" height="61"/>
@@ -6065,17 +6325,89 @@
         <image name="RGB_BOLETA_HOVER.png" width="61" height="61"/>
         <image name="RHYTHM.png" width="320" height="99"/>
         <image name="RHYTHM00.jpg" width="196" height="300"/>
+        <image name="RHYTHM00.jpg" width="196" height="300"/>
+        <image name="RHYTHM00.jpg" width="196" height="300"/>
         <image name="RHYTHM_BOLETA.png" width="61" height="61"/>
         <image name="RHYTHM_BOLETA_HOVER.png" width="61" height="61"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
+        <image name="SHOP_BUTTON.png" width="305" height="43"/>
         <image name="SHOP_BUTTON.png" width="305" height="43"/>
         <image name="SKY_BOLETA.png" width="61" height="61"/>
         <image name="SKY_BOLETA_HOVER.png" width="61" height="61"/>
         <image name="TRANSPARENCY_BOLETA.png" width="61" height="61"/>
         <image name="TRANSPARENCY_BOLETA_HOVER.png" width="61" height="61"/>
         <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="TWITTER.png" width="51" height="42"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
+        <image name="UNPIXELNEGRE.png" width="320" height="490"/>
         <image name="UNPIXELNEGRE.png" width="320" height="490"/>
         <image name="checkout_bck.jpg" width="772" height="267"/>
+        <image name="checkout_bck.jpg" width="772" height="267"/>
         <image name="header_fletxa_fitxa.png" width="20" height="18"/>
+        <image name="header_fletxa_fitxa.png" width="20" height="18"/>
+        <image name="pastilla_buscador.png" width="278" height="31"/>
         <image name="pastilla_buscador.png" width="278" height="31"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
