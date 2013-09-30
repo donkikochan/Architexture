@@ -10,9 +10,11 @@
 #import "Menu_VC.h"
 #import <QuartzCore/QuartzCore.h>
 #import "MenuOption_Cell.h"
+#import "MenuOptionAux_Cell.h"
 #import "CheckoutRing.h"
 #import "CollectionSection_View.h"
 //---------------
+
 @interface Menu_VC ()
 
 @end
@@ -241,50 +243,86 @@
         [cell.m_Button_Option addTarget:self action:@selector(option_Clicked:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
-    else{
-        static NSString *CellIdentifier = @"MenuOption_Cell";
-        MenuOption_Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        
-        // Configure the cell...
-        if (cell == nil)
-        {
-            cell = [[MenuOption_Cell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        }
-        
-        cell.m_Image_Option.hidden = NO;
-        
-        if (indexPath.row == 0)
-        {
-            cell.m_Label_Option.text = NSLocalizedString(@"SHOP",nil);
-            cell.m_Image_Option.image = [UIImage imageNamed:@"MINI-SHOP.png"];
-        }
-        if (indexPath.row == 1)
-        {
-            cell.m_Label_Option.text = NSLocalizedString(@"WEB_ARCHITEXTURE",nil);
-            cell.m_Image_Option.image = [UIImage imageNamed:@"MINI-WEB.png"];
-        }
-        if (indexPath.row == 2)
-        {
-            cell.m_Label_Option.text = NSLocalizedString(@"ABOUT",nil);
-            cell.m_Image_Option.image = [UIImage imageNamed:@"MINI-ABOUT.png"];
-        }
-        if (indexPath.row == 3)
-        {
-            cell.m_Label_Option.text = NSLocalizedString(@"CONTACT_US",nil);
-            cell.m_Image_Option.image = [UIImage imageNamed:@"MINI-CONTACT.png"];
-        }
+    else
+    {
         if (indexPath.row == 4)
         {
-            cell.m_Label_Option.text = NSLocalizedString(@"FACEBOOK",nil);
+            static NSString *CellIdentifier = @"MenuOptionAux_Cell";
+            MenuOptionAux_Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+            
+            // Configure the cell...
+            if (cell == nil)
+            {
+                cell = [[MenuOptionAux_Cell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+            }
+            [cell.m_Button_Facebook addTarget:self action:@selector(facebook_Clicked:) forControlEvents:UIControlEventTouchUpInside];
+            [cell.m_Button_Twitter  addTarget:self action:@selector(twitter_Clicked:) forControlEvents:UIControlEventTouchUpInside];
+            [cell.m_Button_Like     addTarget:self action:@selector(iLike_Clicked:) forControlEvents:UIControlEventTouchUpInside];
+
+            return cell;
         }
-        
-        int tag = 100 + indexPath.row;
-        cell.m_Button_Option.tag = tag;
-        [cell.m_Button_Option addTarget:self action:@selector(option_Clicked:) forControlEvents:UIControlEventTouchUpInside];
-        return cell;
+        else
+        {
+            static NSString *CellIdentifier = @"MenuOption_Cell";
+            MenuOption_Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+            
+            // Configure the cell...
+            if (cell == nil)
+            {
+                cell = [[MenuOption_Cell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+            }
+            
+            cell.m_Image_Option.hidden = NO;
+            
+            if (indexPath.row == 0)
+            {
+                cell.m_Label_Option.text = NSLocalizedString(@"SHOP",nil);
+                cell.m_Image_Option.image = [UIImage imageNamed:@"MINI-SHOP.png"];
+            }
+            if (indexPath.row == 1)
+            {
+                cell.m_Label_Option.text = NSLocalizedString(@"WEB_ARCHITEXTURE",nil);
+                cell.m_Image_Option.image = [UIImage imageNamed:@"MINI-WEB.png"];
+            }
+            if (indexPath.row == 2)
+            {
+                cell.m_Label_Option.text = NSLocalizedString(@"ABOUT",nil);
+                cell.m_Image_Option.image = [UIImage imageNamed:@"MINI-ABOUT.png"];
+            }
+            if (indexPath.row == 3)
+            {
+                cell.m_Label_Option.text = NSLocalizedString(@"CONTACT_US",nil);
+                cell.m_Image_Option.image = [UIImage imageNamed:@"MINI-CONTACT.png"];
+            }
+            if (indexPath.row == 4)
+            {
+                cell.m_Label_Option.text = NSLocalizedString(@"FACEBOOK",nil);
+            }
+            
+            int tag = 100 + indexPath.row;
+            cell.m_Button_Option.tag = tag;
+            [cell.m_Button_Option addTarget:self action:@selector(option_Clicked:) forControlEvents:UIControlEventTouchUpInside];
+            return cell;
+
+        }
     }
     
     return nil;
+}
+
+- (IBAction) facebook_Clicked:(id)sender
+{
+    
+}
+
+- (IBAction) twitter_Clicked:(id)sender
+{
+    
+}
+
+- (IBAction) iLike_Clicked:(id)sender
+{
+    
 }
 
 

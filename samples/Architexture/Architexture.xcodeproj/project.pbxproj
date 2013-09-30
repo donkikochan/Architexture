@@ -18,6 +18,7 @@
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 		C70AD0CE17F635EE008A963B /* LOADING@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C70AD0CD17F635EE008A963B /* LOADING@2x.jpg */; };
+		C70AD0D117F751F1008A963B /* MenuOptionAux_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = C70AD0D017F751F1008A963B /* MenuOptionAux_Cell.m */; };
 		C71CC99317D9DE7200F08F33 /* MapView_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C71CC99217D9DE7200F08F33 /* MapView_VC.m */; };
 		C71CC99517D9F7B400F08F33 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71CC99417D9F7B400F08F33 /* CoreLocation.framework */; };
 		C72ACDEC17CF5853000CCEAD /* UIImage+StackBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = C72ACDD017CF5853000CCEAD /* UIImage+StackBlur.m */; };
@@ -348,6 +349,8 @@
 		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C70AD0CD17F635EE008A963B /* LOADING@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "LOADING@2x.jpg"; sourceTree = "<group>"; };
+		C70AD0CF17F751F1008A963B /* MenuOptionAux_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuOptionAux_Cell.h; sourceTree = "<group>"; };
+		C70AD0D017F751F1008A963B /* MenuOptionAux_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuOptionAux_Cell.m; sourceTree = "<group>"; };
 		C71CC99117D9DE7200F08F33 /* MapView_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView_VC.h; sourceTree = "<group>"; };
 		C71CC99217D9DE7200F08F33 /* MapView_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView_VC.m; sourceTree = "<group>"; };
 		C71CC99417D9F7B400F08F33 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -847,6 +850,8 @@
 				C72ACDDA17CF5853000CCEAD /* Menu_VC.m */,
 				C78BA69117DF2B5E00CADA77 /* MenuOption_Cell.h */,
 				C78BA69217DF2B5E00CADA77 /* MenuOption_Cell.m */,
+				C70AD0CF17F751F1008A963B /* MenuOptionAux_Cell.h */,
+				C70AD0D017F751F1008A963B /* MenuOptionAux_Cell.m */,
 			);
 			path = "03. Menu";
 			sourceTree = "<group>";
@@ -1997,6 +2002,7 @@
 			files = (
 				C7572C2E17F2035B0013439C /* DaliRingProfile_VC.m in Sources */,
 				C72ACDEC17CF5853000CCEAD /* UIImage+StackBlur.m in Sources */,
+				C70AD0D117F751F1008A963B /* MenuOptionAux_Cell.m in Sources */,
 				C78BA69317DF2B5E00CADA77 /* MenuOption_Cell.m in Sources */,
 				C72ACDED17CF5853000CCEAD /* Init_VC.m in Sources */,
 				C72ACDEE17CF5853000CCEAD /* BarcelonaRingsProfile_VC.m in Sources */,

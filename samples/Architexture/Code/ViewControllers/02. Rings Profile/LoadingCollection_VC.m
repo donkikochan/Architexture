@@ -29,6 +29,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)])
+    {
+        // iOS 7
+        [self setNeedsStatusBarAppearanceUpdate];
+    }
+    
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 - (void) viewDidAppear:(BOOL)animated
