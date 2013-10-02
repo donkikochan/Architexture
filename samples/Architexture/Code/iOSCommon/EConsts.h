@@ -36,15 +36,15 @@
 #define CONNECTION_TIMEOUT              60.0
 
 //BSKeyboardControls
-#define KEYBOARD_TOOLBAR_PREVIOUS       NSLocalizedString(@"Previous",@"")
-#define KEYBOARD_TOOLBAR_NEXT           NSLocalizedString(@"Next",@"")
-#define KEYBOARD_TOOLBAR_DONE           NSLocalizedString(@"Done",@"")
+#define KEYBOARD_TOOLBAR_PREVIOUS       NSLocalizedString(@"PREVIOUS",@"")
+#define KEYBOARD_TOOLBAR_NEXT           NSLocalizedString(@"NEXT",@"")
+#define KEYBOARD_TOOLBAR_DONE           NSLocalizedString(@"DONE",@"")
 #define KEYBOARD_TOOLBAR_BUTTON_TINT    [UIColor blackColor]
 #define KEYBOARD_TOOLBAR_DONE_TINT      [UIColor colorWithR:34.0 G:164.0 B:255.0 A:1.0]
 #define KEYBOARD_TOOLBAR_STYLE          UIBarStyleBlack
 
 //AlertInfo
-#define ALERT_OK_TEXT                   NSLocalizedString(@"ACCPET", @"")
+#define ALERT_OK_TEXT                   NSLocalizedString(@"ACCEPT", @"")
 
 //HMSPickerView
 #define HMS_PICKERVIEW_STR_FORMAT       @"%02d:%02d:%02d"

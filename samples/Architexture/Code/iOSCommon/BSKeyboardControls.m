@@ -63,7 +63,7 @@ enum {
         self.toolbar = [[UIToolbar alloc] initWithFrame:self.frame];
         self.toolbar.translucent = YES;
         self.toolbar.barStyle = self.barStyle;
-        self.toolbar.backgroundColor = [UIColor clearColor];
+        self.toolbar.backgroundColor = [UIColor grayColor];
         
         // Setup segmented controls
         self.segmentedPreviousNext = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:self.previousTitle, self.nextTitle, nil]];

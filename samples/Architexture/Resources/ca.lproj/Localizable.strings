@@ -46,3 +46,39 @@
 "RGB_INFO"              = "RGB_INFO_AN.png";
 
 "ARCHITEXTURE_PRODUCT"  = "ArchiteXture Product";
+
+
+"NAME"                  = "Name";
+"ADDRESS"               = "Address";
+"CITY"                  = "City";
+"PROVINCE"              = "Province";
+"ZIP"                   = "ZIP";
+"EMAIL"                 = "Email";
+"COUNTRY"               = "Country";
+"COUPON"                = "Coupon";
+"TITLE_DELIVERY"        = "Delivery";
+"INFO_SHIPPING_2"       = "(a partir de 2 anillos envio gratuito 24-72h)";
+"INFO_SHIPPING_4"       = "(a partir de 4 anillos envio gratuito 24-72h)";
+"SUMMARY_SHIPPING"      = "Resumen de la compra";
+"ERROR_DELIVERY"        = "Delivery Error";
+"NAME_REQUIRED"         = "You must fill out the Name field";
+"EMAIL_REQUIRED"        = "You must fill out the Email field";
+"INTRODUCE_VALID_EMAIL" = "You entered a valid email";
+"ADDRESS_REQUIRED"      = "You must fill out the Address field";
+"CITY_REQUIRED"         = "You must fill out the City field";
+"ZIP_REQUIRED"          = "You must fill out the ZIP field";
+"PROVINCE_REQUIRED"     = "You must fill out the Province field";
+"CANCEL"                = "Cancel";
+"DONE"                  = "Done";
+
+"PROBLEM_DETECTED"      = "Problem detected:";
+"CONNECTION_ERROR"      = "Connection error";
+"APPLY"                 = "Apply";
+"PLACE_ORDER"           = "Place Order";
+"SELECT_COUNTRY"        = "Select Country";
+"DAYS"                  = "Days";
+"RINGS"                 = "Rings";
+"SHIPPING"              = "Shipping";
+"COUPON"                = "Coupon";
+"ACCEPT"                = "Accept";
+"PREVIOUS"              = "Previous";

@@ -8,14 +8,32 @@
 
 //---Imports:--
 #import <UIKit/UIKit.h>
+#import "SyncHandler.h"
 #import "PayPalMobile.h"
 //-------------
 
-@interface DeliveryAddress_VC : BaseViewController <PayPalPaymentDelegate>
+//---Define new types:---
+#define DELIVERY_NAME       @"DELIVERY_NAME"
+#define DELIVERY_ADDRESS    @"DELIVERY_ADDRESS"
+#define DELIVERY_CITY       @"DELIVERY_CITY"
+#define DELIVERY_ZIP        @"DELIVERY_ZIP"
+#define DELIVERY_PROVINCE   @"DELIVERY_PROVINCE"
+#define DELIVERY_EMAIL      @"DELIVERY_EMAIL"
+//-----------------------
+
+
+@interface DeliveryAddress_VC : BaseViewController <    PayPalPaymentDelegate, UITextFieldDelegate,
+                                                        UIActionSheetDelegate, UINavigationControllerDelegate,
+                                                        UIPickerViewDelegate, SyncHandlerDelegate   >
 {
-    NSMutableArray* arrayCountries;
+    NSMutableArray* m_aCountries;
     NSString*       m_sCountryCodeSelected;
     float           m_fShippingPrize;
+    float           m_fShippingPrize_0;
+    float           m_fShippingPrize_1;
+    UIActionSheet*  m_ActionSheet;
+    UIPickerView*   m_PickerView;
+    int             m_iCurrentPicker;
 }
 
 //---IBOutlets:
