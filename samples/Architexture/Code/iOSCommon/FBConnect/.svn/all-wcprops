@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/ioscommon/!svn/ver/68/trunk/FBConnect
+END
+FBSession.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/FBSession.m
+END
+FBRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/FBRequest.h
+END
+FBLoginDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/FBLoginDialog.h
+END
+FBConnect.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/FBConnect.h
+END
+FBRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ioscommon/!svn/ver/59/trunk/FBConnect/FBRequest.m
+END
+FBLoginDialog.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/FBLoginDialog.m
+END
+FBXMLHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/FBXMLHandler.h
+END
+FBFrictionlessRequestSettings.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/FBFrictionlessRequestSettings.h
+END
+FBDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/FBDialog.h
+END
+Facebook.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/Facebook.h
+END
+FBFrictionlessRequestSettings.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/FBFrictionlessRequestSettings.m
+END
+FBXMLHandler.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/FBXMLHandler.m
+END
+FBDialog.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/FBDialog.m
+END
+Facebook.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/Facebook.m
+END
+FBLoginButton.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/FBLoginButton.m
+END
+facebook_ios_sdk_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/facebook_ios_sdk_Prefix.pch
+END
+FBPermissionDialog.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/FBPermissionDialog.m
+END
+FBConnectGlobal.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/FBConnectGlobal.m
+END
+FBStreamDialog.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/FBStreamDialog.m
+END

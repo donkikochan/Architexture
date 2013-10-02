@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/JSON
+END
+JSON.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/JSON/JSON.h
+END
+SBJsonBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/JSON/SBJsonBase.h
+END
+SBJsonParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/JSON/SBJsonParser.h
+END
+SBJsonWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/JSON/SBJsonWriter.h
+END
+SBJSON.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/JSON/SBJSON.h
+END
+SBJsonBase.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/JSON/SBJsonBase.m
+END
+SBJsonParser.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/JSON/SBJsonParser.m
+END
+SBJsonWriter.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/JSON/SBJsonWriter.m
+END
+NSObject+SBJSON.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/JSON/NSObject+SBJSON.h
+END
+NSString+SBJSON.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/JSON/NSString+SBJSON.h
+END
+SBJSON.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/JSON/SBJSON.m
+END
+NSObject+SBJSON.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/JSON/NSObject+SBJSON.m
+END
+NSString+SBJSON.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ioscommon/!svn/ver/38/trunk/FBConnect/JSON/NSString+SBJSON.m
+END

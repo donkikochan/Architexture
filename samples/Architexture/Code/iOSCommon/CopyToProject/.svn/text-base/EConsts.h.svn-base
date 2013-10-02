@@ -1,0 +1,77 @@
+//
+//  EConsts.h
+//
+//  Created by Jordi Badia Santaulària on 09/03/12.
+//  Copyright (c) 2012 Endepro Software. All rights reserved.
+//
+
+#ifndef EConsts_h
+#define EConsts_h
+
+#ifndef NDEBUG
+    //#define DEBUG_EDATABASE
+    //#define DEBUG_ECOMMON
+#endif
+
+//Database
+#define DATABASE_SCRIPT                 1
+#define DB_CONTROL_TABLE_NAME           @"tbl_db_script"
+#define DB_NAME		                @"db.db"
+#define DB_CONTROL_TABLE_CREATE         @"CREATE TABLE IF NOT EXISTS tbl_db_script(script int primary key)"
+#define DB_CONTROL_TABLE_CURR_SCRIPT    @"SELECT MAX(script) FROM tbl_db_script"
+#define DB_CONTROL_TABLE_INSERT         @"INSERT INTO tbl_db_script(script) VALUES(%d)"
+#define DB_SCRIPTS_NAME_FORMAT          @"%d.sql"
+
+//Progress
+#define PROGRESS_DONE_HIDE_DELAY        1
+#define PROGRESS_BACKGROUND             YES
+#define PROGRESS_MIN_SIZE               CGSizeMake(100.f, 100.f)
+
+//Cascade
+#define CASCADE_SPLIT_LEFT_INSERT       58.0f
+#define CASCADE_SPLIT_WIDER_LEFT_INSERT 210.0f
+
+//URL Connection
+#define CONNECTION_TIMEOUT              60.0
+
+//BSKeyboardControls
+#define KEYBOARD_TOOLBAR_PREVIOUS       NSLocalizedString(@"Previous",@"")
+#define KEYBOARD_TOOLBAR_NEXT           NSLocalizedString(@"Next",@"")
+#define KEYBOARD_TOOLBAR_DONE           NSLocalizedString(@"Done",@"")
+
+//AlertInfo
+#define ALERT_OK_TEXT                   NSLocalizedString(@"Aceptar", @"")
+
+//HMSPickerView
+#define HMS_PICKERVIEW_STR_FORMAT       @"%02d:%02d:%02d"
+#define HMS_PICKERVIEW_HRS_ROW0         NSLocalizedString(@"00 hours",@"")
+#define HMS_PICKERVIEW_HRS_ROW          @"%02d"
+#define HMS_PICKERVIEW_MIN_ROW0         NSLocalizedString(@"00 mins",@"")
+#define HMS_PICKERVIEW_MIN_ROW          @"%02d"
+#define HMS_PICKERVIEW_SEC_ROW0         NSLocalizedString(@"00 secs",@"")
+#define HMS_PICKERVIEW_SEC_ROW          @"%02d"
+
+//PullRefreshTableViewController
+#define PULL_TO_REFRESH_WHITE           NO
+#define PULL_TO_REFRESH_HEADER_HEIGHT   52.0f
+#define PULL_TO_REFRESH_PULL_DOWN       NSLocalizedString(@"Pull down to refresh...",@"")
+#define PULL_TO_REFRESH_RELEASE         NSLocalizedString(@"Release to refresh...",@"")
+#define PULL_TO_REFRESH_LOADING         NSLocalizedString(@"Loading...",@"")
+
+//PullToRefreshView
+#define PULL_TO_REFRESH_BG_COLOR        [UIColor colorWithR:226 G:231 B:237 A:1.0]
+#define PULL_TO_REFRESH_TEXT_COLOR      [UIColor colorWithRed:(87.0/255.0) green:(108.0/255.0) blue:(137.0/255.0) alpha:1.0]
+
+//Common
+#define DATE_DEFAULT_LOCALE             @"es_ES"
+
+//Si s'activa el "Automatic Reference Counting" en el projecte posar un 1
+#define OBJC_ARC_ENABLED                0
+
+
+/*
+ * CUSTOM PROJECT CONSTS
+ */
+
+
+#endif

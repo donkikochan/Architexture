@@ -11,7 +11,7 @@
 #import "PayPalMobile.h"
 //-------------
 
-@interface DeliveryAddress_VC : UIViewController <PayPalPaymentDelegate>
+@interface DeliveryAddress_VC : BaseViewController <PayPalPaymentDelegate>
 {
     NSMutableArray* arrayCountries;
     NSString*       m_sCountryCodeSelected;

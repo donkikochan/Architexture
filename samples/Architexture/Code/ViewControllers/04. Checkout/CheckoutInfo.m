@@ -60,11 +60,11 @@
         NSMutableArray* l_ArrayParisCollection = [NSMutableArray arrayWithCapacity:4];
         ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-FLOWER.png"        andRingName:@"FLOWER"       andCollectionName:NSLocalizedString(@"PARIS_COLLECTION",nil)];
         [l_ArrayParisCollection addObject:ring];
-        ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-EARTH.png"         andRingName:@"PLACE"        andCollectionName:NSLocalizedString(@"PARIS_COLLECTION",nil)];
+        ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-PLACE.png"         andRingName:@"PLACE"        andCollectionName:NSLocalizedString(@"PARIS_COLLECTION",nil)];
         [l_ArrayParisCollection addObject:ring];
-        ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-LIGHT.png"         andRingName:@"CALME"        andCollectionName:NSLocalizedString(@"PARIS_COLLECTION",nil)];
+        ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-CALME.png"         andRingName:@"CALME"        andCollectionName:NSLocalizedString(@"PARIS_COLLECTION",nil)];
         [l_ArrayParisCollection addObject:ring];
-        ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-GOLD.png"          andRingName:@"ANGLE"        andCollectionName:NSLocalizedString(@"PARIS_COLLECTION",nil)];
+        ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-ANGLE.png"          andRingName:@"ANGLE"        andCollectionName:NSLocalizedString(@"PARIS_COLLECTION",nil)];
         [l_ArrayParisCollection addObject:ring];
         ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-ICONE.png"         andRingName:@"ICONE"        andCollectionName:NSLocalizedString(@"PARIS_COLLECTION",nil)];
         [l_ArrayParisCollection addObject:ring];

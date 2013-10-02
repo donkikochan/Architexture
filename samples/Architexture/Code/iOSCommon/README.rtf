@@ -1,0 +1,136 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red100\green56\blue32;\red196\green26\blue22;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid201\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid301\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid401\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid501\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid6}
+{\list\listtemplateid7\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid601\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid7}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}{\listoverride\listid7\listoverridecount0\ls7}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19800\viewh12840\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \
+\
+
+\b GENERAL
+\b0 \
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	\'95	}A l'afegir els anxius en el projecte desmarcar l'opci\'f3 "Copy items into destination group's folder (if needed)" per tots els arxius a excepci\'f3 dels arxius que hi ha dins de la carpeta CopyToProject als que s\'ed s'han d'afegir amb aquesta opci\'f3 marcada per si es volen fer canvis espec\'edfics del projecte.\
+{\listtext	\'95	}Cal incloure el Framework "QuartzCore" perqu\'e8 compili.\
+{\listtext	\'95	}Cal incloure el Framework "CoreText" si s'inclou el RTLabel.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+-----------------------------------------------------------------------------------------------------------------\
+
+\b \
+CLCASCADE
+\b0 \
+\
+Per incloure el Cascade en un projecte:\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+\ls2\ilvl0\cf0 {\listtext	1.	}Afegir el Cascade.xcodeproj a dins del projecte (preferentment dins de la carpeta Frameworks).\
+{\listtext	2.	}En la p\'e0gina Summary del projecte principal (al que li estem afegint el CLCascade) afegir en la part de "Linked Frameworks and Libraries" l'arxiu "libCascade.a" que hauria de sortir-nos al comen\'e7ament dins de Workspace.\
+{\listtext	3.	}En el mateix lloc que el punt 2, afegir el Framework QuartzCode (moure'l dins la carpeta Frameworks si cal).\
+{\listtext	4.	}Anar a la pestanya "Build Phases" i en l'apartat "Target Dependencies" afegir el Cascade.\
+{\listtext	5.	}Anar a la pestanya "Build Settings" i en l'apartat "Search Paths" dins de "Header Search Paths" afegir el seg\'fcent path: 		/Users/jmpinyol/iphone/ioscommon/trunk\
+{\listtext	6.	}Tamb\'e9 a "Build Settings" en l'apartat "Linking" cal afegir les seg\'fcents definicions en el "Other Linker Flags" perqu\'e8 no peti a l'executar: -all_load -objC  (per poder afegir les noves definicions que s'utilitzen sobre el UIViewController).\
+{\listtext	7.	}Afegir el seg\'fcent en l'arxiu *-Prefix.pch: 
+\f1\fs22 \cf2 \CocoaLigature0 #import \cf3 <Cascade/Cascade.h> 
+\f0\fs24 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+-----------------------------------------------------------------------------------------------------------------\
+\
+
+\b LIBXML2
+\b0 \
+\
+Per incloure la LIBXML2 en el projecte:\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+\ls3\ilvl0\cf0 {\listtext	1.	}En la p\'e0gina Summary del projecte principal afegir en la part de "Linked Frameworks and Libraries" la llibreria libxml2.dylib.\
+{\listtext	2.	}En la p\'e0gina "Build Settings" afegir el path "/usr/include/libxml2" en el "Header Search Paths" dins del grup "Search Paths".\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+-----------------------------------------------------------------------------------------------------------------\
+\pard\tx560\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+
+\b FACEBOOK
+\b0 \
+\
+Per incloure la llibreria de Facebook al projecte:\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+\ls4\ilvl0\cf0 {\listtext	1.	}Afegir el projecte FBConnect.xcodeproj o facebook-ios-sdk.xcodeproj dins de la carpeta Frameworks (preferentment).\
+{\listtext	2.	}Dins de la p\'e0gina Summary de les propietats del projecte afegir libFBPlatform.a en "Linked Frameworks and Libraries".\
+{\listtext	3.	}En la p\'e0gina "Build Settings" afegir el path "$(SRCROOT)/../../ioscommon/trunk/FBConnect" i "$(SRCROOT)/../../ioscommon/trunk/FBConnect/JSON" en el "Header Search Paths".\
+{\listtext	4.	}En la p\'e0gina "Build Phases" afegir en el "Target Dependences" el FBPlatform.\
+{\listtext	5.	}Seleccionar el projecte FBConnect.xcodeproj i en la p\'e0gina "Build Settings" dins del grup "Deployment" posar el "Skip Install" a Yes.\
+{\listtext	6.	}            (M\'e9s info a http://benscheirman.com/2011/06/creating-proper-ipa-files-in-xcode-4)\
+\pard\tx560\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 -----------------------------------------------------------------------------------------------------------------\
+\pard\tx560\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+
+\b TWITTER
+\b0 \
+\
+Per incloure la llibreria de Twitter al projecte:\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+\ls5\ilvl0\cf0 {\listtext	1.	}Afegir la carpeta Twitter+OAuth al projecte (preferentment a dins de Frameworks).\
+{\listtext	2.	}Afegir libOAuth.a en "Linked Frameworks and Libraries" dins de Summary del projecte principal.\
+{\listtext	3.	}Afegir el path "$(SRCROOT)/../../Twitter+OAuth/Libraries & Headers" a "Library Search Paths" dins de "Build Settings" del projecte.\
+{\listtext	4.	}Si no s'ha incl\'f2s encara, cal incloure tamb\'e9 la LIBXM2 (veure m\'e9s amunt).\
+\pard\tx560\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 -----------------------------------------------------------------------------------------------------------------\
+\pard\tx560\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+
+\b RAPTUREXML
+\b0 \
+https://github.com/ZaBlanc/RaptureXML\
+\
+Per incloure el RaptureXML al projecte:\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+\ls6\ilvl0\cf0 {\listtext	1.	}Afegir els arxius RXMLElement.h i RXMLElement.m.\
+{\listtext	2.	}Incloure la llibreria LIBXML2.\
+{\listtext	3.	}En la p\'e0gina Summary del projecte principal afegir en la part de "Linked Frameworks and Libraries" la llibreria libz.dylib.\
+{\listtext	4.	}Si el projecte est\'e0 en ARC (Automatic Reference Counting) afegir el flag 
+\f2 -fno-objc-arc
+\f0  a l'arxiu RXMLElement.m: anar a la p\'e0gina "Build Phases" en les propietats del projecte, a "Compile Sources" i seleccionar l'arxius i afegir-hi el flag.\
+\pard\tx560\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 -----------------------------------------------------------------------------------------------------------------\
+\pard\tx560\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+
+\b JSONKIT
+\b0 \
+https://github.com/johnezang/JSONKit\
+\
+Per incloure el JSONKIT al projecte:\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+\ls7\ilvl0\cf0 {\listtext	1.	}Afegir els arxius JSONKit.h i JSONKit.m.\
+{\listtext	2.	}Si el projecte est\'e0 en ARC (Automatic Reference Counting) afegir el flag 
+\f2 -fno-objc-arc
+\f0  a l'arxiu JSONKit.m: anar a la p\'e0gina "Build Phases" en les propietats del projecte, a "Compile Sources" i seleccionar l'arxius i afegir-hi el flag.\
+\pard\tx560\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 -----------------------------------------------------------------------------------------------------------------\
+}

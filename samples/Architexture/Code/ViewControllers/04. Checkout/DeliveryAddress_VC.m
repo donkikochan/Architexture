@@ -39,6 +39,22 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    //----Localize Strings:-----
+    _m_Label_Name.text      = NSLocalizedString(@"NAME",nil);
+    _m_Label_Address.text   = NSLocalizedString(@"ADDRESS",nil);
+    _m_Label_City.text      = NSLocalizedString(@"CITY",nil);
+    _m_Label_Province.text  = NSLocalizedString(@"PROVINCE",nil);
+    _m_Label_ZIP.text       = NSLocalizedString(@"ZIP",nil);
+    _m_Label_EMail.text     = NSLocalizedString(@"EMAIL",nil);
+    _m_Label_Country.text   = NSLocalizedString(@"COUNTRY",nil);
+    _m_Label_Coupon.text    = NSLocalizedString(@"COUPON",nil);
+    _m_Label_Title.text     = NSLocalizedString(@"TITLE_DELIVERY",nil);
+    [_m_Button_Back setTitle:NSLocalizedString(@"BUTTON_BACK",nil) forState:UIControlStateNormal];
+    
+    _m_Label_InfoShipping.text  = NSLocalizedString(@"INFO_SHIPPING",nil);
+    _m_Label_Summary.text       = NSLocalizedString(@"SUMMARY_SHIPPING",nil);
+    //--------------------------
+
     [_m_ScrollView setContentSize:CGSizeMake(1.f, 650.f)];
     
     arrayCountries = [[NSMutableArray alloc] init];
@@ -74,6 +90,12 @@
             [_m_Button_Country setTitle:[country objectForKey:@"label"] forState:UIControlStateNormal];
         }
     }
+    
+    [self setupKeyboardControls:self textFields:[NSArray arrayWithObjects:
+                                                 _m_TextField_Name,     _m_TextField_Address,
+                                                 _m_TextField_City,     _m_TextField_ZIP ,
+                                                 _m_TextField_Province, _m_TextField_EMail,
+                                                 _m_TextField_Coupon,   nil]];
     
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)])
     {
