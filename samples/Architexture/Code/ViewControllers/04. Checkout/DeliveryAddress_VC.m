@@ -19,6 +19,8 @@
 #define TIME_SLOW_SHIPPING_NOT_SPAIN    @"7-8"
 #define TIME_QUICK_SHIPPING_NOT_SPAIN   @"24-72h"
 
+#define HEIGHT_CONTENT_SCROLL           650.f
+
 @interface DeliveryAddress_VC ()
 
 @end
@@ -70,7 +72,7 @@
     
     
     
-    //--- Si ja s'ha fet alguna compra reutilitzar les dades----
+    //--- Si ja s'han introduit dades reutilitzar-les:----
     if ([ECommon getUserDefaultValueStringForKey:DELIVERY_NAME] != nil)
     {
         _m_TextField_Name.text      = [ECommon getUserDefaultValueStringForKey:DELIVERY_NAME];
@@ -95,12 +97,19 @@
     {
         _m_TextField_EMail.text     = [ECommon getUserDefaultValueStringForKey:DELIVERY_EMAIL];
     }
+    if ([ECommon getUserDefaultValueStringForKey:DELIVERY_COUNTRY] != nil)
+    {
+        m_sCountryCodeSelected      = [ECommon getUserDefaultValueStringForKey:DELIVERY_COUNTRY];
+    }
+    else{
+        m_sCountryCodeSelected = @"ES";
+    }
     //----------------------------------------------------------
     
     
     m_ActionSheet = nil;
     
-    [_m_ScrollView setContentSize:CGSizeMake(1.f, 650.f)];
+    [_m_ScrollView setContentSize:CGSizeMake(1.f, HEIGHT_CONTENT_SCROLL)];
     
     
     
@@ -131,10 +140,9 @@
     }];
     
     m_iCurrentPicker = 0;
-    m_sCountryCodeSelected = @"ES";
     for (NSDictionary *country in m_aCountries)
     {
-        if([[country objectForKey:@"code"] isEqualToString:@"ES"])
+        if([[country objectForKey:@"code"] isEqualToString:m_sCountryCodeSelected])
         {
             [_m_Button_Country setTitle:[country objectForKey:@"label"] forState:UIControlStateNormal];
             break;
@@ -184,7 +192,7 @@
     //svos = scrollView.contentOffset;
     CGPoint pt;
     pt.x = 0;
-    pt.y = 0;
+    pt.y = HEIGHT_CONTENT_SCROLL*0.5;
     [_m_ScrollView setContentOffset:pt animated:YES];
     
     
@@ -552,6 +560,10 @@
         
         [_m_Button_Country setTitle:[country objectForKey:@"label"] forState:UIControlStateNormal];
         m_sCountryCodeSelected = [country objectForKey:@"code"];
+        
+        [ECommon setUserDefaultString:m_sCountryCodeSelected    forKey:DELIVERY_COUNTRY];
+        [ECommon syncUserDefalts];
+        
         [self setupShippingWithCountryCode:m_sCountryCodeSelected];
     }
     else if (buttonIndex == 0) //Button CANCEL

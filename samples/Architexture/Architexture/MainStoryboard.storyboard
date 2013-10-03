@@ -875,11 +875,11 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4gg-fQ-msS">
-                                        <rect key="frame" x="6" y="4" width="65" height="32"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jiw-FT-jcm">
+                                        <rect key="frame" x="8" y="4" width="65" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Atrás" backgroundImage="8_Clear_Button_OFF.png">
+                                        <state key="normal" title="Clear" backgroundImage="8_Clear_Button_OFF.png">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -887,7 +887,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="back_Clicked:" destination="4Na-rZ-9SD" eventType="touchUpInside" id="a2J-oo-7oA"/>
+                                            <action selector="clear_Clicked:" destination="4Na-rZ-9SD" eventType="touchUpInside" id="HRO-zK-Cjs"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1047,11 +1047,11 @@
                                     <action selector="order_Clicked:" destination="4Na-rZ-9SD" eventType="touchUpInside" id="WCr-ay-VT8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jiw-FT-jcm">
-                                <rect key="frame" x="14" y="425" width="114" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4gg-fQ-msS">
+                                <rect key="frame" x="11" y="425" width="114" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Clear" backgroundImage="8_Clear_Button_OFF.png">
+                                <state key="normal" title="Atrás" backgroundImage="8_Clear_Button_OFF.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1059,7 +1059,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="clear_Clicked:" destination="4Na-rZ-9SD" eventType="touchUpInside" id="HRO-zK-Cjs"/>
+                                    <action selector="back_Clicked:" destination="4Na-rZ-9SD" eventType="touchUpInside" id="a2J-oo-7oA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1089,7 +1089,7 @@
             <objects>
                 <viewController id="VSu-l2-BLE" customClass="DeliveryAddress_VC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="el1-v8-3j3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="780"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="840"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="hhf-lB-WsH" userLabel="Header View">
@@ -1114,17 +1114,17 @@
                                 <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="checkout_bck.jpg" id="7XH-oz-H7U">
-                                <rect key="frame" x="0.0" y="658" width="320" height="122"/>
+                                <rect key="frame" x="0.0" y="718" width="320" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="5mG-3s-ynY">
-                                <rect key="frame" x="0.0" y="65" width="320" height="645"/>
+                                <rect key="frame" x="0.0" y="65" width="320" height="803"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.23529411759999999" green="0.23137254900000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="eyr-mb-Mfc">
-                                <rect key="frame" x="0.0" y="65" width="320" height="645"/>
+                                <rect key="frame" x="0.0" y="65" width="320" height="706"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nombre:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sq3-T5-pVu">
@@ -1230,7 +1230,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Anillos (20x):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oEc-yr-je4">
-                                        <rect key="frame" x="33" y="513" width="99" height="21"/>
+                                        <rect key="frame" x="33" y="578" width="99" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -1244,49 +1244,49 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3.99 €" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vjt-vB-VRA">
-                                        <rect key="frame" x="138" y="513" width="89" height="21"/>
+                                        <rect key="frame" x="138" y="578" width="89" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2.60 €" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3sh-86-G7P">
-                                        <rect key="frame" x="138" y="542" width="89" height="21"/>
+                                        <rect key="frame" x="138" y="607" width="89" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2.60 €" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="51Q-o8-CdC">
-                                        <rect key="frame" x="138" y="615" width="89" height="21"/>
+                                        <rect key="frame" x="138" y="680" width="89" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Shipping:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FQS-ui-vwM">
-                                        <rect key="frame" x="33" y="542" width="89" height="21"/>
+                                        <rect key="frame" x="33" y="607" width="89" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Cupón:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NAG-B3-PXF">
-                                        <rect key="frame" x="33" y="571" width="89" height="21"/>
+                                        <rect key="frame" x="33" y="636" width="89" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Resumen de la compra" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AjO-hc-MKn">
-                                        <rect key="frame" x="8" y="484" width="219" height="21"/>
+                                        <rect key="frame" x="8" y="549" width="219" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oJE-Oz-r9x">
-                                        <rect key="frame" x="33" y="615" width="83" height="21"/>
+                                        <rect key="frame" x="33" y="680" width="83" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -1299,7 +1299,7 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="yes" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" id="iuq-bw-np5">
-                                        <rect key="frame" x="138" y="567" width="99" height="30"/>
+                                        <rect key="frame" x="138" y="632" width="99" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -1309,8 +1309,18 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="F9c-yQ-Sd8">
+                                        <rect key="frame" x="0.0" y="456" width="320" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="R8C-2A-vCe">
+                                        <rect key="frame" x="0.0" y="523" width="320" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Upy-cC-m0q">
-                                        <rect key="frame" x="33" y="609" width="272" height="1"/>
+                                        <rect key="frame" x="33" y="670" width="272" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </imageView>
@@ -1334,7 +1344,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uUh-lJ-A6j">
-                                        <rect key="frame" x="248" y="569" width="59" height="26"/>
+                                        <rect key="frame" x="248" y="634" width="59" height="26"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Aplicar">
@@ -1357,17 +1367,21 @@
                                             <action selector="segmentedChangeValue:" destination="VSu-l2-BLE" eventType="valueChanged" id="p46-ue-NdG"/>
                                         </connections>
                                     </segmentedControl>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Cwo-G0-66Z">
+                                        <rect key="frame" x="20" y="463" width="280" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
                             </scrollView>
                             <view contentMode="scaleToFill" id="la6-T5-Sgi">
-                                <rect key="frame" x="0.0" y="709" width="320" height="2"/>
+                                <rect key="frame" x="0.0" y="769" width="320" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Vw-Er-0MX">
-                                <rect key="frame" x="20" y="725" width="106" height="39"/>
+                                <rect key="frame" x="20" y="785" width="106" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Atrás" backgroundImage="8_Clear_Button_OFF.png">
@@ -1382,7 +1396,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4kb-Em-8vN">
-                                <rect key="frame" x="134" y="725" width="174" height="39"/>
+                                <rect key="frame" x="134" y="785" width="174" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Place Order" backgroundImage="08_Order_Button_OFF.png">
@@ -1430,6 +1444,7 @@
                         <outlet property="m_Label_Total" destination="oJE-Oz-r9x" id="fFY-Gm-yVx"/>
                         <outlet property="m_Label_TotalPrize" destination="51Q-o8-CdC" id="wh2-HG-FOg"/>
                         <outlet property="m_Label_ZIP" destination="uIf-O2-A2n" id="Ndc-W5-5I8"/>
+                        <outlet property="m_RingScroll" destination="Cwo-G0-66Z" id="fS6-nn-d3T"/>
                         <outlet property="m_ScrollView" destination="eyr-mb-Mfc" id="09p-9s-dVZ"/>
                         <outlet property="m_Segmented_ShippingType" destination="aOE-nw-KNY" id="nNt-dt-Lyx"/>
                         <outlet property="m_TextField_Address" destination="1nU-eL-9Sz" id="noL-EL-tIZ"/>

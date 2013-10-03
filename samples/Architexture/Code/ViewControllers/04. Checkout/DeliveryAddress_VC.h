@@ -19,6 +19,7 @@
 #define DELIVERY_ZIP        @"DELIVERY_ZIP"
 #define DELIVERY_PROVINCE   @"DELIVERY_PROVINCE"
 #define DELIVERY_EMAIL      @"DELIVERY_EMAIL"
+#define DELIVERY_COUNTRY      @"DELIVERY_COUNTRY"
 //-----------------------
 
 
@@ -69,6 +70,7 @@
 @property (strong, nonatomic) IBOutlet UIButton             *m_Button_Back2;
 @property (strong, nonatomic) IBOutlet UIButton             *m_Button_Paypal;
 @property (strong, nonatomic) IBOutlet UIButton             *m_Button_Country;
+@property (strong, nonatomic) IBOutlet UIScrollView *m_RingScroll;
 
 
 //---IBActions:
