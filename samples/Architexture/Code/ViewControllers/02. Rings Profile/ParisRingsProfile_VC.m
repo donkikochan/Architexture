@@ -113,7 +113,7 @@
                 @"FLOWER_MAP.jpg",  //_01_FLOWER
                 @"PLACE_MAP.jpg",   //_02_PLACE
                 @"CALME_MAP.jpg",   //_03_CALME
-                @"ANGLES_MAP.jpg",  //_04_ANGLE
+                @"ANGLE_MAP.jpg",   //_04_ANGLE
                 @"ICONE_MAP.jpg",   //_05_ICONE
                 @"RGB_MAP.jpg",     //_06_RGB
                 nil];
@@ -175,9 +175,15 @@
         {
             [self performSegueWithIdentifier:@"FromViewController_To_WebLink" sender:@"http://www.architexture-online.com/"];
         }
-        else if (l_iIndex == 101)
+        else if (l_iIndex == 102)
         {
             //CONTACT US
+            [self performSegueWithIdentifier:@"FromRingProfileToAboutUs" sender:nil];
+        }
+        else if (l_iIndex == 103)
+        {
+            //CONTACT US
+            [self performSegueWithIdentifier:@"FromRingProfileToContactUs" sender:nil];
         }
     }
 }
@@ -241,5 +247,40 @@
     NSLog(@"Materials didReceiveMemoryWarning");
 }
 
+
+//---Functions:
+- (void) PostOnFacebook
+{
+    switch (m_iTagButtonFacebookImage)
+    {
+        case 0://_01_FLOWER
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR FLOWER.jpg";
+            break;
+        case 1://_02_PLACE
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR PLACE.jpg";
+            break;
+        case 2://_03_CALME
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR CALME.jpg";
+            break;
+        case 3://_04_ANGLE
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR ANGLE.jpg";
+            break;
+        case 4://_05_ICONE
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR LIGHT.jpg";
+            break;
+        case 5://_06_RGB
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR ICONE.jpg";
+            break;
+        default:
+            break;
+    }
+    [super PostOnFacebook];
+}
+
+
+- (void) PostOnTwitter
+{
+    [super PostOnTwitter];
+}
 
 @end

@@ -177,9 +177,15 @@
         {
             [self performSegueWithIdentifier:@"FromViewController_To_WebLink" sender:@"http://www.architexture-online.com/"];
         }
-        else if (l_iIndex == 101)
+        else if (l_iIndex == 102)
         {
             //CONTACT US
+            [self performSegueWithIdentifier:@"FromRingProfileToAboutUs" sender:nil];
+        }
+        else if (l_iIndex == 103)
+        {
+            //CONTACT US
+            [self performSegueWithIdentifier:@"FromRingProfileToContactUs" sender:nil];
         }
     }
 }
@@ -243,6 +249,41 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
     NSLog(@"Materials didReceiveMemoryWarning");
+}
+
+//---Functions:
+- (void) PostOnFacebook
+{
+    switch (m_iTagButtonFacebookImage)
+    {
+        case 0://_01_RHYTHM
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR RHYTHM.jpg";
+            break;
+        case 1://_02_TRANSPARENCY
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR TRANSPARENCY.jpg";
+            break;
+        case 2://_03_GOLD
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR GOLD.jpg";
+            break;
+        case 3://_04_COLOURS
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR COLOURS.jpg";
+            break;
+        case 4://_05_LIGHT
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR LIGHT.jpg";
+            break;
+        case 5://_06_MOUNTAIN
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR MOUNTAIN.jpg";
+            break;
+        default:
+            break;
+    }
+    [super PostOnFacebook];
+}
+
+
+- (void) PostOnTwitter
+{
+    [super PostOnTwitter];
 }
 
 @end

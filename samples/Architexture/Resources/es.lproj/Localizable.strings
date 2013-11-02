@@ -24,6 +24,7 @@
 "MATERIALS_COLLECTION"  = "Materials Collection";
 "PARIS_COLLECTION"      = "Paris Collection";
 "SPECIAL_COLLECTIONS"   = "Special Collections";
+"BORN_COLLECTION"       = "Born Collection";
 
 "HAPPI_INFO"            = "HAPPI_INFO_AN.png";
 "REFLEX_INFO"           = "REFLEX_INFO_AN.png";
@@ -48,13 +49,13 @@
 "ARCHITEXTURE_PRODUCT"  = "ArchiteXture Product";
 
 
-"NAME"                  = "Name";
-"ADDRESS"               = "Address";
-"CITY"                  = "City";
-"PROVINCE"              = "Province";
-"ZIP"                   = "ZIP";
-"EMAIL"                 = "Email";
-"COUNTRY"               = "Country";
+"NAME"                  = "*Name";
+"ADDRESS"               = "*Address";
+"CITY"                  = "*City";
+"PROVINCE"              = "*Province";
+"ZIP"                   = "*ZIP";
+"EMAIL"                 = "*Email";
+"COUNTRY"               = "*Country";
 "COUPON"                = "Coupon";
 "TITLE_DELIVERY"        = "Delivery";
 "INFO_SHIPPING_2"       = "(a partir de 2 anillos envio gratuito 24-72h)";
@@ -63,6 +64,8 @@
 "ERROR_DELIVERY"        = "Delivery Error";
 "NAME_REQUIRED"         = "You must fill out the Name field";
 "EMAIL_REQUIRED"        = "You must fill out the Email field";
+"SUBJECT_REQUIRED"      = "You must fill out the Subject field";
+"MESSAGE_REQUIRED"      = "You must fill out the Message field";
 "INTRODUCE_VALID_EMAIL" = "You entered a valid email";
 "ADDRESS_REQUIRED"      = "You must fill out the Address field";
 "CITY_REQUIRED"         = "You must fill out the City field";
@@ -82,3 +85,66 @@
 "COUPON"                = "Coupon";
 "ACCEPT"                = "Accept";
 "PREVIOUS"              = "Previous";
+
+"RINGS_BUYED"           = "Rings Buyed:";
+
+"INSERT_NAME"           = "Insert Name...";
+"INSERT_ADDRESS"        = "Insert Address...";
+"INSERT_CITY"           = "Insert City...";
+"INSERT_ZIP"            = "Insert ZIP...";
+"INSERT_PROVINCE"       = "Insert Province...";
+"INSERT_EMAIL"          = "Insert Email...";
+"INSERT_COUPON"         = "Insert Coupon...";
+"INSERT_SUBJECT"        = "Insert Subject...";
+
+"FIELD_NOT_OPTIONAL"    = "(* All this fields must be inserted)";
+"FIELD_NOT_EMPTY"       = "El campo no puede estar vacío";
+"CHECKING_COUPON"       = "Checking Coupon...";
+
+"PROBLEM_DETECTED"      = "Problema detectao";
+"CONNECTION_ERROR"      = "Error en la connexión al servidor ArchiteXture";
+"VERIFYING_PAYMENT"     = "Verificando el pago";
+
+"FACEBOOK_OPTION"       = "Facebook Options:";
+"POST_FACEBOOK"         = "Post on Facebook wall";
+"ARCHITEXTURE_FACEBOOK" = "Visit ArchiteXture Facebook";
+
+"TWITTER_OPTION"        = "Twitter Options:";
+"POST_TWEET"            = "Do Tweet";
+"ARCHITEXTURE_TWITTER"  = "Visit ArchiteXture Twitter";
+
+"FACEBOOK_NOT_LINKED"   = "Facebook is not available";
+"TWITTER_NOT_LINKED"    = "Twitter is not available";
+
+"FACEBOOK_HAPPINESS"        = "Happiness ring by ArchiteXture. http://www.google.es";
+"FACEBOOK_POST_CANCELLED"   = "Action Cancelled";
+"FACEBOOK_POST_SUCCESSFULL" = "Post Successfull";
+
+"PRESS_ANY_RING"        = "Press any Ring To view Collection";
+"INFO_ABOUT"            = "We are architects and we love architecture.\n\nArchitexture comes from this passion and the desire that we have to bring it to everyone. Fusion between architecture, photography and jewelry becomes in these pieces: small bits of architecture turned into rings. We invite you to come into the Architexture world to share our passion, discover the architecture and enjoy the small details.\n\nHeaded by the architects Monica Molas and Marta Rofin, architexture is part of the Espai Paper project to bring architecture to the people. It is located in Vic and it has international aim.";
+
+
+"ABOUT_US"              = "About Us";
+"CONTACT_US"            = "Contact Us";
+
+"EMAIL_CONTACT"         = "* Email:";
+"NAME_CONTACT"          = "* Name:";
+"SUBJECT_CONTACT"       = "* Subject:";
+"TEXT_CONTACT"          = "* Text:";
+"INFO_CONTACT"          = "Contact:\n\nRambla del Passeig 35\n08500 Vic (Barcelona)\nSPAIN\n\nPhone1: (0034) 655 238 086\nPhone2: (0034) 647 847 315\nEmail: info@architexture-online.com\nWeb: architexture-online.com";
+"SEND_REQUEST"          = "Send Request";
+"ERROR_CONTACTUS"       = "Contact Error";
+
+"EMAIL_NOT_AVAILABLE"   = "Device is not able to send email.";
+"RESULT_CANCELED"       = "Result canceled";
+"RESULT_SAVED"          = "Result saved";
+"RESULT_SENT"           = "Result sent";
+"RESULT_FAILED"         = "Result failed";
+"RESULT_NOT_SENT"       = "Result not sent";
+
+"COUPON_OK"             = "Coupon valid!";
+
+"PURCHASE_OK"           = "Compra Realizada con éxito";
+"THANKS_PURCHASE"       = "Gracias por haber realizado la compra con ArchiteXture!. Para cualquier duda conacte con purchase@architexture.com";
+"ERROR_PURCHASE"        = "Se ha producido un error al enviar los datos de la compra al servidor de Archixteure. Póngase en contacto con purchase@architexture para resolver la incidencia. Gracis por su colaboración, disuclpe las molestias";
+"PURCHASE_NO_OK"        = "Error en la compra";

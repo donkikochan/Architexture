@@ -194,16 +194,16 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    NSLog(@"Num Sectinos: %d",[[AppDelegate mainAppDelegate].m_CheckOutInfo getCollections].count);
-    return [[AppDelegate mainAppDelegate].m_CheckOutInfo getCollections].count + 1;
+    NSLog(@"Num Sections: %d",[[AppDelegate mainAppDelegate].m_CheckOutInfo getCollectionsToMenu].count);
+    return [[AppDelegate mainAppDelegate].m_CheckOutInfo getCollectionsToMenu].count+1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    if (section < [[AppDelegate mainAppDelegate].m_CheckOutInfo getCollections].count)
+    if (section < [[AppDelegate mainAppDelegate].m_CheckOutInfo getCollectionsToMenu].count)
     {
-        NSArray* collection =[ [AppDelegate mainAppDelegate].m_CheckOutInfo getCollections][section];
+        NSArray* collection =[ [AppDelegate mainAppDelegate].m_CheckOutInfo getCollectionsToMenu][section];
         return  collection.count;
     }
     else
@@ -220,7 +220,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section < [[AppDelegate mainAppDelegate].m_CheckOutInfo getCollections].count)
+    if (indexPath.section < [[AppDelegate mainAppDelegate].m_CheckOutInfo getCollectionsToMenu].count)
     {
         static NSString *CellIdentifier = @"MenuOption_Cell";
         MenuOption_Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -231,7 +231,7 @@
             cell = [[MenuOption_Cell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
         
-        NSArray* collection =[ [AppDelegate mainAppDelegate].m_CheckOutInfo getCollections][indexPath.section];
+        NSArray* collection =[ [AppDelegate mainAppDelegate].m_CheckOutInfo getCollectionsToMenu][indexPath.section];
         CheckoutRing* checkoutRing = [collection objectAtIndex:indexPath.row];
         cell.m_Image_Option.hidden = NO;
         cell.m_Image_Option.image = [checkoutRing getImg];
@@ -286,7 +286,7 @@
             }
             if (indexPath.row == 2)
             {
-                cell.m_Label_Option.text = NSLocalizedString(@"ABOUT",nil);
+                cell.m_Label_Option.text = NSLocalizedString(@"ABOUT_US",nil);
                 cell.m_Image_Option.image = [UIImage imageNamed:@"MINI-ABOUT.png"];
             }
             if (indexPath.row == 3)
@@ -329,9 +329,9 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     CollectionSection_View* newSection;
-    if (section < [[AppDelegate mainAppDelegate].m_CheckOutInfo getCollections].count)
+    if (section < [[AppDelegate mainAppDelegate].m_CheckOutInfo getCollectionsToMenu].count)
     {
-        NSArray* collection =[ [AppDelegate mainAppDelegate].m_CheckOutInfo getCollections][section];
+        NSArray* collection =[ [AppDelegate mainAppDelegate].m_CheckOutInfo getCollectionsToMenu][section];
         CheckoutRing* checkoutRing = [collection objectAtIndex:0];
         newSection = [[CollectionSection_View alloc] initWithCollectionName:[checkoutRing getCollectionName]];
     }

@@ -20,7 +20,10 @@
     {
         // Initialization code
        
-        m_aCollections = [[NSMutableArray alloc] init];
+        m_aCollections          = [[NSMutableArray alloc] init];
+        m_aCollectionsToShop    = [[NSMutableArray alloc] init];
+        m_aCollectionsToMenu    = [[NSMutableArray alloc] init];
+        
         CheckoutRing* ring;
         
         //--- BARCELONA COLLECTION
@@ -37,7 +40,10 @@
         [l_ArrayBarcelonaCollection addObject:ring];
         ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-EARTH.png"         andRingName:@"EARTH"        andCollectionName:NSLocalizedString(@"BARCELONA_COLLECTION",nil)];
         [l_ArrayBarcelonaCollection addObject:ring];
-        [m_aCollections addObject:l_ArrayBarcelonaCollection];
+        
+        [m_aCollections         addObject:l_ArrayBarcelonaCollection];
+        [m_aCollectionsToShop   addObject:l_ArrayBarcelonaCollection];
+        [m_aCollectionsToMenu   addObject:l_ArrayBarcelonaCollection];
         
         //--- MATERIALS COLLECTION
         NSMutableArray* l_ArrayMaterialsCollection = [NSMutableArray arrayWithCapacity:6];
@@ -53,8 +59,10 @@
         [l_ArrayMaterialsCollection addObject:ring];
         ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-MOUNTAIN.png"      andRingName:@"MOUNTAIN"     andCollectionName:NSLocalizedString(@"MATERIALS_COLLECTION",nil)];
         [l_ArrayMaterialsCollection addObject:ring];
-        [m_aCollections addObject:l_ArrayMaterialsCollection];
         
+        [m_aCollections         addObject:l_ArrayMaterialsCollection];
+        [m_aCollectionsToShop   addObject:l_ArrayMaterialsCollection];
+        [m_aCollectionsToMenu   addObject:l_ArrayMaterialsCollection];
         
         //--- PARIS COLLECTION
         NSMutableArray* l_ArrayParisCollection = [NSMutableArray arrayWithCapacity:4];
@@ -70,15 +78,36 @@
         [l_ArrayParisCollection addObject:ring];
         ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-RGB.png"           andRingName:@"RGB"          andCollectionName:NSLocalizedString(@"PARIS_COLLECTION",nil)];
         [l_ArrayParisCollection addObject:ring];
-        [m_aCollections addObject:l_ArrayParisCollection];
+        
+        [m_aCollections         addObject:l_ArrayParisCollection];
+        [m_aCollectionsToShop   addObject:l_ArrayParisCollection];
+        [m_aCollectionsToMenu   addObject:l_ArrayParisCollection];
         
         //--- SPECIAL COLLECTIONS
-        NSMutableArray* l_ArrayDaliCollection = [NSMutableArray arrayWithCapacity:4];
-        ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-DALI.png"          andRingName:@"DALÍ"         andCollectionName:NSLocalizedString(@"SPECIAL_COLLECTIONS",nil)];
-        [l_ArrayDaliCollection addObject:ring];
-        ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-BORN.png"          andRingName:@"BORN"         andCollectionName:NSLocalizedString(@"SPECIAL_COLLECTIONS",nil)];
-        [l_ArrayDaliCollection addObject:ring];
-        [m_aCollections addObject:l_ArrayDaliCollection];
+        NSMutableArray* l_SpecialCollection = [NSMutableArray arrayWithCapacity:4];
+        ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-DALI.png"          andRingName:@"DALÍ Collection"  andCollectionName:NSLocalizedString(@"SPECIAL_COLLECTIONS",nil)];
+        [l_SpecialCollection addObject:ring];
+        ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-BORN.png"          andRingName:@"BORN Collection"  andCollectionName:NSLocalizedString(@"SPECIAL_COLLECTIONS",nil)];
+        [l_SpecialCollection addObject:ring];
+        
+        [m_aCollections         addObject:l_SpecialCollection];
+        [m_aCollectionsToMenu   addObject:l_SpecialCollection];
+        
+        
+        //--- BORN COLLECTIONS
+        NSMutableArray* l_ArrayBornCollection = [NSMutableArray arrayWithCapacity:4];
+        ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-TEULA.png"         andRingName:@"TEULA"        andCollectionName:NSLocalizedString(@"BORN_COLLECTION",nil)];
+        [l_ArrayBornCollection addObject:ring];
+        ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-ANTIC.png"         andRingName:@"ANTIC"        andCollectionName:NSLocalizedString(@"BORN_COLLECTION",nil)];
+        [l_ArrayBornCollection addObject:ring];
+        ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-MUR.png"           andRingName:@"MUR"          andCollectionName:NSLocalizedString(@"BORN_COLLECTION",nil)];
+        [l_ArrayBornCollection addObject:ring];
+        ring= [[CheckoutRing alloc] initWithPhotoName:@"MINI-BORN AN.png"       andRingName:@"BORN"         andCollectionName:NSLocalizedString(@"BORN_COLLECTION",nil)];
+        [l_ArrayBornCollection addObject:ring];
+        
+        
+        [m_aCollections         addObject:l_ArrayBornCollection];
+        [m_aCollectionsToShop   addObject:l_ArrayBornCollection];
         
         
         m_sName     =
@@ -96,6 +125,16 @@
 - (NSMutableArray*) getCollections
 {
     return m_aCollections;
+}
+
+- (NSMutableArray*) getCollectionsToMenu
+{
+    return m_aCollectionsToMenu;
+}
+
+- (NSMutableArray*) getCollectionsToShop
+{
+    return m_aCollectionsToShop;
 }
 
 - (NSString*) getName

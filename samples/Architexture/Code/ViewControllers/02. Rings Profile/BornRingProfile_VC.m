@@ -76,17 +76,17 @@
     [_m_View_Ring.m_Button_Shop_Aux1 addTarget:self action:@selector(addShop:) forControlEvents:UIControlEventTouchDown];
     [_m_View_Ring.m_Button_Shop_Aux1 setTitle:NSLocalizedString(@"ADD_TO_CART",nil) forState:UIControlStateNormal];
     
-    _m_View_Ring.m_Button_Shop_Aux1.tag = 2;
-    [_m_View_Ring.m_Button_Shop_Aux1 addTarget:self action:@selector(addShop:) forControlEvents:UIControlEventTouchDown];
-    [_m_View_Ring.m_Button_Shop_Aux1 setTitle:NSLocalizedString(@"ADD_TO_CART",nil) forState:UIControlStateNormal];
+    _m_View_Ring.m_Button_Shop_Aux2.tag = 2;
+    [_m_View_Ring.m_Button_Shop_Aux2 addTarget:self action:@selector(addShop:) forControlEvents:UIControlEventTouchDown];
+    [_m_View_Ring.m_Button_Shop_Aux2 setTitle:NSLocalizedString(@"ADD_TO_CART",nil) forState:UIControlStateNormal];
     
-    _m_View_Ring.m_Button_Shop_Aux1.tag = 3;
-    [_m_View_Ring.m_Button_Shop_Aux1 addTarget:self action:@selector(addShop:) forControlEvents:UIControlEventTouchDown];
-    [_m_View_Ring.m_Button_Shop_Aux1 setTitle:NSLocalizedString(@"ADD_TO_CART",nil) forState:UIControlStateNormal];
+    _m_View_Ring.m_Button_Shop_Aux3.tag = 3;
+    [_m_View_Ring.m_Button_Shop_Aux3 addTarget:self action:@selector(addShop:) forControlEvents:UIControlEventTouchDown];
+    [_m_View_Ring.m_Button_Shop_Aux3 setTitle:NSLocalizedString(@"ADD_TO_CART",nil) forState:UIControlStateNormal];
     
-    _m_View_Ring.m_Button_Shop_Aux1.tag = 4;
-    [_m_View_Ring.m_Button_Shop_Aux1 addTarget:self action:@selector(addShop:) forControlEvents:UIControlEventTouchDown];
-    [_m_View_Ring.m_Button_Shop_Aux1 setTitle:NSLocalizedString(@"ADD_TO_CART",nil) forState:UIControlStateNormal];
+    _m_View_Ring.m_Button_Shop_Aux4.tag = 4;
+    [_m_View_Ring.m_Button_Shop_Aux4 addTarget:self action:@selector(addShop:) forControlEvents:UIControlEventTouchDown];
+    [_m_View_Ring.m_Button_Shop_Aux4 setTitle:NSLocalizedString(@"ADD_TO_CART",nil) forState:UIControlStateNormal];
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)])
     {
         // iOS 7
@@ -231,9 +231,15 @@
         {
             [self performSegueWithIdentifier:@"FromViewController_To_WebLink" sender:@"http://www.architexture-online.com/"];
         }
-        else if (l_iIndex == 101)
+        else if (l_iIndex == 102)
         {
             //CONTACT US
+            [self performSegueWithIdentifier:@"FromRingProfileToAboutUs" sender:nil];
+        }
+        else if (l_iIndex == 103)
+        {
+            //CONTACT US
+            [self performSegueWithIdentifier:@"FromRingProfileToContactUs" sender:nil];
         }
     }
 }

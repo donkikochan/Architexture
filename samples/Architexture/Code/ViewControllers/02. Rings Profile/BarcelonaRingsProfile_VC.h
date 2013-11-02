@@ -22,4 +22,8 @@
 @property (weak, nonatomic) IBOutlet RingProfile_View   *m_View_Ring_05;
 @property (weak, nonatomic) IBOutlet RingProfile_View   *m_View_Ring_06;
 
+//---Functions:
+- (void) PostOnFacebook;
+- (void) PostOnTwitter;
+
 @end

@@ -94,10 +94,11 @@
 #define USER_DEFAULT_MESSAGE_TYPE_TO_SHOW   @"message-type-to-show"
 
 //Server
-#define SERVER_ADDRESS                      @"http://demos.endepro.com"
-#define SERVER_PATH_BASE                    @"/weride"
+#define SERVER_ADDRESS                      @"http://www.architexture-online.com"
+#define SERVER_PATH_BASE                    @"/adminApp"
 #define SERVER_METHOD_LOGIN                 @"/login"
 #define SERVER_METHOD_GET_PROVINCES         @"/get_countries"
+#define SERVER_METHOD_SENDPAYMENTINFO       @"/sendPaymentInfo"
 
 #define JSON_USERID                         @"UserID"
 #define JSON_DATE_FORMAT                    @"yyyy-MM-dd"
@@ -107,5 +108,20 @@
 #define JSON_DATA                           @"data"
 #define JSON_PROVINCE_ID                    @"ID"
 #define JSON_PROVINCE                       @"Name"
+#define JSON_COUPON_ID                      @"CouponID"
+#define JSON_COUPON_AMMOUONT                @"Ammount"
+#define JSON_COUPON_STATUS                  @"couponStatus"
+#define JSON_COUPON_EXPIREDATE              @"ExpireDate"
+#define JSON_NAME                           @"Name"
+#define JSON_EMAIL                          @"Email"
+#define JSON_ADDRESS                        @"Address"
+#define JSON_CITY                           @"City"
+#define JSON_ZIP                            @"ZIP"
+#define JSON_COUNTRY                        @"Country"
+#define JSON_SLOW_SHIPPING                  @"SlowShipping"
+#define JSON_TOTAL_AMOUNT                   @"TotalAmmount"
+#define JSON_RING_ID                        @"RingID"
+#define JSON_AMMOUNT                        @"Ammount"
+#define JSON_RINGS                          @"Rings"
 
 #endif

@@ -25,4 +25,8 @@
 //---IBActions:
 //...
 
+//---Functions:
+- (void) PostOnFacebook;
+- (void) PostOnTwitter;
+
 @end

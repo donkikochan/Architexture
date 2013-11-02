@@ -10,6 +10,11 @@
 #import "Init_VC.h"
 //--------------
 
+//---New Defines:----
+#define TIME_ALPHA_ANIMATION    1.5
+#define TIME_INTERVAL_ANIMATION 0.1
+//-------------------
+
 @interface Init_VC ()
 
 @end
@@ -30,7 +35,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 
-    m_iLastRingAnimated = -1;
+    CALayer * l = _m_View_Info.layer;
+    [l setMasksToBounds:YES];
+    [l setCornerRadius:15.0];
+    _m_Label_Info.text = NSLocalizedString(@"PRESS_ANY_RING", nil);
+    
+    m_iLastRingAnimated = 0;
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:1.5];
     [UIView setAnimationDelay:1.0];
@@ -50,43 +60,71 @@
         btn.alpha = 0.f;
     }
     
-    m_pTimer = [NSTimer scheduledTimerWithTimeInterval:5.f
+    m_pTimer = [NSTimer scheduledTimerWithTimeInterval:TIME_INTERVAL_ANIMATION
                                      target:self
                                    selector:@selector(animateRing:)
                                    userInfo:nil
                                     repeats:YES];
+    
+    m_fCounter      =
+    m_fCounterAux   = 0.f;
+    
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"tag" ascending:YES];
+    m_SortedButtonsAux = [self.m_aButtonsAux sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
 }
-- (void) animateRing:(NSTimer *)timer
+
+
+
+- (void) alphaAnimation:(int) index
 {
-    if (m_iLastRingAnimated != -1)
-    {
-        UIButton* btn = _m_aButtonsAux[m_iLastRingAnimated];
-        [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration:1.5];
-        [UIView setAnimationDelay:0.0];
-        [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-        
-        btn.alpha = 0.f;
-        
-        [UIView commitAnimations];
-    }
-    
-    int index = -1;
-    do {
-        index = random()%18;
-    } while (index == m_iLastRingAnimated);
-    
-    m_iLastRingAnimated = index;
-    
-    UIButton* btn = _m_aButtonsAux[m_iLastRingAnimated];
+    UIButton* btn = m_SortedButtonsAux[index];
     [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:1.5];
+    [UIView setAnimationDuration:TIME_ALPHA_ANIMATION];
     [UIView setAnimationDelay:0.0];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-    
-    btn.alpha = 1.f;
-    
+        btn.alpha = 1.f;
     [UIView commitAnimations];
+    
+    if (index != 0)
+    {
+        index--;
+    }
+    else{
+        index =m_SortedButtonsAux.count -1;
+    }
+    btn = m_SortedButtonsAux[index];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:TIME_ALPHA_ANIMATION];
+    [UIView setAnimationDelay:TIME_ALPHA_ANIMATION*2];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+        btn.alpha = 0.f;
+    [UIView commitAnimations];
+}
+
+- (void) animateRing:(NSTimer *)timer
+{
+    m_fCounter += TIME_INTERVAL_ANIMATION;
+    if (m_fCounter > 1.f)
+    {
+        m_fCounter = 0.f;
+        [self alphaAnimation:m_iLastRingAnimated];
+        m_iLastRingAnimated = (m_iLastRingAnimated +1) % _m_aButtonsAux.count;
+    }
+    
+    if (m_fCounterAux >= 0 && m_fCounterAux < 3.f)
+    {
+        m_fCounterAux += TIME_INTERVAL_ANIMATION;
+    }
+    else
+    {
+        m_fCounterAux = -1;
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationDuration:TIME_ALPHA_ANIMATION];
+        [UIView setAnimationDelay:0.0];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+            _m_View_Info.alpha = 0.f;
+        [UIView commitAnimations];
+    }
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle

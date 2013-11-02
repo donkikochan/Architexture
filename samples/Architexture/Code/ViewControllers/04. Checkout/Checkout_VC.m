@@ -189,14 +189,13 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    NSLog(@"Num Sectinos: %d",[[AppDelegate mainAppDelegate].m_CheckOutInfo getCollections].count);
-    return [[AppDelegate mainAppDelegate].m_CheckOutInfo getCollections].count - 1;
+    NSLog(@"Num Sections: %d",[[AppDelegate mainAppDelegate].m_CheckOutInfo getCollectionsToShop].count);
+    return [[AppDelegate mainAppDelegate].m_CheckOutInfo getCollectionsToShop].count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return the number of rows in the section.
-    NSArray* collection =[ [AppDelegate mainAppDelegate].m_CheckOutInfo getCollections][section];
+    NSArray* collection =[ [AppDelegate mainAppDelegate].m_CheckOutInfo getCollectionsToShop][section];
     return  collection.count;
 }
 
@@ -216,7 +215,7 @@
     {
         cell = [[Checkout_Cell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    NSArray* collection =[ [AppDelegate mainAppDelegate].m_CheckOutInfo getCollections][indexPath.section];
+    NSArray* collection =[ [AppDelegate mainAppDelegate].m_CheckOutInfo getCollectionsToShop][indexPath.section];
     CheckoutRing* checkoutRing = [collection objectAtIndex:indexPath.row];
     
     [cell.m_Button_PhotoRing setBackgroundImage:[checkoutRing getImg] forState:UIControlStateNormal];
@@ -229,7 +228,7 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    NSArray* collection =[ [AppDelegate mainAppDelegate].m_CheckOutInfo getCollections][section];
+    NSArray* collection =[ [AppDelegate mainAppDelegate].m_CheckOutInfo getCollectionsToShop][section];
     CheckoutRing* checkoutRing = [collection objectAtIndex:0];
     CollectionSection_View* newSection = [[CollectionSection_View alloc] initWithCollectionName:[checkoutRing getCollectionName]];
     return newSection;

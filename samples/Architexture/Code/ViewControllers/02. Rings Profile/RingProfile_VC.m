@@ -27,7 +27,8 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+    if (self)
+    {
         // Custom initialization
     }
     return self;
@@ -97,8 +98,8 @@
         
         [ringProfileView.m_ScrollView_Product setDelegate: self];
         [ringProfileView.m_ScrollView_Carousel setDelegate: self];
-        ringProfileView.m_ScrollView_Product.tag = 999;
-        ringProfileView.m_ScrollView_Carousel.tag = 888;
+        ringProfileView.m_ScrollView_Product.tag    = 999;
+        ringProfileView.m_ScrollView_Carousel.tag   = 888;
         
         
         //---- Configure Info Image:
@@ -133,6 +134,12 @@
         //---- Configure Button Map:
         ringProfileView.m_Button_MapView.tag = i;
         [ringProfileView.m_Button_MapView addTarget:self action:@selector(viewMap:) forControlEvents:UIControlEventTouchDown];
+        
+        ringProfileView.m_Button_Facebook.tag = i;
+        ringProfileView.m_Button_Twitter.tag = i;
+        [ringProfileView.m_Button_Facebook addTarget:self action:@selector(showActionSheetFacebook:) forControlEvents:UIControlEventTouchDown];
+        [ringProfileView.m_Button_Twitter addTarget:self action:@selector(showActionSheetTwitter:) forControlEvents:UIControlEventTouchDown];
+        
     }
     
     //GO TO RING PROFILE in pos ringIndex
@@ -165,14 +172,7 @@
 {
     [super viewDidAppear:animated];
     
-    if ([[AppDelegate mainAppDelegate].m_sGoToNewCollection isEqualToString:@"YES"])
-    {
-        int l_index = [[AppDelegate mainAppDelegate].m_sRingToLoad intValue];
-        RingProfile_View* ringProfileView =m_aProfileRing_Views[l_index];
-        [_m_ScrollView_AllRings scrollRectToVisible:CGRectMake(WIDTH_RING_PROFILE*l_index, 0, WIDTH_RING_PROFILE ,ringProfileView.m_ScrollView_Profile.frame.size.height) animated:NO];
-        
-        [AppDelegate mainAppDelegate].m_sGoToNewCollection = @"NO";
-    }
+
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -188,6 +188,16 @@
     m_bMoveCarouselImages   = YES;
     m_bMoveCarouselProducts = YES;
     //[self moveCarousels];
+    
+    
+    if ([[AppDelegate mainAppDelegate].m_sGoToNewCollection isEqualToString:@"YES"])
+    {
+        int l_index = [[AppDelegate mainAppDelegate].m_sRingToLoad intValue];
+        RingProfile_View* ringProfileView =m_aProfileRing_Views[l_index];
+        [_m_ScrollView_AllRings scrollRectToVisible:CGRectMake(WIDTH_RING_PROFILE*l_index, 0, WIDTH_RING_PROFILE ,ringProfileView.m_ScrollView_Profile.frame.size.height) animated:NO];
+        
+        [AppDelegate mainAppDelegate].m_sGoToNewCollection = @"NO";
+    }
 }
 
 - (void) moveCarousels
@@ -417,7 +427,6 @@
 
 
 
-
 - (IBAction) viewArchitextureWeb:(id)sender
 {
     [self performSegueWithIdentifier:@"FromViewController_To_WebLink" sender:@"http://www.architexture-online.com"];
@@ -456,7 +465,6 @@
         ringProfileView.m_ScrollView_Profile.delegate = self;
         ringProfileView.m_ScrollView_Profile.scrollEnabled = YES;
     }
-    
 }
 
 
@@ -468,6 +476,117 @@
         ViewLink_VC * vc = [segue destinationViewController];
         vc.urlAddress = url;
     }
+}
+
+- (IBAction) showActionSheetFacebook:(id)sender
+{
+    m_eTypeActionSheet = ACTION_SHEET_FACEBOOK;
+    UIButton*btn = (UIButton*)sender;
+    m_iTagButtonFacebookImage = btn.tag;
+    m_ActionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"FACEBOOK_OPTION", @"")
+                                                delegate:self
+                                       cancelButtonTitle:NSLocalizedString(@"CANCEL", @"")
+                                  destructiveButtonTitle:nil
+                                       otherButtonTitles:NSLocalizedString(@"POST_FACEBOOK", @""),
+                                        NSLocalizedString(@"ARCHITEXTURE_FACEBOOK", @""),nil];
+    
+    [m_ActionSheet showInView:[[UIApplication sharedApplication] keyWindow]];
+}
+
+- (IBAction) showActionSheetTwitter:(id)sender
+{
+    UIButton* btn = (UIButton*) sender;
+    m_ButtonTag = btn.tag;
+    m_eTypeActionSheet = ACTION_SHEET_TWITTER;
+    
+    m_ActionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"TWITTER_OPTION", @"")
+                                                delegate:self
+                                       cancelButtonTitle:NSLocalizedString(@"CANCEL", @"")
+                                  destructiveButtonTitle:nil
+                                       otherButtonTitles:NSLocalizedString(@"POST_TWEET", @""),
+                     NSLocalizedString(@"ARCHITEXTURE_TWITTER", @""),nil];
+    
+    [m_ActionSheet showInView:[[UIApplication sharedApplication] keyWindow]];
+}
+
+#pragma mark - UIActionSheetDelegate
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    switch (buttonIndex)
+    {
+        case 0: //POST
+        {
+            if (m_eTypeActionSheet == ACTION_SHEET_TWITTER)
+            {
+                [self PostOnTwitter];
+            }
+            else if (m_eTypeActionSheet == ACTION_SHEET_FACEBOOK)
+            {
+                [self PostOnFacebook];
+            }
+        }
+            break;
+            
+        case 1: //VISIT WEB
+        {
+            if (m_eTypeActionSheet == ACTION_SHEET_TWITTER)
+            {
+                [self performSegueWithIdentifier:@"FromViewController_To_WebLink" sender:@"https://twitter.com/rchitexture"];
+            }
+            else if (m_eTypeActionSheet == ACTION_SHEET_FACEBOOK)
+            {
+                [self performSegueWithIdentifier:@"FromViewController_To_WebLink" sender:@"https://www.facebook.com/pages/architexture-online/399183696843071"];
+            }
+        }
+            break;
+        case 2:
+        {
+            //CANCEL
+            //Nothing todo
+        }
+        default:
+            break;
+    }//END switch (buttonIndex)
+}
+
+- (void) PostOnFacebook
+{
+    //check if Facebook Account is linked
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook])
+    {
+        m_mySLComposerSheet = [[SLComposeViewController alloc] init];
+        m_mySLComposerSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        [m_mySLComposerSheet setInitialText:NSLocalizedString(@"FACEBOOK_HAPPINESS", nil)];
+        
+        UIImage* img = [UIImage imageNamed:m_sTagButtonFacebookImage];
+        [m_mySLComposerSheet addImage:img];
+        [self presentViewController:m_mySLComposerSheet animated:YES completion:nil];
+    }
+    else
+    {
+        [ECommon showAlertInfo:@"FACEBOOK_NOT_LINKED" title:NSLocalizedString(@"WARNING", nil)];
+        return;
+    }
+    
+    [m_mySLComposerSheet setCompletionHandler:^(SLComposeViewControllerResult result)
+     {
+        switch (result)
+         {
+            case SLComposeViewControllerResultCancelled:
+                [ECommon showAlertInfo:@"FACEBOOK_POST_CANCELLED" title:@"FACEBOOK"];
+                break;
+            case SLComposeViewControllerResultDone:
+                [ECommon showAlertInfo:@"FACEBOOK_POST_SUCCESSFULL" title:@"FACEBOOK"];
+                break;
+            default:
+                break;
+        }
+    }];
+}
+
+- (void) PostOnTwitter
+{
+    
 }
 
 @end

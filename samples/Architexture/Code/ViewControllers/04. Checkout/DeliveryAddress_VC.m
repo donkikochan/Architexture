@@ -8,6 +8,7 @@
 
 //---Imports:--
 #import "DeliveryAddress_VC.h"
+#import "CheckoutRing.h"
 //-------------
 
 #define PRIZE_SHIPPING_QUICK_SPAIN      2.5f
@@ -19,7 +20,7 @@
 #define TIME_SLOW_SHIPPING_NOT_SPAIN    @"7-8"
 #define TIME_QUICK_SHIPPING_NOT_SPAIN   @"24-72h"
 
-#define HEIGHT_CONTENT_SCROLL           650.f
+#define HEIGHT_CONTENT_SCROLL           736.f
 
 @interface DeliveryAddress_VC ()
 
@@ -42,6 +43,7 @@
 	// Do any additional setup after loading the view.
     
     int numBuyedRings = [[AppDelegate mainAppDelegate].m_CheckOutInfo getNumBuyedRings];
+    m_BeginScrollPointY = 0.f;
     
     //----Localize Strings:-----
     _m_Label_Name.text          = NSLocalizedString(@"NAME",nil);
@@ -53,55 +55,84 @@
     _m_Label_Country.text       = NSLocalizedString(@"COUNTRY",nil);
     _m_Label_Coupon.text        = NSLocalizedString(@"COUPON",nil);
     _m_Label_Title.text         = NSLocalizedString(@"TITLE_DELIVERY",nil);
-    
-    
     _m_Label_Rings.text         = [NSString stringWithFormat:@"%@ (%dx)",NSLocalizedString(@"RINGS",nil),numBuyedRings];
     _m_Label_Shipping.text      = NSLocalizedString(@"SHIPPING",nil);
     _m_Label_Coupon.text        = NSLocalizedString(@"COUPON",nil);
     _m_Label_Total.text         = NSLocalizedString(@"TOTAL",nil);
-    _m_Label_RingPrize.text     = NSLocalizedString(@"RING_PRIZE",nil);
     _m_Label_ShippingPrize.text = NSLocalizedString(@"SHIPPING_PRIZE",nil);
-    
     _m_Label_InfoShipping.text  = NSLocalizedString(@"INFO_SHIPPING_2",nil);
     _m_Label_Summary.text       = NSLocalizedString(@"SUMMARY_SHIPPING",nil);
+    _m_Label_FieldsNotOptionals.text = NSLocalizedString(@"FIELD_NOT_OPTIONAL",nil);
     
     [_m_Button_Apply    setTitle:NSLocalizedString(@"APPLY",nil) forState:UIControlStateNormal];
     [_m_Button_Back     setTitle:NSLocalizedString(@"BACK",nil) forState:UIControlStateNormal];
     [_m_Button_Paypal   setTitle:NSLocalizedString(@"PLACE_ORDER",nil) forState:UIControlStateNormal];
     //--------------------------
     
+    _m_TextField_Name.placeholder       = NSLocalizedString(@"INSERT_NAME",nil);
+    _m_TextField_Address.placeholder    = NSLocalizedString(@"INSERT_ADDRESS",nil);
+    _m_TextField_City.placeholder       = NSLocalizedString(@"INSERT_CITY",nil);
+    _m_TextField_ZIP.placeholder        = NSLocalizedString(@"INSERT_ZIP",nil);
+    _m_TextField_Province.placeholder   = NSLocalizedString(@"INSERT_PROVINCE",nil);
+    _m_TextField_EMail.placeholder      = NSLocalizedString(@"INSERT_EMAIL",nil);
+    _m_TextField_Coupon.placeholder     = NSLocalizedString(@"INSERT_COUPON",nil);
     
+    _m_TextField_Name.text      =
+    _m_TextField_Address.text   =
+    _m_TextField_City.text      =
+    _m_TextField_ZIP.text       =
+    _m_TextField_Province.text  =
+    _m_TextField_EMail.text     =
+    _m_TextField_Coupon.text    = @"";
+    
+    m_sCouponID = @"";
+    m_fCouponAmmount = 0.f;
     
     //--- Si ja s'han introduit dades reutilitzar-les:----
-    if ([ECommon getUserDefaultValueStringForKey:DELIVERY_NAME] != nil)
+    NSString* _name = [ECommon getUserDefaultValueStringForKey:DELIVERY_NAME];
+    if (_name!= nil && ![_name isEqualToString:@""])
     {
-        _m_TextField_Name.text      = [ECommon getUserDefaultValueStringForKey:DELIVERY_NAME];
+        _m_TextField_Name.text = _name;
     }
-    if ([ECommon getUserDefaultValueStringForKey:DELIVERY_ADDRESS] != nil)
+    
+    NSString* _adddress = [ECommon getUserDefaultValueStringForKey:DELIVERY_ADDRESS];
+    if (_adddress != nil && ![_adddress isEqualToString:@""])
     {
-        _m_TextField_Address.text   = [ECommon getUserDefaultValueStringForKey:DELIVERY_ADDRESS];
+        _m_TextField_Address.text = _adddress;
     }
-    if ([ECommon getUserDefaultValueStringForKey:DELIVERY_CITY] != nil)
+    
+    NSString* _city = [ECommon getUserDefaultValueStringForKey:DELIVERY_CITY];
+    if (_city != nil && ![_city isEqualToString:@""])
     {
-        _m_TextField_City.text      = [ECommon getUserDefaultValueStringForKey:DELIVERY_CITY];
+        _m_TextField_City.text = _city;
     }
-    if ([ECommon getUserDefaultValueStringForKey:DELIVERY_ZIP] != nil)
+    
+    NSString* _zip = [ECommon getUserDefaultValueStringForKey:DELIVERY_ZIP];
+    if (_zip != nil && ![_zip isEqualToString:@""])
     {
-        _m_TextField_ZIP.text       = [ECommon getUserDefaultValueStringForKey:DELIVERY_ZIP];
+        _m_TextField_ZIP.text = _zip;
     }
-    if ([ECommon getUserDefaultValueStringForKey:DELIVERY_PROVINCE] != nil)
+    
+    NSString* _province = [ECommon getUserDefaultValueStringForKey:DELIVERY_PROVINCE];
+    if (_province != nil && ![_province isEqualToString:@""])
     {
-        _m_TextField_Province.text  = [ECommon getUserDefaultValueStringForKey:DELIVERY_PROVINCE];
+        _m_TextField_Province.text = _province;
     }
-    if ([ECommon getUserDefaultValueStringForKey:DELIVERY_EMAIL] != nil)
+    
+    NSString* _email = [ECommon getUserDefaultValueStringForKey:DELIVERY_EMAIL];
+    if (_email != nil && ![_email isEqualToString:@""])
     {
-        _m_TextField_EMail.text     = [ECommon getUserDefaultValueStringForKey:DELIVERY_EMAIL];
+        _m_TextField_EMail.text = _email;
     }
-    if ([ECommon getUserDefaultValueStringForKey:DELIVERY_COUNTRY] != nil)
+    
+    NSString* _country = [ECommon getUserDefaultValueStringForKey:DELIVERY_COUNTRY];
+    if ( _country!=nil && ![_country isEqualToString:@""])
     {
-        m_sCountryCodeSelected      = [ECommon getUserDefaultValueStringForKey:DELIVERY_COUNTRY];
+        m_sCountryCodeSelected  = _country;
     }
-    else{
+    else
+    {
+        //default value:
         m_sCountryCodeSelected = @"ES";
     }
     //----------------------------------------------------------
@@ -158,11 +189,78 @@
                                                  _m_TextField_Province, _m_TextField_EMail,
                                                  _m_TextField_Coupon,   nil]];
     
+    [self updateRingScroll];
+    
+    
+    m_bCheckingCoupon       =
+    m_bSendingPaymentInfo   = NO;
+    m_Payment = nil;
+    
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)])
     {
         // iOS 7
         [self setNeedsStatusBarAppearanceUpdate];
     }
+}
+
+
+- (void) updateRingScroll
+{
+    float w = 50;
+    float h = 50;
+    int x = 0;
+    
+    NSString* txtRingBuyed = NSLocalizedString(@"RINGS_BUYED",nil);
+    UIFont* font = [UIFont systemFontOfSize:17.f];
+    int txt_width = [txtRingBuyed sizeWithFont:font].width;
+    UILabel *ringsBuyed = [[UILabel alloc]initWithFrame:CGRectMake(x, 0.0, txt_width, _m_RingScroll.frame.size.height)];
+    ringsBuyed.textColor = [UIColor whiteColor];
+    ringsBuyed.font = font;
+    ringsBuyed.text = txtRingBuyed;
+    ringsBuyed.textAlignment = NSTextAlignmentLeft;
+    ringsBuyed.backgroundColor = [UIColor clearColor];
+    [_m_RingScroll addSubview:ringsBuyed];
+    x+= txt_width;
+    x+=10;
+    
+    NSMutableArray*collections =  [[AppDelegate mainAppDelegate].m_CheckOutInfo getCollections];
+    for (NSArray* collection in collections)
+    {
+        for (CheckoutRing* ring in collection)
+        {
+            if ([ring getAmmount] >0)
+            {
+                //1. Add ring image:
+                CGRect frame = CGRectMake(x, 0.f, w, h);
+                UIImageView* imgView = [[UIImageView alloc] initWithFrame:frame];
+                imgView.image = [ring getImg];
+                [_m_RingScroll addSubview:imgView];
+                
+                //2. Add background number
+                CGRect backgroundFrame = CGRectMake(x+10, 5.f, 30, 40);
+                UIView *backgroundNumber = [[UIView alloc] initWithFrame:backgroundFrame];
+                backgroundNumber.backgroundColor = [UIColor blackColor];
+                backgroundNumber.alpha = 0.4f;
+                CALayer * l = backgroundNumber.layer;
+                [l setMasksToBounds:YES];
+                [l setCornerRadius:5.0];
+                [_m_RingScroll addSubview:backgroundNumber];
+                
+                //3. Add number
+                UIFont* font = [UIFont boldSystemFontOfSize:30.f];
+                UILabel *ringAmmount = [[UILabel alloc]initWithFrame:frame];
+                ringAmmount.textColor = [UIColor whiteColor];
+                ringAmmount.font = font;
+                ringAmmount.text = [NSString stringWithFormat:@"%d",[ring getAmmount]];
+                ringAmmount.textAlignment = NSTextAlignmentCenter;
+                ringAmmount.backgroundColor = [UIColor clearColor];
+                [_m_RingScroll addSubview:ringAmmount];
+                
+                x += w + 10;
+            }
+        }
+    }
+    [_m_RingScroll setContentSize:CGSizeMake(x, 1.f)];
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle
@@ -178,6 +276,7 @@
     CGRect rc = [textField bounds];
     rc = [textField convertRect:rc toView:_m_ScrollView];
     pt = rc.origin;
+    m_BeginScrollPointY = pt.y;
     pt.x = 0;
     pt.y -= 60;
     [_m_ScrollView setContentOffset:pt animated:YES];
@@ -192,7 +291,13 @@
     //svos = scrollView.contentOffset;
     CGPoint pt;
     pt.x = 0;
-    pt.y = HEIGHT_CONTENT_SCROLL*0.5;
+    if (textField != _m_TextField_Coupon)
+    {
+        pt.y = m_BeginScrollPointY - 30;
+    }
+    else{
+        pt.y = HEIGHT_CONTENT_SCROLL - _m_ScrollView.frame.size.height;
+    }
     [_m_ScrollView setContentOffset:pt animated:YES];
     
     
@@ -247,8 +352,8 @@
     
     [self setupShippingWithCountryCode:m_sCountryCodeSelected];
     
-    int numBuyedRings = [[AppDelegate mainAppDelegate].m_CheckOutInfo getNumBuyedRings];
-    _m_Label_RingPrize.text = [NSString stringWithFormat:@"%.02f €",numBuyedRings*RING_PRIZE];
+    float l_ringAmmount = [self getRingsValue];
+    _m_Label_RingPrize.text = [NSString stringWithFormat:@"%.02f €",l_ringAmmount];
 }
 
 
@@ -318,7 +423,7 @@
     }
     
     _m_Label_ShippingPrize.text = [NSString stringWithFormat:@"%.02f €",m_fShippingPrize];
-    _m_Label_TotalPrize.text = [NSString stringWithFormat:@"%.02f €",m_fShippingPrize + numBuyedRings*RING_PRIZE];
+    _m_Label_TotalPrize.text = [NSString stringWithFormat:@"%.02f €",m_fShippingPrize + [self getRingsValue]];
 }
 
 
@@ -419,13 +524,25 @@
     }
     
     _m_Label_ShippingPrize.text = [NSString stringWithFormat:@"%.02f €",m_fShippingPrize];
-    int numBuyedRings = [[AppDelegate mainAppDelegate].m_CheckOutInfo getNumBuyedRings];
-    _m_Label_TotalPrize.text = [NSString stringWithFormat:@"%.02f €",m_fShippingPrize + numBuyedRings*RING_PRIZE];
+    _m_Label_TotalPrize.text = [NSString stringWithFormat:@"%.02f €",m_fShippingPrize + [self getRingsValue]];
 }
 
 - (IBAction)coupon_Clicked:(id)sender
 {
-    
+    if (_m_TextField_Coupon.text.length == 0)
+    {
+        [ECommon showAlertInfo:NSLocalizedString(@"WARNING",nil) title:NSLocalizedString(@"FIELD_NOT_OPTIONAL", nil)];
+    }
+    else
+    {
+        if (m_Payment == nil)
+        {
+            m_Payment = [[Payment alloc] init:self];
+        }
+        m_bCheckingCoupon = YES;
+        [ECommon showProgressInView:self.view withText:NSLocalizedString(@"CHECKING_COUPON",nil)];
+        [m_Payment checkCouponWithCode:_m_TextField_Coupon.text];
+    }
 }
 
 
@@ -509,13 +626,13 @@
     }
     
     
-    int numBuyedRings = [[AppDelegate mainAppDelegate].m_CheckOutInfo getNumBuyedRings];
-    float l_fAmmount = numBuyedRings*RING_PRIZE;
+    float l_fAmmount = [self getRingsValue];
     l_fAmmount += m_fShippingPrize;
     
     // Create a PayPalPayment
     PayPalPayment *payment = [[PayPalPayment alloc] init];
-    payment.amount =  [NSDecimalNumber decimalNumberWithDecimal:[[NSNumber numberWithFloat:l_fAmmount] decimalValue]];
+    float value = [_m_Label_TotalPrize.text floatValue];
+    payment.amount =  [NSDecimalNumber decimalNumberWithDecimal:[[NSNumber numberWithFloat:value] decimalValue]];
     payment.currencyCode = @"EUR";
     payment.shortDescription = NSLocalizedString(@"ARCHITEXTURE_PRODUCT",nil);
     
@@ -529,17 +646,17 @@
     
     
     // Start out working with the test environment! When you are ready, remove this line to switch to live.
-    [PayPalPaymentViewController setEnvironment:PayPalEnvironmentNoNetwork];
+    [PayPalPaymentViewController setEnvironment:PayPalEnvironmentSandbox];
     
     // Provide a payerId that uniquely identifies a user within the scope of your system,
     // such as an email address or user ID.
-    NSString *aPayerId = @"someuser@somedomain.com";
+    NSString *aPayerId = _m_TextField_EMail.text;
     
     // Create a PayPalPaymentViewController with the credentials and payerId, the PayPalPayment
     // from the previous step, and a PayPalPaymentDelegate to handle the results.
     PayPalPaymentViewController *paymentViewController;
-    paymentViewController = [[PayPalPaymentViewController alloc] initWithClientId:@"YOUR_CLIENT_ID"
-                                                                    receiverEmail:@"YOUR_PAYPAL_EMAIL_ADDRESS@gmail.com"
+    paymentViewController = [[PayPalPaymentViewController alloc] initWithClientId:@"AW9_rRArXURSUv7WVIWkxQWvnBxQuPdMq8dsAXKmAAbDz2S1pWa4Tfp7LS_G"
+                                                                    receiverEmail:@"enric.cipsa@gmail.com"
                                                                           payerId:aPayerId
                                                                           payment:payment
                                                                          delegate:self];
@@ -597,39 +714,58 @@
 {
     if (success)
     {
-        /*
-         if ([obj isKindOfClass:[CountryArray class]])
+         if ([obj isKindOfClass:[Payment class]])
          {
-         m_LoadCountries = true;
-         m_ArrCountries      = [[NSMutableArray alloc] init];
-         m_ArrCountriesIds   = [[NSMutableArray alloc] init];
-         m_ArrCountriesCode  = [[NSMutableArray alloc] init];
-         for (int i=0; i<[m_Countries.countries count]; i++)
-         {
-         Country *country = [m_Countries.countries objectAtIndex:i];
-         
-         [m_ArrCountries     addObject:country.name];
-         [m_ArrCountriesIds  addObject:country.identifier];
-         [m_ArrCountriesCode addObject:country.code];
+             if (m_bCheckingCoupon)
+             {
+                 m_bCheckingCoupon = NO;
+                 //TODO.. hacer lo que pertoque con los datos...
+                 NSString *msg = NSLocalizedString(@"COUPON_OK",nil);
+                 [ECommon setProgressDoneAndHideWithText:msg andDelay:3.f];
+                 
+                 m_sCouponID        = m_Payment.couponID_DB;
+                 m_fCouponAmmount   = [m_Payment.couponAmmount floatValue];
+                 
+                 float l_ringAmmount = [self getRingsValue];
+                 _m_Label_RingPrize.text = [NSString stringWithFormat:@"%.02f € (-%.02f%%)",l_ringAmmount, m_fCouponAmmount];
+                 
+                 _m_Label_TotalPrize.text = [NSString stringWithFormat:@"%.02f €",m_fShippingPrize + [self getRingsValue]];
+             }
+             else if (m_bSendingPaymentInfo)
+             {
+                 m_bSendingPaymentInfo = NO;
+                 [ECommon hideProgress];
+                 [ECommon showAlertInfo:NSLocalizedString(@"THANKS_PURCHASE",nil) title:NSLocalizedString(@"PURCHASE_OK",nil)];
+             }
          }
-         
-         m_Makes = [[MakeArray alloc] init:self];
-         [m_Makes getMakes];
-         }
-         */
     }
     else
     {
         //Show error message
         if (obj!=nil && obj.msg != nil && obj.msg.length > 0)
         {
-            [ECommon setProgressDetailsLabel:obj.msg];
-            [ECommon setProgressErrorAndHideWithText:NSLocalizedString(@"PROBLEM_DETECTED", @"")];
+            if (m_bCheckingCoupon)
+            {
+                [ECommon setProgressErrorAndHideWithText:@"Cupon invalid o caducat" andDelay:2.f];
+            }
+            else if (m_bSendingPaymentInfo)
+            {
+                [ECommon hideProgress];
+                [ECommon showAlertInfo:NSLocalizedString(@"CONTACT_ERROR_PURCHASE",nil) title:NSLocalizedString(@"PURCHASE_NO_OK",nil)];
+            }
+            else
+            {
+                [ECommon setProgressDetailsLabel:obj.msg];
+                [ECommon setProgressErrorAndHideWithText:NSLocalizedString(@"PROBLEM_DETECTED", @"")];
+            }
         }
         else
         {
             [ECommon setProgressErrorAndHideWithText:NSLocalizedString(@"CONNECTION_ERROR", @"")];
         }
+        
+        m_bSendingPaymentInfo   =
+        m_bCheckingCoupon       = NO;
     }
 }
 
@@ -645,13 +781,13 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)payPalPaymentDidCancel
+- (void) payPalPaymentDidCancel
 {
     // The payment was canceled; dismiss the PayPalPaymentViewController.
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)verifyCompletedPayment:(PayPalPayment *)completedPayment
+- (void) verifyCompletedPayment:(PayPalPayment *)completedPayment
 {
     // Send the entire confirmation dictionary
     NSData *confirmation = [NSJSONSerialization dataWithJSONObject:completedPayment.confirmation
@@ -661,10 +797,55 @@
     // Send confirmation to your server; your server should verify the proof of payment
     // and give the user their goods or services. If the server is not reachable, save
     // the confirmation and try again later.
+    
+    if (m_Payment == nil)
+    {
+        m_Payment = [[Payment alloc] init:self];
+    }
+    m_bSendingPaymentInfo = YES;
+    [ECommon showProgressInView:self.view withText:NSLocalizedString(@"VERIFYING_PAYMENT",nil)];
+    
+    NSString* name          = _m_TextField_Name.text;
+    NSString* email         = _m_TextField_EMail.text;
+    NSString* address       = _m_TextField_Address.text;
+    NSString* city          = _m_TextField_City.text;
+    NSString* zip           = _m_TextField_ZIP.text;
+    NSString* country       = [_m_Button_Country titleForState:UIControlStateNormal];
+    
+    NSString* slowShipping  = @"-1";
+    if (_m_Segmented_ShippingType.selectedSegmentIndex == 0)
+    {
+        //Slow shipping:
+        slowShipping = @"1";
+    }
+    else{
+        //Quick Shipping
+        slowShipping = @"0";
+    }
+   
+    
+    float l_fAmmount = [self getRingsValue];
+    l_fAmmount += m_fShippingPrize;
+    NSString* totalAmmount  = [NSString stringWithFormat:@"%f", l_fAmmount];
+    
+    NSArray* collections = [[AppDelegate mainAppDelegate].m_CheckOutInfo getCollections];
+    
+    [m_Payment sendPaymentInfoWithName:name withEmail:email withAddress:address withCity:city withZIP:zip withCountry:country withSlowShipping:slowShipping withTotalAmmount:totalAmmount withCollections:collections];
 }
 
 
-- (void)viewDidUnload
+- (float) getRingsValue
+{
+    int numBuyedRings = [[AppDelegate mainAppDelegate].m_CheckOutInfo getNumBuyedRings];
+    float l_fAmmount = numBuyedRings*RING_PRIZE;
+    if (![m_sCouponID isEqualToString:@""])
+    {
+        l_fAmmount = l_fAmmount* ((100.f - m_fCouponAmmount)/100.f);
+    }
+    return l_fAmmount;
+}
+
+- (void) viewDidUnload
 {
     [self setM_Button_Back:nil];
     [self setM_Label_Title:nil];

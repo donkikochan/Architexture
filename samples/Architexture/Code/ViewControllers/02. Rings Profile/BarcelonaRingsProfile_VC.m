@@ -176,9 +176,15 @@
         {
             [self performSegueWithIdentifier:@"FromViewController_To_WebLink" sender:@"http://www.architexture-online.com/"];
         }
-        else if (l_iIndex == 101)
+        else if (l_iIndex == 102)
         {
             //CONTACT US
+            [self performSegueWithIdentifier:@"FromRingProfileToAboutUs" sender:nil];
+        }
+        else if (l_iIndex == 103)
+        {
+            //CONTACT US
+            [self performSegueWithIdentifier:@"FromRingProfileToContactUs" sender:nil];
         }
     }
 }
@@ -242,6 +248,40 @@
     NSLog(@"Barcelona didReceiveMemoryWarning");
 }
 
+
+//---Functions:
+- (void) PostOnFacebook
+{
+    switch (m_iTagButtonFacebookImage)
+    {
+        case 0://_01_HAPPINESS
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR HAPPINESS.jpg";
+            break;
+        case 1://_02_REFLEX
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR REFLEX.jpg";
+            break;
+        case 2://_03_SKY
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR SKY.jpg";
+            break;
+        case 3://_04_CLOTHING
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR CLOTHING.jpg";
+            break;
+        case 4://_05_FANCY
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR FANCY.jpg";
+            break;
+        case 5://_06_EARTH
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR EARTH.jpg";
+            break;
+        default:
+            break;
+    }
+    [super PostOnFacebook];
+}
+
+- (void) PostOnTwitter
+{
+    
+}
 
 
 

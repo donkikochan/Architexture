@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "SyncHandler.h"
 #import "PayPalMobile.h"
+#import "Payment.h"
 //-------------
 
 //---Define new types:---
@@ -19,7 +20,7 @@
 #define DELIVERY_ZIP        @"DELIVERY_ZIP"
 #define DELIVERY_PROVINCE   @"DELIVERY_PROVINCE"
 #define DELIVERY_EMAIL      @"DELIVERY_EMAIL"
-#define DELIVERY_COUNTRY      @"DELIVERY_COUNTRY"
+#define DELIVERY_COUNTRY    @"DELIVERY_COUNTRY"
 //-----------------------
 
 
@@ -35,42 +36,49 @@
     UIActionSheet*  m_ActionSheet;
     UIPickerView*   m_PickerView;
     int             m_iCurrentPicker;
+    float           m_BeginScrollPointY;
+    Payment*        m_Payment;
+    BOOL            m_bCheckingCoupon;
+    BOOL            m_bSendingPaymentInfo;
+    NSString*       m_sCouponID;
+    float           m_fCouponAmmount;
 }
 
 //---IBOutlets:
-@property (strong, nonatomic) IBOutlet UIScrollView         *m_ScrollView;
-@property (strong, nonatomic) IBOutlet UIButton             *m_Button_Back;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_Title;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_Name;
-@property (strong, nonatomic) IBOutlet UITextField          *m_TextField_Name;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_Address;
-@property (strong, nonatomic) IBOutlet UITextField          *m_TextField_Address;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_City;
-@property (strong, nonatomic) IBOutlet UITextField          *m_TextField_City;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_ZIP;
-@property (strong, nonatomic) IBOutlet UITextField          *m_TextField_ZIP;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_Province;
-@property (strong, nonatomic) IBOutlet UITextField          *m_TextField_Province;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_EMail;
-@property (strong, nonatomic) IBOutlet UITextField          *m_TextField_EMail;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_Country;
-@property (strong, nonatomic) IBOutlet UIButton             *m_TextField_Country;
-@property (strong, nonatomic) IBOutlet UISegmentedControl   *m_Segmented_ShippingType;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_InfoShipping;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_Summary;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_Rings;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_Shipping;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_Coupon;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_Total;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_RingPrize;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_ShippingPrize;
-@property (strong, nonatomic) IBOutlet UITextField          *m_TextField_Coupon;
-@property (strong, nonatomic) IBOutlet UIButton             *m_Button_Apply;
-@property (strong, nonatomic) IBOutlet UILabel              *m_Label_TotalPrize;
-@property (strong, nonatomic) IBOutlet UIButton             *m_Button_Back2;
-@property (strong, nonatomic) IBOutlet UIButton             *m_Button_Paypal;
-@property (strong, nonatomic) IBOutlet UIButton             *m_Button_Country;
-@property (strong, nonatomic) IBOutlet UIScrollView *m_RingScroll;
+@property (strong, nonatomic) IBOutlet UIScrollView*        m_ScrollView;
+@property (strong, nonatomic) IBOutlet UITextField*         m_TextField_Name;
+@property (strong, nonatomic) IBOutlet UITextField*         m_TextField_Address;
+@property (strong, nonatomic) IBOutlet UITextField*         m_TextField_City;
+@property (strong, nonatomic) IBOutlet UITextField*         m_TextField_ZIP;
+@property (strong, nonatomic) IBOutlet UITextField*         m_TextField_Province;
+@property (strong, nonatomic) IBOutlet UITextField*         m_TextField_EMail;
+@property (strong, nonatomic) IBOutlet UITextField*         m_TextField_Coupon;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_EMail;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_Province;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_ZIP;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_Country;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_Title;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_Name;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_Address;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_City;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_InfoShipping;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_Summary;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_Rings;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_Shipping;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_Coupon;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_Total;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_RingPrize;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_ShippingPrize;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_TotalPrize;
+@property (strong, nonatomic) IBOutlet UIButton*            m_Button_Back;
+@property (strong, nonatomic) IBOutlet UIButton*            m_TextField_Country;
+@property (strong, nonatomic) IBOutlet UIButton*            m_Button_Apply;
+@property (strong, nonatomic) IBOutlet UIButton*            m_Button_Back2;
+@property (strong, nonatomic) IBOutlet UIButton*            m_Button_Paypal;
+@property (strong, nonatomic) IBOutlet UIButton*            m_Button_Country;
+@property (strong, nonatomic) IBOutlet UIScrollView*        m_RingScroll;
+@property (strong, nonatomic) IBOutlet UISegmentedControl*  m_Segmented_ShippingType;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_FieldsNotOptionals;
 
 
 //---IBActions:

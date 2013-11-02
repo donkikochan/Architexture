@@ -204,9 +204,15 @@
         {
             [self performSegueWithIdentifier:@"FromViewController_To_WebLink" sender:@"http://www.architexture-online.com/"];
         }
-        else if (l_iIndex == 101)
+        else if (l_iIndex == 102)
         {
             //CONTACT US
+            [self performSegueWithIdentifier:@"FromRingProfileToAboutUs" sender:nil];
+        }
+        else if (l_iIndex == 103)
+        {
+            //CONTACT US
+            [self performSegueWithIdentifier:@"FromRingProfileToContactUs" sender:nil];
         }
     }
 }

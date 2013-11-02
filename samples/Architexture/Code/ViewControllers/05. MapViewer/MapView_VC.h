@@ -11,7 +11,7 @@
 #import <MapKit/MapKit.h>
 //----------------
 
-@interface MapView_VC : UIViewController <MKMapViewDelegate>
+@interface MapView_VC : BaseViewController <MKMapViewDelegate>
 {
     CGPoint m_aPositions[18];
 }

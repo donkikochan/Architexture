@@ -10,6 +10,8 @@
 
 @interface CheckoutInfo : NSObject
 {
+    NSMutableArray* m_aCollectionsToShop;
+    NSMutableArray* m_aCollectionsToMenu;
     NSMutableArray* m_aCollections;
     NSString*       m_sName;
     NSString*       m_sAddress;
@@ -21,6 +23,8 @@
 }
 
 - (NSMutableArray*) getCollections;
+- (NSMutableArray*) getCollectionsToMenu;
+- (NSMutableArray*) getCollectionsToShop;
 - (NSString*)       getName;
 - (NSString*)       getAddress;
 - (NSString*)       getCity;
