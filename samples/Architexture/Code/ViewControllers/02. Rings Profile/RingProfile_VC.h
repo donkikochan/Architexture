@@ -49,6 +49,7 @@ typedef enum {
     
     int                         m_iTagButtonFacebookImage;
     NSString*                   m_sTagButtonFacebookImage;
+    NSString*                   m_sTagButtonFacebookText;
 }
 
 //---IBOutlets:

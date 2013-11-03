@@ -19,6 +19,26 @@
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 		C70AD0CE17F635EE008A963B /* LOADING@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C70AD0CD17F635EE008A963B /* LOADING@2x.jpg */; };
 		C70AD0D117F751F1008A963B /* MenuOptionAux_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = C70AD0D017F751F1008A963B /* MenuOptionAux_Cell.m */; };
+		C7153E5F1826551D00899FC7 /* DISPLAY angle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E4B1826551D00899FC7 /* DISPLAY angle.jpg */; };
+		C7153E601826551D00899FC7 /* DISPLAY born.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E4C1826551D00899FC7 /* DISPLAY born.jpg */; };
+		C7153E611826551D00899FC7 /* DISPLAY calme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E4D1826551D00899FC7 /* DISPLAY calme.jpg */; };
+		C7153E621826551D00899FC7 /* DISPLAY dali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E4E1826551D00899FC7 /* DISPLAY dali.jpg */; };
+		C7153E631826551D00899FC7 /* DISPLAY icone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E4F1826551D00899FC7 /* DISPLAY icone.jpg */; };
+		C7153E641826551D00899FC7 /* DISPLAY place.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E501826551D00899FC7 /* DISPLAY place.jpg */; };
+		C7153E651826551D00899FC7 /* DISPLAY rgb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E511826551D00899FC7 /* DISPLAY rgb.jpg */; };
+		C7153E661826551D00899FC7 /* DISPLAY X EXPOSITOR CLOTHING.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E521826551D00899FC7 /* DISPLAY X EXPOSITOR CLOTHING.jpg */; };
+		C7153E671826551D00899FC7 /* DISPLAY X EXPOSITOR COLOURS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E531826551D00899FC7 /* DISPLAY X EXPOSITOR COLOURS.jpg */; };
+		C7153E681826551D00899FC7 /* DISPLAY X EXPOSITOR EARTH.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E541826551D00899FC7 /* DISPLAY X EXPOSITOR EARTH.jpg */; };
+		C7153E691826551D00899FC7 /* DISPLAY X EXPOSITOR FANCY.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E551826551D00899FC7 /* DISPLAY X EXPOSITOR FANCY.jpg */; };
+		C7153E6A1826551D00899FC7 /* DISPLAY X EXPOSITOR FLOWER.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E561826551D00899FC7 /* DISPLAY X EXPOSITOR FLOWER.jpg */; };
+		C7153E6B1826551D00899FC7 /* DISPLAY X EXPOSITOR GOLD.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E571826551D00899FC7 /* DISPLAY X EXPOSITOR GOLD.jpg */; };
+		C7153E6C1826551D00899FC7 /* DISPLAY X EXPOSITOR HAPPINESS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E581826551D00899FC7 /* DISPLAY X EXPOSITOR HAPPINESS.jpg */; };
+		C7153E6D1826551D00899FC7 /* DISPLAY X EXPOSITOR LIGHT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E591826551D00899FC7 /* DISPLAY X EXPOSITOR LIGHT.jpg */; };
+		C7153E6E1826551D00899FC7 /* DISPLAY X EXPOSITOR MOUNTAIN.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E5A1826551D00899FC7 /* DISPLAY X EXPOSITOR MOUNTAIN.jpg */; };
+		C7153E6F1826551D00899FC7 /* DISPLAY X EXPOSITOR REFLEX.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E5B1826551D00899FC7 /* DISPLAY X EXPOSITOR REFLEX.jpg */; };
+		C7153E701826551D00899FC7 /* DISPLAY X EXPOSITOR RHYTHM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E5C1826551D00899FC7 /* DISPLAY X EXPOSITOR RHYTHM.jpg */; };
+		C7153E711826551D00899FC7 /* DISPLAY X EXPOSITOR SKY.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E5D1826551D00899FC7 /* DISPLAY X EXPOSITOR SKY.jpg */; };
+		C7153E721826551D00899FC7 /* DISPLAY X EXPOSITOR TRANSPARENCY.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E5E1826551D00899FC7 /* DISPLAY X EXPOSITOR TRANSPARENCY.jpg */; };
 		C71CC99317D9DE7200F08F33 /* MapView_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C71CC99217D9DE7200F08F33 /* MapView_VC.m */; };
 		C71CC99517D9F7B400F08F33 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71CC99417D9F7B400F08F33 /* CoreLocation.framework */; };
 		C723952717FC83BF00AFF34F /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C723952317FC83BF00AFF34F /* libPayPalMobile.a */; };
@@ -383,19 +403,6 @@
 		C7C5BACA17F48713005E36DF /* TRANSPARENCY@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7C5B9DA17F48713005E36DF /* TRANSPARENCY@2x.png */; };
 		C7D740F917ECA8FA004A5D25 /* LoadingCollection_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D740F817ECA8FA004A5D25 /* LoadingCollection_VC.m */; };
 		C7E68C4C18157B5A005D2FDC /* google maps.png in Resources */ = {isa = PBXBuildFile; fileRef = C7E68C4B18157B5A005D2FDC /* google maps.png */; };
-		C7E68C5B18157B74005D2FDC /* DISPLAY X EXPOSITOR CLOTHING.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7E68C4E18157B74005D2FDC /* DISPLAY X EXPOSITOR CLOTHING.jpg */; };
-		C7E68C5C18157B74005D2FDC /* DISPLAY X EXPOSITOR COLOURS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7E68C4F18157B74005D2FDC /* DISPLAY X EXPOSITOR COLOURS.jpg */; };
-		C7E68C5D18157B74005D2FDC /* DISPLAY X EXPOSITOR EARTH.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7E68C5018157B74005D2FDC /* DISPLAY X EXPOSITOR EARTH.jpg */; };
-		C7E68C5E18157B74005D2FDC /* DISPLAY X EXPOSITOR FANCY.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7E68C5118157B74005D2FDC /* DISPLAY X EXPOSITOR FANCY.jpg */; };
-		C7E68C5F18157B74005D2FDC /* DISPLAY X EXPOSITOR FLOWER.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7E68C5218157B74005D2FDC /* DISPLAY X EXPOSITOR FLOWER.jpg */; };
-		C7E68C6018157B74005D2FDC /* DISPLAY X EXPOSITOR GOLD.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7E68C5318157B74005D2FDC /* DISPLAY X EXPOSITOR GOLD.jpg */; };
-		C7E68C6118157B74005D2FDC /* DISPLAY X EXPOSITOR HAPPINESS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7E68C5418157B74005D2FDC /* DISPLAY X EXPOSITOR HAPPINESS.jpg */; };
-		C7E68C6218157B74005D2FDC /* DISPLAY X EXPOSITOR LIGHT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7E68C5518157B74005D2FDC /* DISPLAY X EXPOSITOR LIGHT.jpg */; };
-		C7E68C6318157B74005D2FDC /* DISPLAY X EXPOSITOR MOUNTAIN.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7E68C5618157B74005D2FDC /* DISPLAY X EXPOSITOR MOUNTAIN.jpg */; };
-		C7E68C6418157B74005D2FDC /* DISPLAY X EXPOSITOR REFLEX.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7E68C5718157B74005D2FDC /* DISPLAY X EXPOSITOR REFLEX.jpg */; };
-		C7E68C6518157B74005D2FDC /* DISPLAY X EXPOSITOR RHYTHM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7E68C5818157B74005D2FDC /* DISPLAY X EXPOSITOR RHYTHM.jpg */; };
-		C7E68C6618157B74005D2FDC /* DISPLAY X EXPOSITOR SKY.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7E68C5918157B74005D2FDC /* DISPLAY X EXPOSITOR SKY.jpg */; };
-		C7E68C6718157B74005D2FDC /* DISPLAY X EXPOSITOR TRANSPARENCY.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7E68C5A18157B74005D2FDC /* DISPLAY X EXPOSITOR TRANSPARENCY.jpg */; };
 		C7E68C6A18157D1C005D2FDC /* PlacePin.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E68C6918157D1C005D2FDC /* PlacePin.m */; };
 /* End PBXBuildFile section */
 
@@ -414,6 +421,26 @@
 		C70AD0CD17F635EE008A963B /* LOADING@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "LOADING@2x.jpg"; sourceTree = "<group>"; };
 		C70AD0CF17F751F1008A963B /* MenuOptionAux_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuOptionAux_Cell.h; sourceTree = "<group>"; };
 		C70AD0D017F751F1008A963B /* MenuOptionAux_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuOptionAux_Cell.m; sourceTree = "<group>"; };
+		C7153E4B1826551D00899FC7 /* DISPLAY angle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY angle.jpg"; sourceTree = "<group>"; };
+		C7153E4C1826551D00899FC7 /* DISPLAY born.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY born.jpg"; sourceTree = "<group>"; };
+		C7153E4D1826551D00899FC7 /* DISPLAY calme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY calme.jpg"; sourceTree = "<group>"; };
+		C7153E4E1826551D00899FC7 /* DISPLAY dali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY dali.jpg"; sourceTree = "<group>"; };
+		C7153E4F1826551D00899FC7 /* DISPLAY icone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY icone.jpg"; sourceTree = "<group>"; };
+		C7153E501826551D00899FC7 /* DISPLAY place.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY place.jpg"; sourceTree = "<group>"; };
+		C7153E511826551D00899FC7 /* DISPLAY rgb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY rgb.jpg"; sourceTree = "<group>"; };
+		C7153E521826551D00899FC7 /* DISPLAY X EXPOSITOR CLOTHING.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR CLOTHING.jpg"; sourceTree = "<group>"; };
+		C7153E531826551D00899FC7 /* DISPLAY X EXPOSITOR COLOURS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR COLOURS.jpg"; sourceTree = "<group>"; };
+		C7153E541826551D00899FC7 /* DISPLAY X EXPOSITOR EARTH.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR EARTH.jpg"; sourceTree = "<group>"; };
+		C7153E551826551D00899FC7 /* DISPLAY X EXPOSITOR FANCY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR FANCY.jpg"; sourceTree = "<group>"; };
+		C7153E561826551D00899FC7 /* DISPLAY X EXPOSITOR FLOWER.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR FLOWER.jpg"; sourceTree = "<group>"; };
+		C7153E571826551D00899FC7 /* DISPLAY X EXPOSITOR GOLD.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR GOLD.jpg"; sourceTree = "<group>"; };
+		C7153E581826551D00899FC7 /* DISPLAY X EXPOSITOR HAPPINESS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR HAPPINESS.jpg"; sourceTree = "<group>"; };
+		C7153E591826551D00899FC7 /* DISPLAY X EXPOSITOR LIGHT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR LIGHT.jpg"; sourceTree = "<group>"; };
+		C7153E5A1826551D00899FC7 /* DISPLAY X EXPOSITOR MOUNTAIN.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR MOUNTAIN.jpg"; sourceTree = "<group>"; };
+		C7153E5B1826551D00899FC7 /* DISPLAY X EXPOSITOR REFLEX.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR REFLEX.jpg"; sourceTree = "<group>"; };
+		C7153E5C1826551D00899FC7 /* DISPLAY X EXPOSITOR RHYTHM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR RHYTHM.jpg"; sourceTree = "<group>"; };
+		C7153E5D1826551D00899FC7 /* DISPLAY X EXPOSITOR SKY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR SKY.jpg"; sourceTree = "<group>"; };
+		C7153E5E1826551D00899FC7 /* DISPLAY X EXPOSITOR TRANSPARENCY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR TRANSPARENCY.jpg"; sourceTree = "<group>"; };
 		C71CC99117D9DE7200F08F33 /* MapView_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView_VC.h; sourceTree = "<group>"; };
 		C71CC99217D9DE7200F08F33 /* MapView_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView_VC.m; sourceTree = "<group>"; };
 		C71CC99417D9F7B400F08F33 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -838,19 +865,6 @@
 		C7D740F717ECA8FA004A5D25 /* LoadingCollection_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingCollection_VC.h; sourceTree = "<group>"; };
 		C7D740F817ECA8FA004A5D25 /* LoadingCollection_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingCollection_VC.m; sourceTree = "<group>"; };
 		C7E68C4B18157B5A005D2FDC /* google maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google maps.png"; sourceTree = "<group>"; };
-		C7E68C4E18157B74005D2FDC /* DISPLAY X EXPOSITOR CLOTHING.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR CLOTHING.jpg"; sourceTree = "<group>"; };
-		C7E68C4F18157B74005D2FDC /* DISPLAY X EXPOSITOR COLOURS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR COLOURS.jpg"; sourceTree = "<group>"; };
-		C7E68C5018157B74005D2FDC /* DISPLAY X EXPOSITOR EARTH.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR EARTH.jpg"; sourceTree = "<group>"; };
-		C7E68C5118157B74005D2FDC /* DISPLAY X EXPOSITOR FANCY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR FANCY.jpg"; sourceTree = "<group>"; };
-		C7E68C5218157B74005D2FDC /* DISPLAY X EXPOSITOR FLOWER.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR FLOWER.jpg"; sourceTree = "<group>"; };
-		C7E68C5318157B74005D2FDC /* DISPLAY X EXPOSITOR GOLD.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR GOLD.jpg"; sourceTree = "<group>"; };
-		C7E68C5418157B74005D2FDC /* DISPLAY X EXPOSITOR HAPPINESS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR HAPPINESS.jpg"; sourceTree = "<group>"; };
-		C7E68C5518157B74005D2FDC /* DISPLAY X EXPOSITOR LIGHT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR LIGHT.jpg"; sourceTree = "<group>"; };
-		C7E68C5618157B74005D2FDC /* DISPLAY X EXPOSITOR MOUNTAIN.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR MOUNTAIN.jpg"; sourceTree = "<group>"; };
-		C7E68C5718157B74005D2FDC /* DISPLAY X EXPOSITOR REFLEX.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR REFLEX.jpg"; sourceTree = "<group>"; };
-		C7E68C5818157B74005D2FDC /* DISPLAY X EXPOSITOR RHYTHM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR RHYTHM.jpg"; sourceTree = "<group>"; };
-		C7E68C5918157B74005D2FDC /* DISPLAY X EXPOSITOR SKY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR SKY.jpg"; sourceTree = "<group>"; };
-		C7E68C5A18157B74005D2FDC /* DISPLAY X EXPOSITOR TRANSPARENCY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DISPLAY X EXPOSITOR TRANSPARENCY.jpg"; sourceTree = "<group>"; };
 		C7E68C6818157D1C005D2FDC /* PlacePin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacePin.h; sourceTree = "<group>"; };
 		C7E68C6918157D1C005D2FDC /* PlacePin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacePin.m; sourceTree = "<group>"; };
 		CCCB51B8140FB9E6005A9272 /* libQCAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQCAR.a; path = ../../build/lib/arm/libQCAR.a; sourceTree = SOURCE_ROOT; };
@@ -1963,19 +1977,26 @@
 		C7E68C4D18157B74005D2FDC /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
-				C7E68C4E18157B74005D2FDC /* DISPLAY X EXPOSITOR CLOTHING.jpg */,
-				C7E68C4F18157B74005D2FDC /* DISPLAY X EXPOSITOR COLOURS.jpg */,
-				C7E68C5018157B74005D2FDC /* DISPLAY X EXPOSITOR EARTH.jpg */,
-				C7E68C5118157B74005D2FDC /* DISPLAY X EXPOSITOR FANCY.jpg */,
-				C7E68C5218157B74005D2FDC /* DISPLAY X EXPOSITOR FLOWER.jpg */,
-				C7E68C5318157B74005D2FDC /* DISPLAY X EXPOSITOR GOLD.jpg */,
-				C7E68C5418157B74005D2FDC /* DISPLAY X EXPOSITOR HAPPINESS.jpg */,
-				C7E68C5518157B74005D2FDC /* DISPLAY X EXPOSITOR LIGHT.jpg */,
-				C7E68C5618157B74005D2FDC /* DISPLAY X EXPOSITOR MOUNTAIN.jpg */,
-				C7E68C5718157B74005D2FDC /* DISPLAY X EXPOSITOR REFLEX.jpg */,
-				C7E68C5818157B74005D2FDC /* DISPLAY X EXPOSITOR RHYTHM.jpg */,
-				C7E68C5918157B74005D2FDC /* DISPLAY X EXPOSITOR SKY.jpg */,
-				C7E68C5A18157B74005D2FDC /* DISPLAY X EXPOSITOR TRANSPARENCY.jpg */,
+				C7153E4B1826551D00899FC7 /* DISPLAY angle.jpg */,
+				C7153E4C1826551D00899FC7 /* DISPLAY born.jpg */,
+				C7153E4D1826551D00899FC7 /* DISPLAY calme.jpg */,
+				C7153E4E1826551D00899FC7 /* DISPLAY dali.jpg */,
+				C7153E4F1826551D00899FC7 /* DISPLAY icone.jpg */,
+				C7153E501826551D00899FC7 /* DISPLAY place.jpg */,
+				C7153E511826551D00899FC7 /* DISPLAY rgb.jpg */,
+				C7153E521826551D00899FC7 /* DISPLAY X EXPOSITOR CLOTHING.jpg */,
+				C7153E531826551D00899FC7 /* DISPLAY X EXPOSITOR COLOURS.jpg */,
+				C7153E541826551D00899FC7 /* DISPLAY X EXPOSITOR EARTH.jpg */,
+				C7153E551826551D00899FC7 /* DISPLAY X EXPOSITOR FANCY.jpg */,
+				C7153E561826551D00899FC7 /* DISPLAY X EXPOSITOR FLOWER.jpg */,
+				C7153E571826551D00899FC7 /* DISPLAY X EXPOSITOR GOLD.jpg */,
+				C7153E581826551D00899FC7 /* DISPLAY X EXPOSITOR HAPPINESS.jpg */,
+				C7153E591826551D00899FC7 /* DISPLAY X EXPOSITOR LIGHT.jpg */,
+				C7153E5A1826551D00899FC7 /* DISPLAY X EXPOSITOR MOUNTAIN.jpg */,
+				C7153E5B1826551D00899FC7 /* DISPLAY X EXPOSITOR REFLEX.jpg */,
+				C7153E5C1826551D00899FC7 /* DISPLAY X EXPOSITOR RHYTHM.jpg */,
+				C7153E5D1826551D00899FC7 /* DISPLAY X EXPOSITOR SKY.jpg */,
+				C7153E5E1826551D00899FC7 /* DISPLAY X EXPOSITOR TRANSPARENCY.jpg */,
 			);
 			path = Facebook;
 			sourceTree = "<group>";
@@ -2040,14 +2061,13 @@
 				C7C5BA8C17F48713005E36DF /* PLACE_MAP@2x.jpg in Resources */,
 				C7C5BAB817F48713005E36DF /* BORN@2x.png in Resources */,
 				C7C5BA5917F48713005E36DF /* CLICK_BUTTON@2x.png in Resources */,
-				C7E68C6318157B74005D2FDC /* DISPLAY X EXPOSITOR MOUNTAIN.jpg in Resources */,
 				C7C5BAA117F48713005E36DF /* ICONE_TITLE_BIG@2x.png in Resources */,
 				C78C82AE17F5E20900C17D28 /* SKY_BOLETA@2x.png in Resources */,
+				C7153E611826551D00899FC7 /* DISPLAY calme.jpg in Resources */,
 				C7C5BA9517F48713005E36DF /* CALME_TITLE_BIG@2x.png in Resources */,
 				C7C5BA8517F48713005E36DF /* FLOWER_INFO_AN@2x.png in Resources */,
 				C7C5B9EA17F48713005E36DF /* TRANSPARENCY19@2x.jpg in Resources */,
 				C7C5BAB717F48713005E36DF /* ANGLE@2x.png in Resources */,
-				C7E68C5C18157B74005D2FDC /* DISPLAY X EXPOSITOR COLOURS.jpg in Resources */,
 				C7C5BA9617F48713005E36DF /* CALME_TITLE_SMALL@2x.png in Resources */,
 				C775F8F51804554100F6E87F /* MINI-ANTIC@2x.png in Resources */,
 				C78C829117F5E20900C17D28 /* CATALEG_BASE@2x.jpg in Resources */,
@@ -2059,11 +2079,11 @@
 				C7C5BABE17F48713005E36DF /* FANCY@2x.png in Resources */,
 				C7C5BA1117F48713005E36DF /* backgorundCell2.JPG in Resources */,
 				C7C5BA4217F48713005E36DF /* SKY_TITLE_BIG@2x.png in Resources */,
-				C7E68C5E18157B74005D2FDC /* DISPLAY X EXPOSITOR FANCY.jpg in Resources */,
 				C78C829B17F5E20900C17D28 /* FLOWER_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BA8917F48713005E36DF /* FLOWER_TITLE_BIG@2x.png in Resources */,
 				C7C5BA6E17F48713005E36DF /* GOLD_MAP@2x.jpg in Resources */,
 				C7C5B9FD17F48713005E36DF /* RGB00@2x.jpg in Resources */,
+				C7153E711826551D00899FC7 /* DISPLAY X EXPOSITOR SKY.jpg in Resources */,
 				C7C5B9F617F48713005E36DF /* PLACE19@2x.jpg in Resources */,
 				C775F8B417FB120100F6E87F /* progress_error.png in Resources */,
 				C7C5BA5C17F48713005E36DF /* DEGRADAT@2x.png in Resources */,
@@ -2078,7 +2098,9 @@
 				C7C5B9EC17F48713005E36DF /* GOLD19@2x.jpg in Resources */,
 				C7C5BA2317F48713005E36DF /* MINI-FANCY@2x.png in Resources */,
 				C7C5B9FF17F48713005E36DF /* BORN00@2x.jpg in Resources */,
+				C7153E5F1826551D00899FC7 /* DISPLAY angle.jpg in Resources */,
 				C7C5BA5F17F48713005E36DF /* header_fletxa_fitxa@2x.png in Resources */,
+				C7153E6F1826551D00899FC7 /* DISPLAY X EXPOSITOR REFLEX.jpg in Resources */,
 				C7C5BA9217F48713005E36DF /* CALME_MAP@2x.jpg in Resources */,
 				C78C828F17F5E20900C17D28 /* CALME_BOLETA_HOVER@2x.png in Resources */,
 				C775F8B317FB120100F6E87F /* progress_done.png in Resources */,
@@ -2092,9 +2114,11 @@
 				C7C5BABF17F48713005E36DF /* FLOWER@2x.png in Resources */,
 				C7A851BA1792F4D10059361B /* Default.png in Resources */,
 				C7C5B9EE17F48713005E36DF /* COLOURS19@2x.jpg in Resources */,
+				C7153E601826551D00899FC7 /* DISPLAY born.jpg in Resources */,
 				C7C5BA7417F48713005E36DF /* COLOURS_MAP@2x.jpg in Resources */,
 				C7C5B9DB17F48713005E36DF /* HAPPI00@2x.jpg in Resources */,
 				C7C5BAC717F48713005E36DF /* RGB@2x.png in Resources */,
+				C7153E661826551D00899FC7 /* DISPLAY X EXPOSITOR CLOTHING.jpg in Resources */,
 				C7C5BA7617F48713005E36DF /* COLOURS_TIRA_IMATGES@2x.png in Resources */,
 				C775F88317FB120000F6E87F /* arrow2@2x.png in Resources */,
 				C78C82A417F5E20900C17D28 /* MOUNTAIN_BOLETA@2x.png in Resources */,
@@ -2155,6 +2179,7 @@
 				C7C5BA2917F48713005E36DF /* MINI-MOUNTAIN@2x.png in Resources */,
 				C7C5B9EF17F48713005E36DF /* LIGHT00@2x.jpg in Resources */,
 				C7C5BA1317F48713005E36DF /* checkout_background.jpg in Resources */,
+				C7153E6B1826551D00899FC7 /* DISPLAY X EXPOSITOR GOLD.jpg in Resources */,
 				C7C5BA7517F48713005E36DF /* COLOURS_PRODUCT@2x.png in Resources */,
 				C7C5BA1417F48713005E36DF /* checkout_bck.jpg in Resources */,
 				C7C5BAA517F48713005E36DF /* RGB_PRODUCT@2x.png in Resources */,
@@ -2163,6 +2188,7 @@
 				C7C5BA9017F48713005E36DF /* PLACE_TITLE_SMALL@2x.png in Resources */,
 				C7C5BA2817F48713005E36DF /* MINI-LIGHT@2x.png in Resources */,
 				C7C5B9E817F48713005E36DF /* RHYTHM19@2x.jpg in Resources */,
+				C7153E6D1826551D00899FC7 /* DISPLAY X EXPOSITOR LIGHT.jpg in Resources */,
 				C7C5BA9917F48713005E36DF /* ANGLE_PRODUCT@2x.png in Resources */,
 				C7C5BA6F17F48713005E36DF /* GOLD_PRODUCT@2x.png in Resources */,
 				C7C5BA3C17F48713005E36DF /* REFLEX_TITLE_BIG@2x.png in Resources */,
@@ -2174,7 +2200,6 @@
 				C7C5BA2017F48713005E36DF /* MINI-CONTACT@2x.png in Resources */,
 				C7C5BA3D17F48713005E36DF /* REFLEX_TITLE_SMALL@2x.png in Resources */,
 				C78C829A17F5E20900C17D28 /* FLOWER_BOLETA@2x.png in Resources */,
-				C7E68C5F18157B74005D2FDC /* DISPLAY X EXPOSITOR FLOWER.jpg in Resources */,
 				C78C829317F5E20900C17D28 /* CLOTHING_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BA8617F48713005E36DF /* FLOWER_MAP@2x.jpg in Resources */,
 				C7C5BAC417F48713005E36DF /* MOUNTAIN@2x.png in Resources */,
@@ -2192,7 +2217,6 @@
 				C7C5BA1517F48713005E36DF /* INSTRUCCIONS@2x.png in Resources */,
 				C7C5BAC017F48713005E36DF /* GOLD@2x.png in Resources */,
 				C7C5BAC817F48713005E36DF /* RHYTHM@2x.png in Resources */,
-				C7E68C5D18157B74005D2FDC /* DISPLAY X EXPOSITOR EARTH.jpg in Resources */,
 				C775F89517FB120000F6E87F /* divider_vertical.png in Resources */,
 				C78C82A717F5E20900C17D28 /* PLACE_BOLETA_HOVER@2x.png in Resources */,
 				C7C5B9E717F48713005E36DF /* RHYTHM00@2x.jpg in Resources */,
@@ -2209,10 +2233,11 @@
 				C7C5BA8817F48713005E36DF /* FLOWER_TIRA_IMATGES@2x.png in Resources */,
 				C78C82AC17F5E20900C17D28 /* RHYTHM_BOLETA@2x.png in Resources */,
 				C7C5BA9417F48713005E36DF /* CALME_TIRA_IMATGES@2x.png in Resources */,
-				C7E68C6618157B74005D2FDC /* DISPLAY X EXPOSITOR SKY.jpg in Resources */,
 				C7C5BA4E17F48713005E36DF /* FANCY_TITLE_BIG@2x.png in Resources */,
 				C7E68C4C18157B5A005D2FDC /* google maps.png in Resources */,
+				C7153E691826551D00899FC7 /* DISPLAY X EXPOSITOR FANCY.jpg in Resources */,
 				C78C829017F5E20900C17D28 /* CATALEG.jpg in Resources */,
+				C7153E631826551D00899FC7 /* DISPLAY icone.jpg in Resources */,
 				C7C5BA6D17F48713005E36DF /* GOLD_INFO_AN@2x.png in Resources */,
 				C7C5BA0517F48713005E36DF /* 08_Checkout_Quantity_1024x768.png in Resources */,
 				C775F8B717FB120100F6E87F /* README.rtf in Resources */,
@@ -2221,11 +2246,13 @@
 				C7C5B9E017F48713005E36DF /* SKY19@2x.jpg in Resources */,
 				C7C5BA9D17F48713005E36DF /* ICONE_INFO_AN@2x.png in Resources */,
 				C7C5BA0117F48713005E36DF /* DALI00@2x.jpg in Resources */,
+				C7153E641826551D00899FC7 /* DISPLAY place.jpg in Resources */,
 				C7C5BA5017F48713005E36DF /* EARTH_INFO_AN@2x.png in Resources */,
 				C760EE0E181283450052A919 /* architexture-online.mp4 in Resources */,
 				C7C5BA8417F48713005E36DF /* MENU@2x.png in Resources */,
 				C7C5BA3917F48713005E36DF /* REFLEX_MAP@2x.jpg in Resources */,
 				C7C5BA7C17F48713005E36DF /* LIGHT_TITLE_SMALL@2x.png in Resources */,
+				C7153E681826551D00899FC7 /* DISPLAY X EXPOSITOR EARTH.jpg in Resources */,
 				C7C5BABB17F48713005E36DF /* COLOURS@2x.png in Resources */,
 				C7C5BA4917F48713005E36DF /* CLOTHING_TITLE_SMALL@2x.png in Resources */,
 				C7C5BAB517F48713005E36DF /* DALI_TITLE_BIG@2x.png in Resources */,
@@ -2249,6 +2276,7 @@
 				C7C5BAB117F48713005E36DF /* BORN_TITLE_SMALL@2x.png in Resources */,
 				C7C5BA0A17F48713005E36DF /* 08_Paypal_ON_IPAD_02.jpg in Resources */,
 				C7C5BA3017F48713005E36DF /* MINI-TRANSPARENCY@2x.png in Resources */,
+				C7153E6E1826551D00899FC7 /* DISPLAY X EXPOSITOR MOUNTAIN.jpg in Resources */,
 				C78C829417F5E20900C17D28 /* COLOURS_BOLETA@2x.png in Resources */,
 				C7C5BA3417F48713005E36DF /* HAPPI_PRODUCT@2x.png in Resources */,
 				C7C5B9F217F48713005E36DF /* MOUNTAIN19@2x.jpg in Resources */,
@@ -2258,7 +2286,6 @@
 				C7C5BA6717F48713005E36DF /* TRANSPARENCY_INFO_AN@2x.png in Resources */,
 				C7C5BA7D17F48713005E36DF /* MOUNTAIN_INFO_AN@2x.png in Resources */,
 				C7C5BA0817F48713005E36DF /* 08_PayPal_OFF.png in Resources */,
-				C7E68C6718157B74005D2FDC /* DISPLAY X EXPOSITOR TRANSPARENCY.jpg in Resources */,
 				C78C82A317F5E20900C17D28 /* LIGHT_BOLETA_HOVER@2x.png in Resources */,
 				C7C5B9FA17F48713005E36DF /* ANGLE19@2x.jpg in Resources */,
 				C78C82B017F5E20900C17D28 /* TRANSPARENCY_BOLETA@2x.png in Resources */,
@@ -2267,14 +2294,18 @@
 				C7C5BA4317F48713005E36DF /* SKY_TITLE_SMALL@2x.png in Resources */,
 				C7C5BA8F17F48713005E36DF /* PLACE_TITLE_BIG@2x.png in Resources */,
 				C7C5BABC17F48713005E36DF /* DALI@2x.png in Resources */,
+				C7153E721826551D00899FC7 /* DISPLAY X EXPOSITOR TRANSPARENCY.jpg in Resources */,
 				C7C5BA9E17F48713005E36DF /* ICONE_MAP@2x.jpg in Resources */,
 				C7C5BA7017F48713005E36DF /* GOLD_TIRA_IMATGES@2x.png in Resources */,
 				C7C5BA7A17F48713005E36DF /* LIGHT_TIRA_IMATGES@2x.png in Resources */,
 				C7C5BAA617F48713005E36DF /* RGB_TIRA_IMATGES@2x.png in Resources */,
 				C7C5BA2217F48713005E36DF /* MINI-EARTH@2x.png in Resources */,
+				C7153E6C1826551D00899FC7 /* DISPLAY X EXPOSITOR HAPPINESS.jpg in Resources */,
 				C7A8525D1793326A0059361B /* ICONA.png in Resources */,
+				C7153E701826551D00899FC7 /* DISPLAY X EXPOSITOR RHYTHM.jpg in Resources */,
 				C78C828D17F5E20900C17D28 /* ANGLE_BOLETA_HOVER@2x.png in Resources */,
 				C7C5BA1217F48713005E36DF /* backgroundCell.JPG in Resources */,
+				C7153E621826551D00899FC7 /* DISPLAY dali.jpg in Resources */,
 				C7C5BA9717F48713005E36DF /* ANGLE_INFO_AN@2x.png in Resources */,
 				C7C5BA1017F48713005E36DF /* 8_Clear_Button_ON.png in Resources */,
 				C7C5BACA17F48713005E36DF /* TRANSPARENCY@2x.png in Resources */,
@@ -2282,9 +2313,11 @@
 				C7C5B9F417F48713005E36DF /* FLOWER19@2x.jpg in Resources */,
 				C70AD0CE17F635EE008A963B /* LOADING@2x.jpg in Resources */,
 				C7C5BA5317F48713005E36DF /* EARTH_TIRA_IMATGES@2x.png in Resources */,
+				C7153E651826551D00899FC7 /* DISPLAY rgb.jpg in Resources */,
 				C7C5BA1E17F48713005E36DF /* MINI-CLOTHING@2x.png in Resources */,
 				C78C829817F5E20900C17D28 /* FANCY_BOLETA@2x.png in Resources */,
 				C7C5BA0F17F48713005E36DF /* 8_Clear_Button_OFF.png in Resources */,
+				C7153E6A1826551D00899FC7 /* DISPLAY X EXPOSITOR FLOWER.jpg in Resources */,
 				C7C5BA2717F48713005E36DF /* MINI-ICONE@2x.png in Resources */,
 				C7C5BA7917F48713005E36DF /* LIGHT_PRODUCT@2x.png in Resources */,
 				C760EE10181283530052A919 /* us.jpg in Resources */,
@@ -2304,10 +2337,8 @@
 				C7C5BA0217F48713005E36DF /* DALI19@2x.jpg in Resources */,
 				C7C5BA4017F48713005E36DF /* SKY_PRODUCT@2x.png in Resources */,
 				C7A8525F1793327C0059361B /* ICONA@2x.png in Resources */,
-				C7E68C6518157B74005D2FDC /* DISPLAY X EXPOSITOR RHYTHM.jpg in Resources */,
 				C7C5BAA017F48713005E36DF /* ICONE_TIRA_IMATGES@2x.png in Resources */,
 				C7C5BAA717F48713005E36DF /* RGB_TITLE_BIG@2x.png in Resources */,
-				C7E68C6218157B74005D2FDC /* DISPLAY X EXPOSITOR LIGHT.jpg in Resources */,
 				C7C5BA4A17F48713005E36DF /* FANCY_INFO_AN@2x.png in Resources */,
 				C7C5BA5717F48713005E36DF /* base dali.jpg in Resources */,
 				C7C5BA4F17F48713005E36DF /* FANCY_TITLE_SMALL@2x.png in Resources */,
@@ -2315,13 +2346,13 @@
 				C7C5B9DE17F48713005E36DF /* REFLEX19@2x.jpg in Resources */,
 				C7C5BA2617F48713005E36DF /* MINI-HAPPINESS@2x.png in Resources */,
 				C7C5B9E117F48713005E36DF /* CLOTHING00@2x.jpg in Resources */,
+				C7153E671826551D00899FC7 /* DISPLAY X EXPOSITOR COLOURS.jpg in Resources */,
 				C7C5BA2117F48713005E36DF /* MINI-DALI@2x.png in Resources */,
 				C7C5B9F517F48713005E36DF /* PLACE00@2x.jpg in Resources */,
 				C7C5BA6C17F48713005E36DF /* TRANSPARENCY_TITLE_SMALL@2x.png in Resources */,
 				C7C5BA8B17F48713005E36DF /* PLACE_INFO_AN@2x.png in Resources */,
 				C7C5BA8E17F48713005E36DF /* PLACE_TIRA_IMATGES@2x.png in Resources */,
 				C7C5BA3E17F48713005E36DF /* SKY_INFO_AN@2x.png in Resources */,
-				C7E68C6118157B74005D2FDC /* DISPLAY X EXPOSITOR HAPPINESS.jpg in Resources */,
 				C7C5BA7317F48713005E36DF /* COLOURS_INFO_AN@2x.png in Resources */,
 				C72ACE2117CF79EE000CCEAD /* MainStoryboard.storyboard in Resources */,
 				C7C5BA4C17F48713005E36DF /* FANCY_PRODUCT@2x.png in Resources */,
@@ -2334,15 +2365,12 @@
 				C775F8F61804554100F6E87F /* MINI-MUR@2x.png in Resources */,
 				C78C82A017F5E20900C17D28 /* ICONE_BOLETA@2x.png in Resources */,
 				C7C5BA9817F48713005E36DF /* ANGLE_MAP@2x.jpg in Resources */,
-				C7E68C5B18157B74005D2FDC /* DISPLAY X EXPOSITOR CLOTHING.jpg in Resources */,
-				C7E68C6018157B74005D2FDC /* DISPLAY X EXPOSITOR GOLD.jpg in Resources */,
 				C7C5B9DC17F48713005E36DF /* HAPPI19@2x.jpg in Resources */,
 				C7C5BA6117F48713005E36DF /* RHYTHM_INFO_AN@2x.png in Resources */,
 				C7C5BA0417F48713005E36DF /* 08_Add_Button_ON.png in Resources */,
 				C7C5B9FC17F48713005E36DF /* ICONE19@2x.jpg in Resources */,
 				C7C5BA3217F48713005E36DF /* HAPPI_INFO_AN@2x.png in Resources */,
 				C7C5BA9117F48713005E36DF /* CALME_INFO_AN@2x.png in Resources */,
-				C7E68C6418157B74005D2FDC /* DISPLAY X EXPOSITOR REFLEX.jpg in Resources */,
 				C7C5BA8717F48713005E36DF /* FLOWER_PRODUCT@2x.png in Resources */,
 				C78C828C17F5E20900C17D28 /* ANGLE_BOLETA@2x.png in Resources */,
 				C7C5BA4B17F48713005E36DF /* FANCY_MAP@2x.jpg in Resources */,

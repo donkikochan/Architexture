@@ -10,14 +10,15 @@
 "CHECKOUT"              = "CheckOut";
 "NEXT"                  = "Next";
 "BACK"                  = "Back";
-"TOTAL"                 = "Total";
-"NOT_SHIPPING"          = "(Not including shipping)";
-"WARNING"               = "Advertencia";
+"TOTAL"                 = "Total to pay";
+"TOTAL_AUX"             = "Total";
+"NOT_SHIPPING"          = "(Shipping not included)";
+"WARNING"               = "Warning";
 "OK"                    = "Ok";
-"AT_LEAST_ONE_RING"     = "Para continuar el pedido ha de añadir al carrito almenos 1 anillo";
+"AT_LEAST_ONE_RING"     = "Add at least 1 product to continue";
 "SHOP"                  = "Shop";
 "CLEAR"                 = "Clear";
-"WEB_ARCHITEXTURE"      = "Web Architexture";
+"WEB_ARCHITEXTURE"      = "architexture-online.com";
 "CONTACT_US"            = "Contact us";
 
 "BARCELONA_COLLECTION"  = "Barcelona Collection";
@@ -46,34 +47,37 @@
 "ICONE_INFO"            = "ICONE_INFO_AN.png";
 "RGB_INFO"              = "RGB_INFO_AN.png";
 
-"ARCHITEXTURE_PRODUCT"  = "ArchiteXture Product";
+"ARCHITEXTURE_PRODUCT"  = "ArchiteXture Products";
 
 
-"NAME"                  = "*Name";
+"NAME"                  = "*Full Name";
 "ADDRESS"               = "*Address";
-"CITY"                  = "*City";
+"CITY"                  = "*Town/City";
 "PROVINCE"              = "*Province";
-"ZIP"                   = "*ZIP";
+"ZIP"                   = "*Postcode/Zip";
 "EMAIL"                 = "*Email";
+"PHONE"                 = "*Phone";
+"ORDER_NOTES"           = "Order Notes";
 "COUNTRY"               = "*Country";
 "COUPON"                = "Coupon";
 "TITLE_DELIVERY"        = "Delivery";
-"INFO_SHIPPING_2"       = "(a partir de 2 anillos envio gratuito 24-72h)";
-"INFO_SHIPPING_4"       = "(a partir de 4 anillos envio gratuito 24-72h)";
-"SUMMARY_SHIPPING"      = "Resumen de la compra";
+"INFO_SHIPPING_2"       = "(FREE shipping 24-72h for 2 or more products)";
+"INFO_SHIPPING_4"       = "(FREE shipping 24-72h for 4 or more products)";
+"SUMMARY_SHIPPING"      = "Shopping cart summary";
 "ERROR_DELIVERY"        = "Delivery Error";
-"NAME_REQUIRED"         = "You must fill out the Name field";
-"EMAIL_REQUIRED"        = "You must fill out the Email field";
-"SUBJECT_REQUIRED"      = "You must fill out the Subject field";
-"MESSAGE_REQUIRED"      = "You must fill out the Message field";
-"INTRODUCE_VALID_EMAIL" = "You entered a valid email";
-"ADDRESS_REQUIRED"      = "You must fill out the Address field";
-"CITY_REQUIRED"         = "You must fill out the City field";
-"ZIP_REQUIRED"          = "You must fill out the ZIP field";
-"PROVINCE_REQUIRED"     = "You must fill out the Province field";
+"NAME_REQUIRED"         = "Please fill out the Complete Name field";
+"EMAIL_REQUIRED"        = "Please fill out the Email field";
+"SUBJECT_REQUIRED"      = "Please fill out the Subject field";
+"MESSAGE_REQUIRED"      = "Please fill out the Message field";
+"INTRODUCE_VALID_EMAIL" = "Please enter a valid email";
+"ADDRESS_REQUIRED"      = "Please fill out the Address field";
+"CITY_REQUIRED"         = "Please fill out the Town/City field";
+"ZIP_REQUIRED"          = "Please fill out the Postcode/Zip field";
+"PROVINCE_REQUIRED"     = "Please fill out the Province field";
+"PHONE_REQUIRED"        = "Please fill out the Phone field";
 "CANCEL"                = "Cancel";
 "DONE"                  = "Done";
-
+"PRESS_BACK_SHOP"       = "Press Back to modify your cart";
 "PROBLEM_DETECTED"      = "Problem detected:";
 "CONNECTION_ERROR"      = "Connection error";
 "APPLY"                 = "Apply";
@@ -86,41 +90,42 @@
 "ACCEPT"                = "Accept";
 "PREVIOUS"              = "Previous";
 
-"RINGS_BUYED"           = "Rings Buyed:";
+"RINGS_BUYED"           = "Your order:";
 
-"INSERT_NAME"           = "Insert Name...";
+"INSERT_NAME"           = "Insert Complete Name...";
 "INSERT_ADDRESS"        = "Insert Address...";
-"INSERT_CITY"           = "Insert City...";
-"INSERT_ZIP"            = "Insert ZIP...";
+"INSERT_CITY"           = "Insert Town/City...";
+"INSERT_ZIP"            = "Insert Postcode/Zip...";
 "INSERT_PROVINCE"       = "Insert Province...";
 "INSERT_EMAIL"          = "Insert Email...";
+"INSERT_PHONE"          = "Insert Phone...";
+"INSERT_ORDER_NOTES"    = "e.g. special notes for delivery...";
 "INSERT_COUPON"         = "Insert Coupon...";
 "INSERT_SUBJECT"        = "Insert Subject...";
 
-"FIELD_NOT_OPTIONAL"    = "(* All this fields must be inserted)";
-"FIELD_NOT_EMPTY"       = "El campo no puede estar vacío";
+"FIELD_NOT_OPTIONAL"    = "(* Required fields)";
+"FIELD_NOT_EMPTY"       = "This field cannot be empty";
 "CHECKING_COUPON"       = "Checking Coupon...";
 
-"PROBLEM_DETECTED"      = "Problema detectao";
-"CONNECTION_ERROR"      = "Error en la connexión al servidor ArchiteXture";
-"VERIFYING_PAYMENT"     = "Verificando el pago";
+"PROBLEM_DETECTED"      = "Problem detected";
+"CONNECTION_ERROR"      = "Connection to the ArchiteXture server failed";
+"VERIFYING_PAYMENT"     = "Verifying the payment";
 
 "FACEBOOK_OPTION"       = "Facebook Options:";
-"POST_FACEBOOK"         = "Post on Facebook wall";
-"ARCHITEXTURE_FACEBOOK" = "Visit ArchiteXture Facebook";
+"POST_FACEBOOK"         = "Post it on Facebook";
+"ARCHITEXTURE_FACEBOOK" = "Visit ArchiteXture on Facebook";
 
 "TWITTER_OPTION"        = "Twitter Options:";
-"POST_TWEET"            = "Do Tweet";
-"ARCHITEXTURE_TWITTER"  = "Visit ArchiteXture Twitter";
+"POST_TWEET"            = "Tweet";
+"ARCHITEXTURE_TWITTER"  = "Visit ArchiteXture on Twitter";
 
 "FACEBOOK_NOT_LINKED"   = "Facebook is not available";
 "TWITTER_NOT_LINKED"    = "Twitter is not available";
 
-"FACEBOOK_HAPPINESS"        = "Happiness ring by ArchiteXture. http://www.google.es";
 "FACEBOOK_POST_CANCELLED"   = "Action Cancelled";
 "FACEBOOK_POST_SUCCESSFULL" = "Post Successfull";
 
-"PRESS_ANY_RING"        = "Press any Ring To view Collection";
+"PRESS_ANY_RING"        = "Press to view ArchiteXture Collection";
 "INFO_ABOUT"            = "We are architects and we love architecture.\n\nArchitexture comes from this passion and the desire that we have to bring it to everyone. Fusion between architecture, photography and jewelry becomes in these pieces: small bits of architecture turned into rings. We invite you to come into the Architexture world to share our passion, discover the architecture and enjoy the small details.\n\nHeaded by the architects Monica Molas and Marta Rofin, architexture is part of the Espai Paper project to bring architecture to the people. It is located in Vic and it has international aim.";
 
 
@@ -135,7 +140,7 @@
 "SEND_REQUEST"          = "Send Request";
 "ERROR_CONTACTUS"       = "Contact Error";
 
-"EMAIL_NOT_AVAILABLE"   = "Device is not able to send email.";
+"EMAIL_NOT_AVAILABLE"   = "Please configure your email account.";
 "RESULT_CANCELED"       = "Result canceled";
 "RESULT_SAVED"          = "Result saved";
 "RESULT_SENT"           = "Result sent";
@@ -143,5 +148,35 @@
 "RESULT_NOT_SENT"       = "Result not sent";
 
 "COUPON_OK"             = "Coupon valid!";
+"COUPON_NOT_OK"         = "Invalid Coupon";
+
+"PURCHASE_OK"           = "Successfully complete";
+"THANKS_PURCHASE"       = "Thank you to buy ArchiteXture";
 
 
+
+
+"ERROR_PURCHASE"        = "Se ha producido un error al enviar los datos de la compra al servidor de Archixteure. Póngase en contacto con purchase@architexture para resolver la incidencia. Gracis por su colaboración, disuclpe las molestias";
+
+"PURCHASE_NO_OK"        = "Error en la compra";
+
+"FACEBOOK_HAPPINESS"    = "Happiness ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_REFLEX"       = "Refelx ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_SKY"          = "Sky ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_CLOTHING"     = "Clothing ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_FANCY"        = "Fancy ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_EARTH"        = "Earth ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_RHYTHM"       = "Rhythm ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_TRANSPARENCY" = "Transparency ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_GOLD"         = "Gold ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_COLOURS"      = "Colours ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_LIGHT"        = "Light ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_MOUNTAIN"     = "Mountain ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_FLOWER"       = "Flower ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_PLACE"        = "Place ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_CALME"        = "Calme ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_ANGLE"        = "Angle ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_LIGHT"        = "Light ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_ICONE"        = "Icone ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_BORN"         = "Born rings available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FACEBOOK_DALI"         = "Dalí rings available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";

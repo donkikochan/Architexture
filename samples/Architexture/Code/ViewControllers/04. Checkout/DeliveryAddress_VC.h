@@ -14,13 +14,15 @@
 //-------------
 
 //---Define new types:---
-#define DELIVERY_NAME       @"DELIVERY_NAME"
-#define DELIVERY_ADDRESS    @"DELIVERY_ADDRESS"
-#define DELIVERY_CITY       @"DELIVERY_CITY"
-#define DELIVERY_ZIP        @"DELIVERY_ZIP"
-#define DELIVERY_PROVINCE   @"DELIVERY_PROVINCE"
-#define DELIVERY_EMAIL      @"DELIVERY_EMAIL"
-#define DELIVERY_COUNTRY    @"DELIVERY_COUNTRY"
+#define DELIVERY_NAME           @"DELIVERY_NAME"
+#define DELIVERY_ADDRESS        @"DELIVERY_ADDRESS"
+#define DELIVERY_CITY           @"DELIVERY_CITY"
+#define DELIVERY_ZIP            @"DELIVERY_ZIP"
+#define DELIVERY_PROVINCE       @"DELIVERY_PROVINCE"
+#define DELIVERY_EMAIL          @"DELIVERY_EMAIL"
+#define DELIVERY_PHONE          @"DELIVERY_PHONE"
+#define DELIVERY_ORDER_NOTES    @"DELIVERY_ORDER_NOTES"
+#define DELIVERY_COUNTRY        @"DELIVERY_COUNTRY"
 //-----------------------
 
 
@@ -53,6 +55,8 @@
 @property (strong, nonatomic) IBOutlet UITextField*         m_TextField_Province;
 @property (strong, nonatomic) IBOutlet UITextField*         m_TextField_EMail;
 @property (strong, nonatomic) IBOutlet UITextField*         m_TextField_Coupon;
+@property (strong, nonatomic) IBOutlet UITextField*         m_TextField_Phone;
+@property (strong, nonatomic) IBOutlet UITextView*          m_TextView_OrderNotes;
 @property (strong, nonatomic) IBOutlet UILabel*             m_Label_EMail;
 @property (strong, nonatomic) IBOutlet UILabel*             m_Label_Province;
 @property (strong, nonatomic) IBOutlet UILabel*             m_Label_ZIP;
@@ -66,6 +70,9 @@
 @property (strong, nonatomic) IBOutlet UILabel*             m_Label_Rings;
 @property (strong, nonatomic) IBOutlet UILabel*             m_Label_Shipping;
 @property (strong, nonatomic) IBOutlet UILabel*             m_Label_Coupon;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_Phone;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_OrderNotes;
+@property (strong, nonatomic) IBOutlet UILabel*             m_Label_ContinueShopping;
 @property (strong, nonatomic) IBOutlet UILabel*             m_Label_Total;
 @property (strong, nonatomic) IBOutlet UILabel*             m_Label_RingPrize;
 @property (strong, nonatomic) IBOutlet UILabel*             m_Label_ShippingPrize;

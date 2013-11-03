@@ -20,7 +20,7 @@
 #define TIME_SLOW_SHIPPING_NOT_SPAIN    @"7-8"
 #define TIME_QUICK_SHIPPING_NOT_SPAIN   @"24-72h"
 
-#define HEIGHT_CONTENT_SCROLL           736.f
+#define HEIGHT_CONTENT_SCROLL           1100.f
 
 @interface DeliveryAddress_VC ()
 
@@ -62,7 +62,10 @@
     _m_Label_ShippingPrize.text = NSLocalizedString(@"SHIPPING_PRIZE",nil);
     _m_Label_InfoShipping.text  = NSLocalizedString(@"INFO_SHIPPING_2",nil);
     _m_Label_Summary.text       = NSLocalizedString(@"SUMMARY_SHIPPING",nil);
-    _m_Label_FieldsNotOptionals.text = NSLocalizedString(@"FIELD_NOT_OPTIONAL",nil);
+    _m_Label_FieldsNotOptionals.text    = NSLocalizedString(@"FIELD_NOT_OPTIONAL",nil);
+    _m_Label_Phone.text         = NSLocalizedString(@"PHONE",nil);
+    _m_Label_OrderNotes.text    = NSLocalizedString(@"ORDER_NOTES",nil);
+    _m_Label_ContinueShopping.text      = NSLocalizedString(@"PRESS_BACK_SHOP",nil);
     
     [_m_Button_Apply    setTitle:NSLocalizedString(@"APPLY",nil) forState:UIControlStateNormal];
     [_m_Button_Back     setTitle:NSLocalizedString(@"BACK",nil) forState:UIControlStateNormal];
@@ -76,6 +79,7 @@
     _m_TextField_Province.placeholder   = NSLocalizedString(@"INSERT_PROVINCE",nil);
     _m_TextField_EMail.placeholder      = NSLocalizedString(@"INSERT_EMAIL",nil);
     _m_TextField_Coupon.placeholder     = NSLocalizedString(@"INSERT_COUPON",nil);
+    _m_TextField_Phone.placeholder      = NSLocalizedString(@"INSERT_PHONE",nil);
     
     _m_TextField_Name.text      =
     _m_TextField_Address.text   =
@@ -123,6 +127,18 @@
     if (_email != nil && ![_email isEqualToString:@""])
     {
         _m_TextField_EMail.text = _email;
+    }
+    
+    NSString* _phone = [ECommon getUserDefaultValueStringForKey:DELIVERY_PHONE];
+    if (_phone != nil && ![_phone isEqualToString:@""])
+    {
+        _m_TextField_Phone.text = _phone;
+    }
+    
+    NSString* _orderNotes = [ECommon getUserDefaultValueStringForKey:DELIVERY_ORDER_NOTES];
+    if (_orderNotes != nil && ![_orderNotes isEqualToString:@""])
+    {
+        _m_TextView_OrderNotes.text = _orderNotes;
     }
     
     NSString* _country = [ECommon getUserDefaultValueStringForKey:DELIVERY_COUNTRY];
@@ -187,6 +203,7 @@
                                                  _m_TextField_Name,     _m_TextField_Address,
                                                  _m_TextField_City,     _m_TextField_ZIP ,
                                                  _m_TextField_Province, _m_TextField_EMail,
+                                                 _m_TextField_Phone,    _m_TextView_OrderNotes,
                                                  _m_TextField_Coupon,   nil]];
     
     [self updateRingScroll];
@@ -331,7 +348,11 @@
         [ECommon setUserDefaultString:_m_TextField_EMail.text   forKey:DELIVERY_EMAIL];
         [ECommon syncUserDefalts];
     }
-
+    else if(textField == _m_TextField_Phone && _m_TextField_Phone.text.length != 0)
+    {
+        [ECommon setUserDefaultString:_m_TextField_Phone.text   forKey:DELIVERY_PHONE];
+        [ECommon syncUserDefalts];
+    }
 }
 
 - (void) ressignAllTxtFields
@@ -343,6 +364,8 @@
     [_m_TextField_Province  resignFirstResponder];
     [_m_TextField_EMail     resignFirstResponder];
     [_m_TextField_Coupon    resignFirstResponder];
+    [_m_TextField_Phone     resignFirstResponder];
+    [_m_TextView_OrderNotes resignFirstResponder];
 }
 
 
@@ -444,14 +467,7 @@
 
 - (void) resignResponderAll
 {
-    [_m_TextField_Address   resignFirstResponder];
-    [_m_TextField_City      resignFirstResponder];
-    [_m_TextField_Country   resignFirstResponder];
-    [_m_TextField_Coupon    resignFirstResponder];
-    [_m_TextField_EMail     resignFirstResponder];
-    [_m_TextField_Name      resignFirstResponder];
-    [_m_TextField_Province  resignFirstResponder];
-    [_m_TextField_ZIP       resignFirstResponder];
+    [self ressignAllTxtFields];
 }
 
 - (void) showActionSheetPicker:(NSString*)title selRow:(int)row
@@ -529,6 +545,7 @@
 
 - (IBAction)coupon_Clicked:(id)sender
 {
+    [self resignResponderAll];
     if (_m_TextField_Coupon.text.length == 0)
     {
         [ECommon showAlertInfo:NSLocalizedString(@"WARNING",nil) title:NSLocalizedString(@"FIELD_NOT_OPTIONAL", nil)];
@@ -613,7 +630,13 @@
         [_m_TextField_EMail becomeFirstResponder];
         return NO;
     }
-    
+    if (_m_TextField_Phone.text.length == 0)
+    {
+        [ECommon showAlertInfo:NSLocalizedString(@"PHONE_REQUIRED", nil) title:NSLocalizedString(@"ERROR_DELIVERY",nil)];
+        [self jumptTotextField:_m_TextField_Phone];
+        [_m_TextField_Phone becomeFirstResponder];
+        return NO;
+    }
     
     return YES;
 }
@@ -746,7 +769,7 @@
         {
             if (m_bCheckingCoupon)
             {
-                [ECommon setProgressErrorAndHideWithText:@"Cupon invalid o caducat" andDelay:2.f];
+                [ECommon setProgressErrorAndHideWithText:NSLocalizedString(@"COUPON_NOT_OK",nil) andDelay:2.f];
             }
             else if (m_bSendingPaymentInfo)
             {

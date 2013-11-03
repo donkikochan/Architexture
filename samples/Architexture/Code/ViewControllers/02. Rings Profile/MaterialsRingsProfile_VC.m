@@ -258,21 +258,27 @@
     {
         case 0://_01_RHYTHM
             m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR RHYTHM.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_RHYTHM",nil);
             break;
         case 1://_02_TRANSPARENCY
             m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR TRANSPARENCY.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_TRANSPARENCY",nil);
             break;
         case 2://_03_GOLD
             m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR GOLD.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_GOLD",nil);
             break;
         case 3://_04_COLOURS
             m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR COLOURS.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_COLOURS",nil);
             break;
         case 4://_05_LIGHT
             m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR LIGHT.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_LIGHT",nil);
             break;
         case 5://_06_MOUNTAIN
             m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR MOUNTAIN.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_MOUNTAIN",nil);
             break;
         default:
             break;
@@ -283,6 +289,36 @@
 
 - (void) PostOnTwitter
 {
+    switch (m_iTagButtonFacebookImage)
+    {
+        case 0://_01_RHYTHM
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR RHYTHM.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_RHYTHM",nil);
+            break;
+        case 1://_02_TRANSPARENCY
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR TRANSPARENCY.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_TRANSPARENCY",nil);
+            break;
+        case 2://_03_GOLD
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR GOLD.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_GOLD",nil);
+            break;
+        case 3://_04_COLOURS
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR COLOURS.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_COLOURS",nil);
+            break;
+        case 4://_05_LIGHT
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR LIGHT.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_LIGHT",nil);
+            break;
+        case 5://_06_MOUNTAIN
+            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR MOUNTAIN.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_MOUNTAIN",nil);
+            break;
+        default:
+            break;
+    }
+    
     [super PostOnTwitter];
 }
 

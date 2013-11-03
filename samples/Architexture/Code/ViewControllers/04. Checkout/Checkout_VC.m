@@ -39,7 +39,7 @@
     
     //----Localize Labels:----
     _m_Label_Title.text         = NSLocalizedString(@"CHECKOUT",nil);
-    _m_Label_Total.text         = NSLocalizedString(@"TOTAL",nil);
+    _m_Label_Total.text         = NSLocalizedString(@"TOTAL_AUX",nil);
     _m_Label_NotShipping.text   = NSLocalizedString(@"NOT_SHIPPING",nil);
     [_m_Button_Back setTitle:NSLocalizedString(@"BACK",nil) forState:UIControlStateNormal];
     [_m_Button_Clear setTitle:NSLocalizedString(@"CLEAR",nil) forState:UIControlStateNormal];

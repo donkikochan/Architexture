@@ -60,6 +60,9 @@
     _m_View_Ring.m_Image_TitleSmall.alpha    = 0.f;
     _m_View_Ring.m_Image_TitleBig.alpha      = 1.f;
  
+    [_m_View_Ring.m_Button_Facebook addTarget:self action:@selector(showActionSheetFacebook:) forControlEvents:UIControlEventTouchDown];
+    [_m_View_Ring.m_Button_Twitter addTarget:self action:@selector(showActionSheetTwitter:) forControlEvents:UIControlEventTouchDown];
+    
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)])
     {
         // iOS 7
@@ -230,5 +233,144 @@
     
     NSLog(@"Dalí didReceiveMemoryWarning");
 }
+
+
+- (IBAction) showActionSheetFacebook:(id)sender
+{
+    m_eTypeActionSheet = ACTION_SHEET_FACEBOOK;
+    m_ActionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"FACEBOOK_OPTION", @"")
+                                                delegate:self
+                                       cancelButtonTitle:NSLocalizedString(@"CANCEL", @"")
+                                  destructiveButtonTitle:nil
+                                       otherButtonTitles:NSLocalizedString(@"POST_FACEBOOK", @""),
+                     NSLocalizedString(@"ARCHITEXTURE_FACEBOOK", @""),nil];
+    
+    [m_ActionSheet showInView:[[UIApplication sharedApplication] keyWindow]];
+}
+
+- (IBAction) showActionSheetTwitter:(id)sender
+{
+    m_eTypeActionSheet = ACTION_SHEET_TWITTER;
+    
+    m_ActionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"TWITTER_OPTION", @"")
+                                                delegate:self
+                                       cancelButtonTitle:NSLocalizedString(@"CANCEL", @"")
+                                  destructiveButtonTitle:nil
+                                       otherButtonTitles:NSLocalizedString(@"POST_TWEET", @""),
+                     NSLocalizedString(@"ARCHITEXTURE_TWITTER", @""),nil];
+    
+    [m_ActionSheet showInView:[[UIApplication sharedApplication] keyWindow]];
+}
+
+#pragma mark - UIActionSheetDelegate
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    switch (buttonIndex)
+    {
+        case 0: //POST
+        {
+            if (m_eTypeActionSheet == ACTION_SHEET_TWITTER)
+            {
+                [self PostOnTwitter];
+            }
+            else if (m_eTypeActionSheet == ACTION_SHEET_FACEBOOK)
+            {
+                [self PostOnFacebook];
+            }
+        }
+            break;
+            
+        case 1: //VISIT WEB
+        {
+            if (m_eTypeActionSheet == ACTION_SHEET_TWITTER)
+            {
+                [self performSegueWithIdentifier:@"FromViewController_To_WebLink" sender:@"https://twitter.com/rchitexture"];
+            }
+            else if (m_eTypeActionSheet == ACTION_SHEET_FACEBOOK)
+            {
+                [self performSegueWithIdentifier:@"FromViewController_To_WebLink" sender:@"https://www.facebook.com/pages/architexture-online/399183696843071"];
+            }
+        }
+            break;
+        case 2:
+        {
+            //CANCEL
+            //Nothing todo
+        }
+        default:
+            break;
+    }//END switch (buttonIndex)
+}
+
+- (void) PostOnFacebook
+{
+    //check if Facebook Account is linked
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook])
+    {
+        m_mySLComposerSheet = [[SLComposeViewController alloc] init];
+        m_mySLComposerSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        [m_mySLComposerSheet setInitialText:NSLocalizedString(@"FACEBOOK_DALI", nil)];
+        
+        UIImage* img = [UIImage imageNamed:@"DISPLAY dali.jpg"];
+        [m_mySLComposerSheet addImage:img];
+        [self presentViewController:m_mySLComposerSheet animated:YES completion:nil];
+    }
+    else
+    {
+        [ECommon showAlertInfo:NSLocalizedString(@"FACEBOOK_NOT_LINKED",nil) title:NSLocalizedString(@"WARNING", nil)];
+        return;
+    }
+    
+    [m_mySLComposerSheet setCompletionHandler:^(SLComposeViewControllerResult result)
+     {
+         switch (result)
+         {
+             case SLComposeViewControllerResultCancelled:
+                 [ECommon showAlertInfo:NSLocalizedString(@"FACEBOOK_POST_CANCELLED",nil) title:@"FACEBOOK"];
+                 break;
+             case SLComposeViewControllerResultDone:
+                 [ECommon showAlertInfo:NSLocalizedString(@"FACEBOOK_POST_SUCCESSFULL",nil) title:@"FACEBOOK"];
+                 break;
+             default:
+                 break;
+         }
+     }];
+}
+
+- (void) PostOnTwitter
+{
+    //check if Facebook Account is linked
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+        m_mySLComposerSheet = [[SLComposeViewController alloc] init];
+        m_mySLComposerSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [m_mySLComposerSheet setInitialText:NSLocalizedString(@"FACEBOOK_DALI", nil)];
+        
+        UIImage* img = [UIImage imageNamed:@"DISPLAY dali.jpg"];
+        [m_mySLComposerSheet addImage:img];
+        [self presentViewController:m_mySLComposerSheet animated:YES completion:nil];
+    }
+    else
+    {
+        [ECommon showAlertInfo:NSLocalizedString(@"TWITTER_NOT_LINKED",nil) title:NSLocalizedString(@"WARNING", nil)];
+        return;
+    }
+    
+    [m_mySLComposerSheet setCompletionHandler:^(SLComposeViewControllerResult result)
+     {
+         switch (result)
+         {
+             case SLComposeViewControllerResultCancelled:
+                 [ECommon showAlertInfo:NSLocalizedString(@"FACEBOOK_POST_CANCELLED",nil) title:@"TWITTER"];
+                 break;
+             case SLComposeViewControllerResultDone:
+                 [ECommon showAlertInfo:NSLocalizedString(@"FACEBOOK_POST_SUCCESSFULL",nil) title:@"TWITTER"];
+                 break;
+             default:
+                 break;
+         }
+     }];
+}
+
 
 @end

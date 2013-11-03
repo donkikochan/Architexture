@@ -255,22 +255,28 @@
     switch (m_iTagButtonFacebookImage)
     {
         case 0://_01_HAPPINESS
-            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR HAPPINESS.jpg";
+            m_sTagButtonFacebookImage   = @"DISPLAY X EXPOSITOR HAPPINESS.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_HAPPINESS",nil);
             break;
         case 1://_02_REFLEX
-            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR REFLEX.jpg";
+            m_sTagButtonFacebookImage   = @"DISPLAY X EXPOSITOR REFLEX.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_REFLEX",nil);
             break;
         case 2://_03_SKY
-            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR SKY.jpg";
+            m_sTagButtonFacebookImage   = @"DISPLAY X EXPOSITOR SKY.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_SKY",nil);
             break;
         case 3://_04_CLOTHING
-            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR CLOTHING.jpg";
+            m_sTagButtonFacebookImage   = @"DISPLAY X EXPOSITOR CLOTHING.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_CLOTHING",nil);
             break;
         case 4://_05_FANCY
-            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR FANCY.jpg";
+            m_sTagButtonFacebookImage   = @"DISPLAY X EXPOSITOR FANCY.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_FANCY",nil);
             break;
         case 5://_06_EARTH
-            m_sTagButtonFacebookImage = @"DISPLAY X EXPOSITOR EARTH.jpg";
+            m_sTagButtonFacebookImage   = @"DISPLAY X EXPOSITOR EARTH.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_EARTH",nil);
             break;
         default:
             break;
@@ -280,7 +286,37 @@
 
 - (void) PostOnTwitter
 {
-    
+    switch (m_iTagButtonFacebookImage)
+    {
+        case 0://_01_HAPPINESS
+            m_sTagButtonFacebookImage   = @"DISPLAY X EXPOSITOR HAPPINESS.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_HAPPINESS",nil);
+            break;
+        case 1://_02_REFLEX
+            m_sTagButtonFacebookImage   = @"DISPLAY X EXPOSITOR REFLEX.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_REFLEX",nil);
+            break;
+        case 2://_03_SKY
+            m_sTagButtonFacebookImage   = @"DISPLAY X EXPOSITOR SKY.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_SKY",nil);
+            break;
+        case 3://_04_CLOTHING
+            m_sTagButtonFacebookImage   = @"DISPLAY X EXPOSITOR CLOTHING.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_CLOTHING",nil);
+            break;
+        case 4://_05_FANCY
+            m_sTagButtonFacebookImage   = @"DISPLAY X EXPOSITOR FANCY.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_FANCY",nil);
+            break;
+        case 5://_06_EARTH
+            m_sTagButtonFacebookImage   = @"DISPLAY X EXPOSITOR EARTH.jpg";
+            m_sTagButtonFacebookText    = NSLocalizedString(@"FACEBOOK_EARTH",nil);
+            break;
+        default:
+            break;
+    }
+    [super PostOnTwitter];
+
 }
 
 

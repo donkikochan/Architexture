@@ -282,11 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Code/ViewControllers/04. Checkout/DeliveryAddress_VC.m"
-            timestampString = "404584754.086541"
+            timestampString = "405202432.862694"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "684"
-            endingLineNumber = "684"
+            startingLineNumber = "707"
+            endingLineNumber = "707"
             landmarkName = "-actionSheet:didDismissWithButtonIndex:"
             landmarkType = "5">
          </BreakpointContent>
@@ -298,11 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Code/ViewControllers/04. Checkout/DeliveryAddress_VC.m"
-            timestampString = "404474764.246694"
+            timestampString = "405202432.862694"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "387"
-            endingLineNumber = "387"
+            startingLineNumber = "410"
+            endingLineNumber = "410"
             landmarkName = "-setupShippingWithCountryCode:"
             landmarkType = "5">
          </BreakpointContent>
@@ -314,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Code/ViewControllers/04. Checkout/DeliveryAddress_VC.m"
-            timestampString = "404474764.246694"
+            timestampString = "405202432.862694"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "303"
-            endingLineNumber = "303"
+            startingLineNumber = "320"
+            endingLineNumber = "320"
             landmarkName = "-textFieldDidEndEditing:"
             landmarkType = "5">
          </BreakpointContent>
@@ -330,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Code/ViewControllers/04. Checkout/DeliveryAddress_VC.m"
-            timestampString = "404474764.246694"
+            timestampString = "405202432.862694"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "290"
-            endingLineNumber = "290"
+            startingLineNumber = "307"
+            endingLineNumber = "307"
             landmarkName = "-textFieldDidEndEditing:"
             landmarkType = "5">
          </BreakpointContent>
@@ -346,11 +346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Code/ViewControllers/02. Rings Profile/BarcelonaRingsProfile_VC.m"
-            timestampString = "404758786.077352"
+            timestampString = "405166045.264404"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "278"
-            endingLineNumber = "278"
+            startingLineNumber = "284"
+            endingLineNumber = "284"
             landmarkName = "-PostOnFacebook"
             landmarkType = "5">
          </BreakpointContent>
@@ -384,6 +384,22 @@
             startingLineNumber = "52"
             endingLineNumber = "52"
             landmarkName = "-processJSON:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Code/ViewControllers/02. Rings Profile/ParisRingsProfile_VC.m"
+            timestampString = "405160698.594477"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "254"
+            endingLineNumber = "254"
+            landmarkName = "-PostOnFacebook"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

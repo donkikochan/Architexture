@@ -556,7 +556,7 @@
     {
         m_mySLComposerSheet = [[SLComposeViewController alloc] init];
         m_mySLComposerSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-        [m_mySLComposerSheet setInitialText:NSLocalizedString(@"FACEBOOK_HAPPINESS", nil)];
+        [m_mySLComposerSheet setInitialText:m_sTagButtonFacebookText];
         
         UIImage* img = [UIImage imageNamed:m_sTagButtonFacebookImage];
         [m_mySLComposerSheet addImage:img];
@@ -564,7 +564,7 @@
     }
     else
     {
-        [ECommon showAlertInfo:@"FACEBOOK_NOT_LINKED" title:NSLocalizedString(@"WARNING", nil)];
+        [ECommon showAlertInfo:NSLocalizedString(@"FACEBOOK_NOT_LINKED",nil) title:NSLocalizedString(@"WARNING", nil)];
         return;
     }
     
@@ -573,10 +573,10 @@
         switch (result)
          {
             case SLComposeViewControllerResultCancelled:
-                [ECommon showAlertInfo:@"FACEBOOK_POST_CANCELLED" title:@"FACEBOOK"];
+                [ECommon showAlertInfo:NSLocalizedString(@"FACEBOOK_POST_CANCELLED",nil) title:@"FACEBOOK"];
                 break;
             case SLComposeViewControllerResultDone:
-                [ECommon showAlertInfo:@"FACEBOOK_POST_SUCCESSFULL" title:@"FACEBOOK"];
+                [ECommon showAlertInfo:NSLocalizedString(@"FACEBOOK_POST_SUCCESSFULL",nil) title:@"FACEBOOK"];
                 break;
             default:
                 break;
@@ -586,7 +586,37 @@
 
 - (void) PostOnTwitter
 {
+    //check if Facebook Account is linked
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+        m_mySLComposerSheet = [[SLComposeViewController alloc] init];
+        m_mySLComposerSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [m_mySLComposerSheet setInitialText:m_sTagButtonFacebookText];
+        
+        UIImage* img = [UIImage imageNamed:m_sTagButtonFacebookImage];
+        [m_mySLComposerSheet addImage:img];
+        [self presentViewController:m_mySLComposerSheet animated:YES completion:nil];
+    }
+    else
+    {
+        [ECommon showAlertInfo:NSLocalizedString(@"TWITTER_NOT_LINKED",nil) title:NSLocalizedString(@"WARNING", nil)];
+        return;
+    }
     
+    [m_mySLComposerSheet setCompletionHandler:^(SLComposeViewControllerResult result)
+     {
+         switch (result)
+         {
+             case SLComposeViewControllerResultCancelled:
+                 [ECommon showAlertInfo:NSLocalizedString(@"FACEBOOK_POST_CANCELLED",nil) title:@"TWITTER"];
+                 break;
+             case SLComposeViewControllerResultDone:
+                 [ECommon showAlertInfo:NSLocalizedString(@"FACEBOOK_POST_SUCCESSFULL",nil) title:@"TWITTER"];
+                 break;
+             default:
+                 break;
+         }
+     }];
 }
 
 @end
