@@ -20,7 +20,7 @@
 #define TIME_SLOW_SHIPPING_NOT_SPAIN    @"7-8"
 #define TIME_QUICK_SHIPPING_NOT_SPAIN   @"24-72h"
 
-#define HEIGHT_CONTENT_SCROLL           1100.f
+#define HEIGHT_CONTENT_SCROLL           1000.f
 
 @interface DeliveryAddress_VC ()
 
@@ -80,6 +80,7 @@
     _m_TextField_EMail.placeholder      = NSLocalizedString(@"INSERT_EMAIL",nil);
     _m_TextField_Coupon.placeholder     = NSLocalizedString(@"INSERT_COUPON",nil);
     _m_TextField_Phone.placeholder      = NSLocalizedString(@"INSERT_PHONE",nil);
+
     
     _m_TextField_Name.text      =
     _m_TextField_Address.text   =
@@ -88,6 +89,9 @@
     _m_TextField_Province.text  =
     _m_TextField_EMail.text     =
     _m_TextField_Coupon.text    = @"";
+    
+    _m_TextView_OrderNotes.text = NSLocalizedString(@"INSERT_ORDER_NOTES",nil);
+    _m_TextView_OrderNotes.textColor = [UIColor colorWithRed:188.f/255.f green:188.f/255.f blue:188.f/255.f alpha:1.f];
     
     m_sCouponID = @"";
     m_fCouponAmmount = 0.f;
@@ -135,11 +139,12 @@
         _m_TextField_Phone.text = _phone;
     }
     
+    /*
     NSString* _orderNotes = [ECommon getUserDefaultValueStringForKey:DELIVERY_ORDER_NOTES];
     if (_orderNotes != nil && ![_orderNotes isEqualToString:@""])
     {
         _m_TextView_OrderNotes.text = _orderNotes;
-    }
+    }*/
     
     NSString* _country = [ECommon getUserDefaultValueStringForKey:DELIVERY_COUNTRY];
     if ( _country!=nil && ![_country isEqualToString:@""])
@@ -197,7 +202,7 @@
         m_iCurrentPicker++;
     }
     //------------------------------------------------------------
-    
+    _m_TextView_OrderNotes.delegate = self;
     
     [self setupKeyboardControls:self textFields:[NSArray arrayWithObjects:
                                                  _m_TextField_Name,     _m_TextField_Address,
@@ -285,6 +290,32 @@
     return UIStatusBarStyleLightContent;
 }
 
+
+- (void) textViewDidBeginEditing:(UITextView *)textView
+{
+    [super textViewDidBeginEditing:textView];
+    
+    CGPoint pt;
+    CGRect rc = [textView bounds];
+    rc = [textView convertRect:rc toView:_m_ScrollView];
+    pt = rc.origin;
+    m_BeginScrollPointY = pt.y;
+    pt.x = 0;
+    pt.y -= 10;
+    [_m_ScrollView setContentOffset:pt animated:YES];
+    
+    [textView becomeFirstResponder];
+    
+    
+    if ([textView.text isEqualToString:NSLocalizedString(@"INSERT_ORDER_NOTES",nil)])
+    {
+        textView.text = @"";
+        textView.textColor = [UIColor blackColor]; //optional
+    }
+    
+    [textView becomeFirstResponder];
+}
+
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     [super textFieldDidBeginEditing:textField];
@@ -302,10 +333,23 @@
     [textField becomeFirstResponder];
 }
 
+- (void) textViewDidEndEditing:(UITextView *)textView
+{
+    CGPoint pt;
+    pt.x = 0;
+    pt.y = m_BeginScrollPointY - 30;
+    
+    [_m_ScrollView setContentOffset:pt animated:YES];
+    NSLog(@"%@",textView.text);
+    if ([textView.text isEqualToString:@""]) {
+        textView.text = NSLocalizedString(@"INSERT_ORDER_NOTES",nil);
+        textView.textColor = [UIColor colorWithRed:188.f/255.f green:188.f/255.f blue:188.f/255.f alpha:1.f];
+    }
+}
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
-    //svos = scrollView.contentOffset;
+    
     CGPoint pt;
     pt.x = 0;
     if (textField != _m_TextField_Coupon)
@@ -411,7 +455,6 @@
             [_m_Segmented_ShippingType setTitle:title_segmented_0 forSegmentAtIndex:0];
             [_m_Segmented_ShippingType setTitle:title_segmented_1 forSegmentAtIndex:1];
         }
-        
     }
     else
     {

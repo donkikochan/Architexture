@@ -48,6 +48,7 @@
 {
     NSDictionary*   imgsDictionary;
     BOOL            m_bOpenMenu;
+    BOOL            m_bConfigBackToMenu;
 }
 
 @property (strong, nonatomic) UINavigationController*   mainNavigationViewController;
@@ -67,4 +68,5 @@
 - (void) hideSideMenu;
 - (BOOL) haveToOpenMenu;
 - (void) setOpenMenu;
+- (void) configBackToMenu;
 @end

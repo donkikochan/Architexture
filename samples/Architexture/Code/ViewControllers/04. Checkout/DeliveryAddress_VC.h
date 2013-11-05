@@ -26,7 +26,7 @@
 //-----------------------
 
 
-@interface DeliveryAddress_VC : BaseViewController <    PayPalPaymentDelegate, UITextFieldDelegate,
+@interface DeliveryAddress_VC : BaseViewController <    PayPalPaymentDelegate, UITextFieldDelegate, UITextViewDelegate,
                                                         UIActionSheetDelegate, UINavigationControllerDelegate,
                                                         UIPickerViewDelegate, SyncHandlerDelegate   >
 {
@@ -86,7 +86,6 @@
 @property (strong, nonatomic) IBOutlet UIScrollView*        m_RingScroll;
 @property (strong, nonatomic) IBOutlet UISegmentedControl*  m_Segmented_ShippingType;
 @property (strong, nonatomic) IBOutlet UILabel*             m_Label_FieldsNotOptionals;
-
 
 //---IBActions:
 - (IBAction) country_Cicked:(id)sender;

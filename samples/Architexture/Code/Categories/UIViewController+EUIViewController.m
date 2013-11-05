@@ -44,7 +44,7 @@ static char const * const KeyboardControlsKey = "KeyboardControls";
     self.keyboardControls.barStyle = UIBarStyleBlackTranslucent;
     
     // Set the tint color of the "Previous" and "Next" button. Default is black.
-    self.keyboardControls.previousNextTintColor = [UIColor blackColor];
+    self.keyboardControls.previousNextTintColor = [UIColor whiteColor];
     
     // Set the tint color of the done button. Default is a color which looks a lot like the original blue color for a "Done" butotn
     self.keyboardControls.doneTintColor = [UIColor colorWithRed:34.0/255.0 green:164.0/255.0 blue:255.0/255.0 alpha:1.0];

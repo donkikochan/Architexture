@@ -165,6 +165,12 @@
     [self slideThenHide];
     UIButton* btn = (UIButton*) sender;
     m_iTag = btn.tag;
+    
+    if (m_iTag >= 100)
+    {
+        [[AppDelegate mainAppDelegate] configBackToMenu];
+    }
+    
     [NSTimer scheduledTimerWithTimeInterval:TIME_TO_SHOW_NEW_MAIN_INFO
                                      target:self
                                    selector:@selector(optionClicked:)
@@ -313,6 +319,7 @@
 - (IBAction) facebook_Clicked:(id)sender
 {
     [self slideThenHide];
+    [[AppDelegate mainAppDelegate] configBackToMenu];
     m_iTag = 104;
     [NSTimer scheduledTimerWithTimeInterval:TIME_TO_SHOW_NEW_MAIN_INFO
                                      target:self
@@ -324,6 +331,7 @@
 - (IBAction) twitter_Clicked:(id)sender
 {
     [self slideThenHide];
+    [[AppDelegate mainAppDelegate] configBackToMenu];
     m_iTag = 105;
     [NSTimer scheduledTimerWithTimeInterval:TIME_TO_SHOW_NEW_MAIN_INFO
                                      target:self

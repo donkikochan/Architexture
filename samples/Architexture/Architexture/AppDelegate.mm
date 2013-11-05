@@ -95,6 +95,10 @@
     _m_sRingToLoad          = @"0";
     _m_sGoToNewCollection   = @"NO";
     _m_sMapRing             = @"0";
+    
+    m_bConfigBackToMenu =
+    m_bOpenMenu         = NO;
+    
     return YES;
 }
 
@@ -200,7 +204,8 @@
 
 - (void) setOpenMenu
 {
-    m_bOpenMenu = YES;
+    m_bOpenMenu = YES && m_bConfigBackToMenu;
+    m_bConfigBackToMenu = NO;
 }
 
 - (BOOL) haveToOpenMenu
@@ -208,6 +213,10 @@
     BOOL flag = m_bOpenMenu;
     m_bOpenMenu = false;
     return flag;
+}
+- (void) configBackToMenu
+{
+    m_bConfigBackToMenu = YES;
 }
 
 @end
