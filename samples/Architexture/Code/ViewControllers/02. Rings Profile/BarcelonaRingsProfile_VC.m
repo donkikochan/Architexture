@@ -198,34 +198,40 @@
         case 0: //_01_HAPPINESS
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"HAPPINESS"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"HAPPINESS"];
         }
             break;
         case 1: //_02_REFLEX
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"REFLEX"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"REFLEX"];
         }
             break;
         case 2: //_03_SKY
         {
-           [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"SKY"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"SKY"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"SKY"];
         }
             break;
 
         case 3: //_04_CLOTHING
         {
-           [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"CLOTHING"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"CLOTHING"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"CLOTHING"];
         }
             break;
 
         case 4: //_05_FANCY
         {
-           [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"FANCY"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"FANCY"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"FANCY"];
         }
             break;
 
         case 5: //_06_EARTH
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"EARTH"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"EARTH"];
         }
             break;
     }

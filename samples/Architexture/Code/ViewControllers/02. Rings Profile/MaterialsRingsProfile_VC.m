@@ -201,34 +201,40 @@
         case 0: //_01_RHYTHM
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"RHYTHM"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"RHYTHM"];
         }
             break;
         case 1: //_02_TRANSPARENCY
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"TRANSPARENCY"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"TRANSPARENCY"];
         }
             break;
         case 2: //_03_GOLD
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"GOLD"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"GOLD"];
         }
             break;
             
         case 3: //_04_COLOURS
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"COLOURS"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"COLOURS"];
         }
             break;
             
         case 4: //_05_LIGHT
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"LIGHT"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"LIGHT"];
         }
             break;
             
         case 5: //_06_MOUNTAIN
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"MOUNTAIN"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"MOUNTAIN"];
         }
             break;
     }

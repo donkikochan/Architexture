@@ -216,6 +216,17 @@
     }
 }
 
+- (void) jumpToRing:(NSString*)_id
+{
+    m_sRingToJump = _id;
+}
+- (NSString*) getRingToJump
+{
+    NSString* ring = m_sRingToJump;
+    m_sRingToJump = @"";
+    return ring;
+}
+
 - (int) getNumBuyedRings
 {
     int numBuyedRings = 0;

@@ -198,34 +198,40 @@
         case 0: //_01_FLOWER
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"FLOWER"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"FLOWER"];
         }
             break;
         case 1: //_02_PLACE
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"PLACE"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"PLACE"];
         }
             break;
         case 2: //_03_CALME
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"CALME"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"CALME"];
         }
             break;
             
         case 3: //_04_ANGLE
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"ANGLE"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"ANGLE"];
         }
             break;
             
         case 4: //_05_ICONE
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"ICONE"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"ICONE"];
         }
             break;
             
         case 5: //_06_RGB
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"RGB"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"RGB"];
         }
             break;
     }

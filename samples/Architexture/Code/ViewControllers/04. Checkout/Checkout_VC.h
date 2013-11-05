@@ -18,6 +18,8 @@
     float           m_fTotalPrize;
     float           m_fRingPrize;
     int             m_iTotalAmmount;
+    NSString*       m_sRingToJump;
+    NSIndexPath*    m_IndexPathToJump;
 }
 
 //---IBOutlets:

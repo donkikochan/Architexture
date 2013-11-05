@@ -136,7 +136,12 @@
 											 selector:@selector(notificationCallback:)
 												 name:nil
 											   object:nil ];
+    
+    m_sRingToJump = [[AppDelegate mainAppDelegate].m_CheckOutInfo getRingToJump];
+    
 }
+
+
 
 - (void)viewDidDisappear:(BOOL)animated
 {
@@ -222,7 +227,35 @@
     cell.m_Label_Ammount.text = [NSString stringWithFormat:@"%d",[checkoutRing getAmmount]];
     cell.m_Label_Quantity.text = [NSString stringWithFormat:@"%@:",[checkoutRing getRingName]];
     [cell setId:[checkoutRing getRingName]];
+    
+    
+  
+    if ([m_sRingToJump isEqualToString:[checkoutRing getRingName]])
+    {
+        m_IndexPathToJump = [NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section];
+    }
+    
+    int numSections = [[AppDelegate mainAppDelegate].m_CheckOutInfo getCollectionsToShop].count;
+    if (indexPath.section == numSections - 1)
+    {
+        int numRows = collection.count;
+        if (indexPath.row == numRows - 1)
+        {
+            if (![m_sRingToJump isEqualToString:@""])
+            {
+                [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(jumpToRing) userInfo:nil repeats:NO];
+            }
+        }
+    }
+    
     return cell;
+}
+
+- (void) jumpToRing
+{
+    [_m_TableView scrollToRowAtIndexPath:m_IndexPathToJump
+                         atScrollPosition:UITableViewScrollPositionMiddle
+                                 animated:YES];
 }
 
 

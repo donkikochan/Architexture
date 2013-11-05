@@ -272,22 +272,26 @@
         case 1: //TEULA
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"TEULA"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"TEULA"];
         }
             break;
         case 2: //ANTIC
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"ANTIC"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"ANTIC"];
         }
             break;
         case 3: //MUR
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"MUR"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"MUR"];
         }
             break;
             
         case 4: //BORN
         {
             [[AppDelegate mainAppDelegate].m_CheckOutInfo addAmmount:1 ToRing:@"BORN"];
+            [[AppDelegate mainAppDelegate].m_CheckOutInfo jumpToRing:@"BORN"];
         }
             break;
     }

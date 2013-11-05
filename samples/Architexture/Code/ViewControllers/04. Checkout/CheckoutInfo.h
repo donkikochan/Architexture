@@ -20,6 +20,7 @@
     NSString*       m_sProvince;
     NSString*       m_sEmail;
     NSString*       m_sCountry;
+    NSString*       m_sRingToJump;
 }
 
 - (NSMutableArray*) getCollections;
@@ -44,4 +45,7 @@
 - (void)            addAmmount:(int) ammount ToRing:(NSString*)_id;
 - (int)             getNumBuyedRings;
 - (void)            resetRings;
+
+- (void)            jumpToRing:(NSString*)_id;
+- (NSString*)       getRingToJump;
 @end
