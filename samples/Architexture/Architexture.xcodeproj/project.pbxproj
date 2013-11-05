@@ -17,6 +17,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		8B1F6E15182926DE00659BC2 /* InfoRings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B1F6E14182926DE00659BC2 /* InfoRings.xib */; };
 		C70AD0CE17F635EE008A963B /* LOADING@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C70AD0CD17F635EE008A963B /* LOADING@2x.jpg */; };
 		C70AD0D117F751F1008A963B /* MenuOptionAux_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = C70AD0D017F751F1008A963B /* MenuOptionAux_Cell.m */; };
 		C7153E5F1826551D00899FC7 /* DISPLAY angle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7153E4B1826551D00899FC7 /* DISPLAY angle.jpg */; };
@@ -418,6 +419,7 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8B1F6E14182926DE00659BC2 /* InfoRings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoRings.xib; sourceTree = "<group>"; };
 		C70AD0CD17F635EE008A963B /* LOADING@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "LOADING@2x.jpg"; sourceTree = "<group>"; };
 		C70AD0CF17F751F1008A963B /* MenuOptionAux_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuOptionAux_Cell.h; sourceTree = "<group>"; };
 		C70AD0D017F751F1008A963B /* MenuOptionAux_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuOptionAux_Cell.m; sourceTree = "<group>"; };
@@ -1044,6 +1046,7 @@
 				C7A91F0A17EDDDFF00AD20CC /* Special Collections */,
 				C7D740F717ECA8FA004A5D25 /* LoadingCollection_VC.h */,
 				C7D740F817ECA8FA004A5D25 /* LoadingCollection_VC.m */,
+				8B1F6E14182926DE00659BC2 /* InfoRings.xib */,
 			);
 			path = "02. Rings Profile";
 			sourceTree = "<group>";
@@ -2066,6 +2069,7 @@
 				C7153E611826551D00899FC7 /* DISPLAY calme.jpg in Resources */,
 				C7C5BA9517F48713005E36DF /* CALME_TITLE_BIG@2x.png in Resources */,
 				C7C5BA8517F48713005E36DF /* FLOWER_INFO_AN@2x.png in Resources */,
+				8B1F6E15182926DE00659BC2 /* InfoRings.xib in Resources */,
 				C7C5B9EA17F48713005E36DF /* TRANSPARENCY19@2x.jpg in Resources */,
 				C7C5BAB717F48713005E36DF /* ANGLE@2x.png in Resources */,
 				C7C5BA9617F48713005E36DF /* CALME_TITLE_SMALL@2x.png in Resources */,

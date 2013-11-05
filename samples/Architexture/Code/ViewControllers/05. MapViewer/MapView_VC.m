@@ -86,6 +86,7 @@
 }
 - (IBAction)back_Clicked:(id)sender
 {
+    [[AppDelegate mainAppDelegate] setOpenMenu];
     [self.navigationController popViewControllerAnimated:YES];
 
 }

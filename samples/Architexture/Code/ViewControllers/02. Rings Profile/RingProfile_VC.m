@@ -142,6 +142,8 @@
         
     }
     
+    
+    
     //GO TO RING PROFILE in pos ringIndex
     int ringIndex = 0; //from [0 to m_aProfileRing_Views.count-1]
     RingProfile_View* ringProfileView =m_aProfileRing_Views[0];
@@ -172,7 +174,11 @@
 {
     [super viewDidAppear:animated];
     
-
+    if ([[AppDelegate mainAppDelegate] haveToOpenMenu])
+    {
+        m_bMenuClicked = YES;
+        [[AppDelegate mainAppDelegate] showSideMenu];
+    }
 }
 
 - (void) viewWillAppear:(BOOL)animated

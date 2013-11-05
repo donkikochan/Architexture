@@ -312,17 +312,35 @@
 
 - (IBAction) facebook_Clicked:(id)sender
 {
-    
+    [self slideThenHide];
+    m_iTag = 104;
+    [NSTimer scheduledTimerWithTimeInterval:TIME_TO_SHOW_NEW_MAIN_INFO
+                                     target:self
+                                   selector:@selector(optionClicked:)
+                                   userInfo:nil
+                                    repeats:NO];
 }
 
 - (IBAction) twitter_Clicked:(id)sender
 {
-    
+    [self slideThenHide];
+    m_iTag = 105;
+    [NSTimer scheduledTimerWithTimeInterval:TIME_TO_SHOW_NEW_MAIN_INFO
+                                     target:self
+                                   selector:@selector(optionClicked:)
+                                   userInfo:nil
+                                    repeats:NO];
 }
 
 - (IBAction) iLike_Clicked:(id)sender
 {
-    
+    [self slideThenHide];
+    m_iTag = 106;
+    [NSTimer scheduledTimerWithTimeInterval:TIME_TO_SHOW_NEW_MAIN_INFO
+                                     target:self
+                                   selector:@selector(optionClicked:)
+                                   userInfo:nil
+                                    repeats:NO];
 }
 
 

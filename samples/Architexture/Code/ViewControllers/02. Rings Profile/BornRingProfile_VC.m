@@ -120,6 +120,11 @@
     {
         [AppDelegate mainAppDelegate].m_sGoToNewCollection = @"NO";
     }
+    
+    if ([[AppDelegate mainAppDelegate] haveToOpenMenu])
+    {
+        [[AppDelegate mainAppDelegate] showSideMenu];
+    }
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -244,6 +249,20 @@
         {
             //CONTACT US
             [self performSegueWithIdentifier:@"FromRingProfileToContactUs" sender:nil];
+        }
+        else if (l_iIndex == 104)
+        {
+            //FACEBOOK WEB
+            [self performSegueWithIdentifier:@"FromViewController_To_WebLink" sender:@"https://www.facebook.com/pages/architexture-online/399183696843071"];
+        }
+        else if (l_iIndex == 105)
+        {
+            //TWITTER WEB
+            [self performSegueWithIdentifier:@"FromViewController_To_WebLink" sender:@"https://twitter.com/rchitexture"];
+        }
+        else if (l_iIndex == 106)
+        {
+            //I LIKE..
         }
     }
 }

@@ -46,7 +46,8 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
-    NSDictionary *imgsDictionary;
+    NSDictionary*   imgsDictionary;
+    BOOL            m_bOpenMenu;
 }
 
 @property (strong, nonatomic) UINavigationController*   mainNavigationViewController;
@@ -64,5 +65,6 @@
 - (void) setNavigationViewController:(UINavigationController *)navigationViewController;
 - (void) showSideMenu;
 - (void) hideSideMenu;
-
+- (BOOL) haveToOpenMenu;
+- (void) setOpenMenu;
 @end

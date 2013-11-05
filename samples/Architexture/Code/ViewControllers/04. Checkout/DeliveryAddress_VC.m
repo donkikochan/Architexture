@@ -548,7 +548,7 @@
     [self resignResponderAll];
     if (_m_TextField_Coupon.text.length == 0)
     {
-        [ECommon showAlertInfo:NSLocalizedString(@"WARNING",nil) title:NSLocalizedString(@"FIELD_NOT_OPTIONAL", nil)];
+        [ECommon showAlertInfo:NSLocalizedString(@"WARNING",nil) title:NSLocalizedString(@"ENTER_COUPON_CODE", nil)];
     }
     else
     {
@@ -758,7 +758,13 @@
              {
                  m_bSendingPaymentInfo = NO;
                  [ECommon hideProgress];
-                 [ECommon showAlertInfo:NSLocalizedString(@"THANKS_PURCHASE",nil) title:NSLocalizedString(@"PURCHASE_OK",nil)];
+                 
+                 UIAlertView *alert = [[UIAlertView alloc]
+                                       initWithTitle:NSLocalizedString(@"PURCHASE_OK",nil)
+                                       message:NSLocalizedString(@"THANKS_PURCHASE",nil)
+                                       delegate:self
+                                       cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"OK",nil),nil];
+                 [alert show];
              }
          }
     }
@@ -789,6 +795,17 @@
         
         m_bSendingPaymentInfo   =
         m_bCheckingCoupon       = NO;
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
+    if([title isEqualToString: NSLocalizedString(@"OK",nil)])
+    {
+        [[AppDelegate mainAppDelegate].m_CheckOutInfo resetRings];
+        UIViewController* vc = [self.navigationController popViewControllerAnimated:YES];
+        [vc.navigationController popToRootViewControllerAnimated:YES];
     }
 }
 

@@ -153,7 +153,7 @@
 "PURCHASE_OK"           = "Successfully complete";
 "THANKS_PURCHASE"       = "Thank you to buy ArchiteXture";
 
-
+"ENTER_COUPON_CODE"     = "Please enter a coupon code.";
 
 
 "ERROR_PURCHASE"        = "Se ha producido un error al enviar los datos de la compra al servidor de Archixteure. Póngase en contacto con purchase@architexture para resolver la incidencia. Gracis por su colaboración, disuclpe las molestias";

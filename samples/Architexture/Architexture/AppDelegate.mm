@@ -198,6 +198,16 @@
     self.window.rootViewController = self.mainNavigationViewController;
 }
 
+- (void) setOpenMenu
+{
+    m_bOpenMenu = YES;
+}
 
+- (BOOL) haveToOpenMenu
+{
+    BOOL flag = m_bOpenMenu;
+    m_bOpenMenu = false;
+    return flag;
+}
 
 @end
