@@ -26,7 +26,8 @@
 @synthesize SlowShipping    = _SlowShipping;
 @synthesize TotalAmmount    = _TotalAmmount;
 @synthesize Collections     = _Collections;
-
+@synthesize Phone           = _Phone;
+@synthesize OrderNotes      = _OrderNotes;
 
 
 - (int) getType
@@ -52,6 +53,8 @@
     [data setValue:_Country         forKey: @"Country"];
     [data setValue:_SlowShipping    forKey: @"SlowShipping"];
     [data setValue:_TotalAmmount    forKey: @"TotalAmmount"];
+    [data setValue:_Phone           forKey: @"Phone"];
+    [data setValue:_OrderNotes      forKey: @"OrderNotes"];
     
     NSMutableArray *arr = [[NSMutableArray alloc] init];
     

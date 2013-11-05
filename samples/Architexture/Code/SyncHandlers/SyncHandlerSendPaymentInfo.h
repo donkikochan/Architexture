@@ -36,6 +36,8 @@
 @property (nonatomic, strong) NSString* Country;
 @property (nonatomic, strong) NSString* SlowShipping;
 @property (nonatomic, strong) NSString* TotalAmmount;
+@property (nonatomic, strong) NSString* Phone;
+@property (nonatomic, strong) NSString* OrderNotes;
 @property (nonatomic, strong) NSArray*  Collections;
 
 @end
