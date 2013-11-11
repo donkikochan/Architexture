@@ -136,7 +136,7 @@
 "NAME_CONTACT"          = "* Name:";
 "SUBJECT_CONTACT"       = "* Subject:";
 "TEXT_CONTACT"          = "* Text:";
-"INFO_CONTACT"          = "Contact:\n\nRambla del Passeig 35\n08500 Vic (Barcelona)\nSPAIN\n\nPhone1: (0034) 655 238 086\nPhone2: (0034) 647 847 315\nEmail: info@architexture-online.com\nWeb: architexture-online.com";
+"INFO_CONTACT"          = "Contact:\n\nRambla Passeig 35\n08500 Vic (Barcelona)\nSPAIN\n\nPhone1: (0034) 655 238 086\nPhone2: (0034) 647 847 315\nEmail: info@architexture-online.com\nWeb: architexture-online.com";
 "SEND_REQUEST"          = "Send Request";
 "ERROR_CONTACTUS"       = "Contact Error";
 
@@ -156,9 +156,9 @@
 "ENTER_COUPON_CODE"     = "Please enter a coupon code.";
 
 
-"ERROR_PURCHASE"        = "Se ha producido un error al enviar los datos de la compra al servidor de Archixteure. Póngase en contacto con purchase@architexture para resolver la incidencia. Gracis por su colaboración, disuclpe las molestias";
+"ERROR_PURCHASE"        = "There was an error in sending the purchasing data to the Architexture server. Please contact info@architexture-online.com to solve the issue. Thank you for your collaboration, sorry for the inconvenience.";
 
-"PURCHASE_NO_OK"        = "Error en la compra";
+"PURCHASE_NO_OK"        = "Any purchase made";
 
 "FACEBOOK_HAPPINESS"    = "Happiness ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
 "FACEBOOK_REFLEX"       = "Refelx ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
@@ -180,3 +180,5 @@
 "FACEBOOK_ICONE"        = "Icone ring available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
 "FACEBOOK_BORN"         = "Born rings available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
 "FACEBOOK_DALI"         = "Dalí rings available on http://wwww.architexture-online.com or ArxhitectureApp on Appstore";
+"FULL_COLLECTIONS"      = "Full Collections";
+"VIEW_PROFILE"          = "View Profile";

@@ -81,7 +81,7 @@
     
     
     [_m_MapView setMapType:MKMapTypeStandard];
-    CGPoint point = CGPointMake(2.174284, 41.378845);
+    CGPoint point = CGPointMake(2.256871, 41.930267);
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2DMake(point.y, point.x), 3500, 3500);
     [_m_MapView setRegion:region animated:YES];
     
@@ -115,10 +115,10 @@
         
         if (kk.pointID == 0)
         {
-            retval.image = [UIImage imageNamed:@"google maps.png"];
-            //30 × 52 pixels
+            retval.image = [UIImage imageNamed:@"barra_menu_mapa_selec.png"];
+            
             float w_offest = 0;
-            float h_offset = -13;
+            float h_offset = -21;
             retval.centerOffset = CGPointMake(w_offest, h_offset);
             
         }//128 × 220

@@ -35,6 +35,8 @@
                      withCountry:(NSString*)_country
                 withSlowShipping:(NSString*)_slowShipping
                 withTotalAmmount:(NSString*)_totalAmmount
-                 withCollections:(NSArray*)_collections;
+                 withCollections:(NSArray*)_collections
+                       withPhone:(NSString*) _phone
+                  withOrderNotes:(NSString*)_orderNotes;
 
 @end

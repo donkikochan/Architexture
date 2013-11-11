@@ -35,6 +35,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 
+    m_pTimer = nil;
+    
     CALayer * l = _m_View_Info.layer;
     [l setMasksToBounds:YES];
     [l setCornerRadius:15.0];
@@ -60,12 +62,6 @@
         btn.alpha = 0.f;
     }
     
-    m_pTimer = [NSTimer scheduledTimerWithTimeInterval:TIME_INTERVAL_ANIMATION
-                                     target:self
-                                   selector:@selector(animateRing:)
-                                   userInfo:nil
-                                    repeats:YES];
-    
     m_fCounter      =
     m_fCounterAux   = 0.f;
     
@@ -74,6 +70,23 @@
 }
 
 
+- (void) viewDidAppear:(BOOL)animated
+{
+    if (m_pTimer == nil)
+    {
+        m_pTimer = [NSTimer scheduledTimerWithTimeInterval:TIME_INTERVAL_ANIMATION
+                                                    target:self
+                                                  selector:@selector(animateRing:)
+                                                  userInfo:nil
+                                                   repeats:YES];
+    }
+}
+
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [m_pTimer invalidate];
+    m_pTimer = nil;
+}
 
 - (void) alphaAnimation:(int) index
 {

@@ -847,8 +847,7 @@
     if([title isEqualToString: NSLocalizedString(@"OK",nil)])
     {
         [[AppDelegate mainAppDelegate].m_CheckOutInfo resetRings];
-        UIViewController* vc = [self.navigationController popViewControllerAnimated:YES];
-        [vc.navigationController popToRootViewControllerAnimated:YES];
+        [self.navigationController popToRootViewControllerAnimated:YES];
     }
 }
 
@@ -894,7 +893,12 @@
     NSString* city          = _m_TextField_City.text;
     NSString* zip           = _m_TextField_ZIP.text;
     NSString* country       = [_m_Button_Country titleForState:UIControlStateNormal];
-    
+    NSString* phone         = _m_TextField_Phone.text;
+    NSString* orderNotes    = _m_TextView_OrderNotes.text;
+    if ([orderNotes isEqualToString:NSLocalizedString(@"INSERT_ORDER_NOTES", nil)])
+    {
+        orderNotes = @"";
+    }
     NSString* slowShipping  = @"-1";
     if (_m_Segmented_ShippingType.selectedSegmentIndex == 0)
     {
@@ -913,7 +917,7 @@
     
     NSArray* collections = [[AppDelegate mainAppDelegate].m_CheckOutInfo getCollections];
     
-    [m_Payment sendPaymentInfoWithName:name withEmail:email withAddress:address withCity:city withZIP:zip withCountry:country withSlowShipping:slowShipping withTotalAmmount:totalAmmount withCollections:collections];
+    [m_Payment sendPaymentInfoWithName:name withEmail:email withAddress:address withCity:city withZIP:zip withCountry:country withSlowShipping:slowShipping withTotalAmmount:totalAmmount withCollections:collections withPhone:phone withOrderNotes:orderNotes];
 }
 
 

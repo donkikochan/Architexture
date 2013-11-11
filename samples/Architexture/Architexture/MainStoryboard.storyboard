@@ -10,7 +10,7 @@
             <objects>
                 <viewController id="9vO-Qu-mUu" customClass="Init_VC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lra-Bu-bHX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480.00000000000006"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default.png" id="rTB-7H-i5W" userLabel="SplashScreen">
@@ -6474,7 +6474,7 @@ Headed by the architects Monica Molas and Marta Rofin, architexture is part of t
         <image name="TWITTER.png" width="51" height="42"/>
         <image name="UNPIXELNEGRE.png" width="320" height="490"/>
         <image name="checkout_bck.jpg" width="772" height="267"/>
-        <image name="header_fletxa_fitxa.png" width="20" height="18"/>
+        <image name="header_fletxa_fitxa.png" width="19" height="17"/>
         <image name="pastilla_buscador.png" width="278" height="31"/>
         <image name="us.jpg" width="624" height="178"/>
     </resources>

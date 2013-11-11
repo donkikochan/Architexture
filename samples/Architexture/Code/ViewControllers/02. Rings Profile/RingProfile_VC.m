@@ -139,20 +139,46 @@
         ringProfileView.m_Button_Twitter.tag = i;
         [ringProfileView.m_Button_Facebook addTarget:self action:@selector(showActionSheetFacebook:) forControlEvents:UIControlEventTouchDown];
         [ringProfileView.m_Button_Twitter addTarget:self action:@selector(showActionSheetTwitter:) forControlEvents:UIControlEventTouchDown];
-        
     }
     
     
     
+    m_bFinishedJump = NO;
+    
     //GO TO RING PROFILE in pos ringIndex
     int ringIndex = 0; //from [0 to m_aProfileRing_Views.count-1]
     RingProfile_View* ringProfileView =m_aProfileRing_Views[0];
-    [_m_ScrollView_AllRings scrollRectToVisible:CGRectMake(WIDTH_RING_PROFILE*ringIndex, 0, WIDTH_RING_PROFILE , ringProfileView.m_ScrollView_Profile.frame.size.height) animated:YES];
+    [_m_ScrollView_AllRings scrollRectToVisible:CGRectMake(WIDTH_RING_PROFILE*ringIndex, 0, WIDTH_RING_PROFILE , ringProfileView.m_ScrollView_Profile.frame.size.height) animated:NO];
     
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)])
     {
         // iOS 7
         [self setNeedsStatusBarAppearanceUpdate];
+    }
+}
+
+- (void) addInfoRings
+{
+    NSString* showRingoInfo = [ECommon getUserDefaultValueStringForKey:SHOW_RING_INFO];
+    if (showRingoInfo == nil || [showRingoInfo isEqualToString:@""])
+    {
+        m_aInfoRings = [[NSMutableArray alloc]init];
+        for (int i=0; i < m_aProfileRing_Views.count; i++)
+        {
+            //---- Configurar la posicio de la view en el scrollview Generic:
+            RingProfile_View* ringProfileView =m_aProfileRing_Views[i];
+            
+            float posX = (320*0.5) - (187*0.5);
+            CGRect rect = CGRectMake(posX, 20, 187, 151);
+            InfoRings* l_InfoRings = [[InfoRings alloc] initWithFrame:rect];
+            CALayer * l = l_InfoRings.layer;
+            [l setMasksToBounds:YES];
+            [l setCornerRadius:5.0];
+            [m_aInfoRings addObject:l_InfoRings];
+            
+            [ringProfileView.m_ScrollView_Profile addSubview:l_InfoRings];
+            [l_InfoRings setFrame:rect];
+        }
     }
 }
 
@@ -179,6 +205,9 @@
         m_bMenuClicked = YES;
         [[AppDelegate mainAppDelegate] showSideMenu];
     }
+    
+    [self addInfoRings];
+    m_bFinishedJump = YES;
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -204,6 +233,7 @@
         
         [AppDelegate mainAppDelegate].m_sGoToNewCollection = @"NO";
     }
+    
 }
 
 - (void) moveCarousels
@@ -260,6 +290,8 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    
+    
     int tag = scrollView.tag;
     
     if (tag == 888 || tag == 999)
@@ -270,6 +302,22 @@
     
     if (tag>= 0 && tag<= m_aProfileRing_Views.count)
     {
+        NSString* showRingoInfo = [ECommon getUserDefaultValueStringForKey:SHOW_RING_INFO];
+        if (m_bFinishedJump && (showRingoInfo == nil || [showRingoInfo isEqualToString:@""]))
+        {
+            [ECommon setUserDefaultString:@"NO" forKey:SHOW_RING_INFO];
+            for(InfoRings*infoRing in m_aInfoRings)
+            {
+                [UIView beginAnimations:nil context:nil];
+                [UIView setAnimationDuration:1.f];
+                [UIView setAnimationDelay:0.0];
+                [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+                infoRing.alpha = 0.f;
+                [UIView commitAnimations];
+            }
+        }
+
+        
         for (int i = 0; i < m_aProfileRing_Views.count; i++)
         {
             RingProfile_View* ringProfileView = m_aProfileRing_Views[i];
@@ -330,6 +378,22 @@
     
     if (tag == 666)
     {
+        NSString* showRingoInfo = [ECommon getUserDefaultValueStringForKey:SHOW_RING_INFO];
+        if (m_bFinishedJump && (showRingoInfo == nil || [showRingoInfo isEqualToString:@""]))
+        {
+            [ECommon setUserDefaultString:@"NO" forKey:SHOW_RING_INFO];
+            for(InfoRings*infoRing in m_aInfoRings)
+            {
+                [UIView beginAnimations:nil context:nil];
+                [UIView setAnimationDuration:1.f];
+                [UIView setAnimationDelay:0.0];
+                [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+                infoRing.alpha = 0.f;
+                [UIView commitAnimations];
+            }
+        }
+        
+        
         //---Move image horizontally:
         for (int i = 0; i < m_aProfileRing_Views.count; i++)
         {

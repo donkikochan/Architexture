@@ -11,10 +11,12 @@
 #import "RingProfile_View.h"
 #import <Social/Social.h>
 #import <Accounts/Accounts.h>
+#import "InfoRings.h"
 //---------------
 
 //----Define new types:--
 #define WIDTH_RING_PROFILE  320.f
+#define SHOW_RING_INFO      @"SHOW_RING_INFO"
 
 typedef enum {
     ACTION_SHEET_FACEBOOK,
@@ -51,7 +53,9 @@ typedef enum {
     NSString*                   m_sTagButtonFacebookImage;
     NSString*                   m_sTagButtonFacebookText;
     
-    UIView*                     m_ViewInfo;
+    NSMutableArray*             m_aInfoRings;
+    BOOL                        m_bFinishedJump;
+
 }
 
 //---IBOutlets:
