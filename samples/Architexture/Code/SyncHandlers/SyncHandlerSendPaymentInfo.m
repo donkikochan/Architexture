@@ -28,7 +28,7 @@
 @synthesize Collections     = _Collections;
 @synthesize Phone           = _Phone;
 @synthesize OrderNotes      = _OrderNotes;
-
+@synthesize CouponID      = _CouponID;
 
 - (int) getType
 {
@@ -55,6 +55,7 @@
     [data setValue:_TotalAmmount    forKey: @"TotalAmmount"];
     [data setValue:_Phone           forKey: @"Phone"];
     [data setValue:_OrderNotes      forKey: @"OrderNotes"];
+    [data setValue:_CouponID        forKey: @"CouponID"];
     
     NSMutableArray *arr = [[NSMutableArray alloc] init];
     

@@ -38,6 +38,7 @@
 @property (nonatomic, strong) NSString* TotalAmmount;
 @property (nonatomic, strong) NSString* Phone;
 @property (nonatomic, strong) NSString* OrderNotes;
+@property (nonatomic, strong) NSString* CouponID;
 @property (nonatomic, strong) NSArray*  Collections;
 
 @end

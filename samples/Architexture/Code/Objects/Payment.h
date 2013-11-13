@@ -37,6 +37,7 @@
                 withTotalAmmount:(NSString*)_totalAmmount
                  withCollections:(NSArray*)_collections
                        withPhone:(NSString*) _phone
-                  withOrderNotes:(NSString*)_orderNotes;
+                  withOrderNotes:(NSString*)_orderNotes
+                    withCouponID:(NSString*) _couponID;
 
 @end

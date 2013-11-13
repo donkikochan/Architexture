@@ -823,7 +823,7 @@
             else if (m_bSendingPaymentInfo)
             {
                 [ECommon hideProgress];
-                [ECommon showAlertInfo:NSLocalizedString(@"CONTACT_ERROR_PURCHASE",nil) title:NSLocalizedString(@"PURCHASE_NO_OK",nil)];
+                [ECommon showAlertInfo:NSLocalizedString(@"ERROR_PURCHASE",nil) title:NSLocalizedString(@"PURCHASE_NO_OK",nil)];
             }
             else
             {
@@ -917,7 +917,7 @@
     
     NSArray* collections = [[AppDelegate mainAppDelegate].m_CheckOutInfo getCollections];
     
-    [m_Payment sendPaymentInfoWithName:name withEmail:email withAddress:address withCity:city withZIP:zip withCountry:country withSlowShipping:slowShipping withTotalAmmount:totalAmmount withCollections:collections withPhone:phone withOrderNotes:orderNotes];
+    [m_Payment sendPaymentInfoWithName:name withEmail:email withAddress:address withCity:city withZIP:zip withCountry:country withSlowShipping:slowShipping withTotalAmmount:totalAmmount withCollections:collections withPhone:phone withOrderNotes:orderNotes withCouponID:m_sCouponID];
 }
 
 

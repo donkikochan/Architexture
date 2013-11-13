@@ -517,7 +517,7 @@
         RingProfile_View* ringProfileView = m_aProfileRing_Views[i];
         ringProfileView.m_ScrollView_Profile.delegate = nil;
         ringProfileView.m_ScrollView_Profile.scrollEnabled = NO;
-        [ringProfileView.m_ScrollView_Profile scrollRectToVisible:CGRectMake(0, 1948.f, WIDTH_RING_PROFILE , ringProfileView.m_ScrollView_Profile.frame.size.height) animated:YES];
+        [ringProfileView.m_ScrollView_Profile scrollRectToVisible:CGRectMake(0, 2020.f, WIDTH_RING_PROFILE , ringProfileView.m_ScrollView_Profile.frame.size.height) animated:YES];
         ringProfileView.m_Image_TitleBig.alpha = 0.f;
         ringProfileView.m_Image_TitleSmall.alpha = 1.f;
     }

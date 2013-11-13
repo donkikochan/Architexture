@@ -51,6 +51,7 @@
                  withCollections:(NSArray*)_collections
                        withPhone:(NSString*) _phone
                   withOrderNotes:(NSString*)_orderNotes
+                    withCouponID:(NSString*)_couponID
 {
     SyncHandlerSendPaymentInfo *handler = [[SyncHandlerSendPaymentInfo alloc] init:self];
     
@@ -65,6 +66,7 @@
     handler.Collections     = _collections;
     handler.Phone           = _phone;
     handler.OrderNotes      = _orderNotes;
+    handler.CouponID        = _couponID;
     
     [handler start];
 }
