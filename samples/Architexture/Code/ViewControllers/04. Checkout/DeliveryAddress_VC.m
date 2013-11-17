@@ -712,7 +712,8 @@
     
     
     // Start out working with the test environment! When you are ready, remove this line to switch to live.
-    [PayPalPaymentViewController setEnvironment:PayPalEnvironmentSandbox];
+    
+    [PayPalPaymentViewController setEnvironment:PayPalEnvironmentProduction];
     
     // Provide a payerId that uniquely identifies a user within the scope of your system,
     // such as an email address or user ID.
@@ -721,11 +722,16 @@
     // Create a PayPalPaymentViewController with the credentials and payerId, the PayPalPayment
     // from the previous step, and a PayPalPaymentDelegate to handle the results.
     PayPalPaymentViewController *paymentViewController;
-    paymentViewController = [[PayPalPaymentViewController alloc] initWithClientId:@"AW9_rRArXURSUv7WVIWkxQWvnBxQuPdMq8dsAXKmAAbDz2S1pWa4Tfp7LS_G"
-                                                                    receiverEmail:@"enric.cipsa@gmail.com"
-                                                                          payerId:aPayerId
-                                                                          payment:payment
-                                                                         delegate:self];
+    NSString* clientID =@"AWacMBBY8QqB5jpLQfMCVo_4Z7XRfqmW6aRMgkp4TfetreBOPadGp78MuMcF";
+    NSString* receiverEmail = @"espaipaper@gmail.com";
+    paymentViewController = [[PayPalPaymentViewController alloc]
+                             initWithClientId:clientID
+                             receiverEmail:receiverEmail
+                             payerId:aPayerId
+                             payment:payment
+                             delegate:self];
+    
+    paymentViewController.hideCreditCardButton = YES;
     
     // Present the PayPalPaymentViewController.
     [self presentViewController:paymentViewController animated:YES completion:nil];
